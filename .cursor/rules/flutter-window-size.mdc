@@ -1,0 +1,20 @@
+---
+description: Flutter Windows desktop window size — always launch in iPhone 15 Pro portrait format
+alwaysApply: true
+---
+
+# Flutter Windows Launch Size
+
+Always run the app in a window sized to match an **iPhone 15 Pro** portrait screen.
+
+- Width: `393` logical pixels  
+- Height: `852` logical pixels  
+
+This is set in `windows/runner/main.cpp`:
+
+```cpp
+Win32Window::Point origin(10, 10);
+Win32Window::Size size(393, 852);
+```
+
+Never change this size back to 1280 × 720 or any other desktop size unless the user explicitly asks.

@@ -1,0 +1,15 @@
+Stretching and mobility catalog, reviewed 2026-11-06.
+57 selected names/IDs from Free Exercise DB (Unlicense / public domain):
+https://github.com/yuhonas/free-exercise-db
+Upstream revision at import: f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5
+https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/dist/exercises.json
+License text: STRETCH_CATALOG_LICENSE.txt. No upstream photos are included.
+All German/English instructions were rewritten. Pigeon, gentle wrist flexor/extensor and standing quad, shin and foot variants were added (64 total).
+Selection excludes assisted PNF, foam rolling and loaded stretches. Dynamic mobility is labeled as such.
+General technique reference: https://www.orthoinfo.org/en/staying-healthy/warm-up-cool-down-and-be-flexible/
+Anatomical function references: anatomy_config.json sources (OpenStax).
+Recommendations are editorial region-based suggestions for surrounding muscles, not individualized treatment and not instructions to stretch ligaments.
+Jaw/throat ligaments deliberately have no stretch recommendation.
+Rebuild catalog: node tool/generate_stretch_catalog.cjs; dart format lib/data/stretch_exercise_catalog.dart
+Rebuild atlas copy: node tool/update_anatomy_details.cjs
+

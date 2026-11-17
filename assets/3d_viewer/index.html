@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Kaizen · Anatomie</title>
+<style>
+html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a0a0a}
+#renderCanvas{display:block;width:100%;height:100%;outline:none;touch-action:none}
+#status{position:absolute;inset:0;display:grid;place-content:center;padding:28px;text-align:center;font:14px/1.5 system-ui,sans-serif;color:#c7c6c1;pointer-events:none}
+#status:empty{display:none}
+</style>
+<script src="./babylon.js"></script>
+<script src="./babylonjs.loaders.min.js"></script>
+</head>
+<body>
+<canvas id="renderCanvas" tabindex="0" aria-label="Drehbares anatomisches Körpermodell"></canvas>
+<div id="status" role="status" aria-live="polite">Modell wird geladen …</div>
+<script src="./anatomy_viewer.js"></script>
+</body>
+</html>

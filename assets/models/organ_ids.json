@@ -1,0 +1,1268 @@
+{
+  "schema_version": 1,
+  "units": "metres",
+  "gltf_up": "+Y",
+  "blender_up": "+Z",
+  "anatomical_left": "+X",
+  "scope": "28 common internal-organ structures, a practical overview rather than every microscopic organ or reproductive structure.",
+  "source_blend": "C:\\Users\\janjk\\OneDrive\\Desktop\\projects\\FitFlow\\body_model\\reference\\z_anatomy\\Z-Anatomy\\FitFlow_Anatomical_Body.blend",
+  "license": "CC-BY-SA-4.0",
+  "groups": [
+    {
+      "id": "brain",
+      "organ_id": "brain",
+      "structure_id": "organ.brain",
+      "object_name": "organ.brain",
+      "name_de": "Großhirn",
+      "tissue_type": "organ",
+      "organ_system": "nervous",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        " Posterior transverse collateral sulcus.l",
+        " Posterior transverse collateral sulcus.r",
+        "Angular gyrus.l",
+        "Angular gyrus.r",
+        "Anterior occipital sulcus*.l",
+        "Anterior occipital sulcus*.r",
+        "Calcarine sulcus.l",
+        "Calcarine sulcus.r",
+        "Central sulcus.l",
+        "Central sulcus.r",
+        "Cingulate gyrus (Posteroventral part*).l",
+        "Cingulate gyrus (Posteroventral part*).r",
+        "Cingulate gyrus and sulcus (Middle anterior part).l",
+        "Cingulate gyrus and sulcus (Middle anterior part).r",
+        "Cingulate gyrus and sulcus (Middle posterior part).l",
+        "Cingulate gyrus and sulcus (Middle posterior part).r",
+        "Cingulate gyrus and sulcus (Posterior dorsal part).l",
+        "Cingulate gyrus and sulcus (Posterior dorsal part).r",
+        "Cingulate sulcus (Marginal part*).l",
+        "Cingulate sulcus (Marginal part*).r",
+        "Circular sulcus of insula.l",
+        "Circular sulcus of insula.r",
+        "Collateral sulcus.l",
+        "Collateral sulcus.r",
+        "Cuneus.l",
+        "Cuneus.r",
+        "Inferior occipital gyrus and sulcus*.l",
+        "Inferior occipital gyrus and sulcus*.r",
+        "Inferior temporal gyrus.l",
+        "Inferior temporal gyrus.r",
+        "Insula (Subcentral gyrus and ant. and post. sulci*).l",
+        "Insula (Subcentral gyrus and ant. and post. sulci*).r",
+        "Lat_Fis-ant-Horizont.l",
+        "Lat_Fis-ant-Horizont.r",
+        "Lat_Fis-ant-Vertical.l",
+        "Lat_Fis-ant-Vertical.r",
+        "Lat_Fis-post.l",
+        "Lat_Fis-post.r",
+        "Lateral occipital gyrus (Middle occipital gyrus*).l",
+        "Lateral occipital gyrus (Middle occipital gyrus*).r",
+        "Lateral occipitotemporal gyrus.l",
+        "Lateral occipitotemporal gyrus.r",
+        "Lingual gyrus.l",
+        "Lingual gyrus.r",
+        "Lunate sulcus.l",
+        "Lunate sulcus.r",
+        "Medial occipitotemporal gyrus (Parahippocampal*).l",
+        "Medial occipitotemporal gyrus (Parahippocampal*).r",
+        "Middle frontal gyrus.l",
+        "Middle frontal gyrus.r",
+        "Middle temporal gyrus.l",
+        "Middle temporal gyrus.r",
+        "Occipital pole.l",
+        "Occipital pole.r",
+        "Occipitotemporal sulcus (Lateral part*).l",
+        "Occipitotemporal sulcus (Lateral part*).r",
+        "Orbital gyri (Frontomarginal gyrus and sulcus*).l",
+        "Orbital gyri (Frontomarginal gyrus and sulcus*).r",
+        "Orbital gyri.l",
+        "Orbital gyri.r",
+        "Orbital part of  inferior frontal gyrus.l",
+        "Orbital part of  inferior frontal gyrus.r",
+        "Orbital sulci (H-shaped orbital sulci*).l",
+        "Orbital sulci (H-shaped orbital sulci*).r",
+        "Orbital sulci (Lateral Orbital sulcus*).l",
+        "Orbital sulci (Lateral Orbital sulcus*).r",
+        "Paracentral gyrus and sulcus*.l",
+        "Paracentral gyrus and sulcus*.r",
+        "Postcentral gyrus.l",
+        "Postcentral gyrus.r",
+        "Precentral gyrus.l",
+        "Precentral gyrus.r",
+        "Precuneus.l",
+        "Precuneus.r",
+        "Inferior frontal sulcus.l",
+        "Inferior frontal sulcus.r",
+        "Inferior temporal sulcus.l",
+        "Inferior temporal sulcus.r",
+        "Intraparietal sulcus.l",
+        "Intraparietal sulcus.r",
+        "Olfactory sulcus.l",
+        "Olfactory sulcus.r",
+        "Opercular part of inferior frontal gyrus.l",
+        "Opercular part of inferior frontal gyrus.r",
+        "Paracentral sulcus.l",
+        "Paracentral sulcus.r",
+        "Parieto-occipital sulcus.l",
+        "Parieto-occipital sulcus.r",
+        "Postcentral sulcus.l",
+        "Postcentral sulcus.r",
+        "Precentral sulcus (inferior part)*.l",
+        "Precentral sulcus (inferior part)*.r",
+        "Precentral sulcus (Superior part)*.l",
+        "Precentral sulcus (Superior part)*.r",
+        "Straight gyrus (Gyrus rectus).l",
+        "Straight gyrus (Gyrus rectus).r",
+        "Subparietal sulcus.l",
+        "Subparietal sulcus.r",
+        "Sulcus interm_prim-Jensen.l",
+        "Sulcus interm_prim-Jensen.r",
+        "Superior frontal gyrus.l",
+        "Superior frontal gyrus.r",
+        "Superior frontal sulcus.l",
+        "Superior frontal sulcus.r",
+        "Superior occipital gyri.l",
+        "Superior occipital gyri.r",
+        "Superior parietal lobule.l",
+        "Superior parietal lobule.r",
+        "Superior temporal gyrus (Lateral part).l",
+        "Superior temporal gyrus (Lateral part).r",
+        "Superior temporal sulcus.l",
+        "Superior temporal sulcus.r",
+        "Supramarginal gyrus.l",
+        "Supramarginal gyrus.r",
+        "Temporal plane.l",
+        "Temporal plane.r",
+        "Temporal pole.l",
+        "Temporal pole.r",
+        "Transverse frontopolar gyrus and sulcus*.l",
+        "Transverse frontopolar gyrus and sulcus*.r",
+        "Transverse occipital sulcus.l",
+        "Transverse occipital sulcus.r",
+        "Transverse temporal gyri.l",
+        "Transverse temporal gyri.r",
+        "Triangular part of inferior frontal gyrus.l",
+        "Triangular part of inferior frontal gyrus.r"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.62,
+        0.43,
+        0.4
+      ],
+      "evaluated_before_reduction_triangles": 324556,
+      "vertices": 2248,
+      "faces": 4348,
+      "triangles": 4348,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.0723419040441513,
+          -0.08486250787973404,
+          1.666080117225647
+        ],
+        [
+          0.0729156881570816,
+          0.1050582006573677,
+          1.7919819355010986
+        ]
+      ]
+    },
+    {
+      "id": "cerebellum",
+      "organ_id": "brain",
+      "structure_id": "organ.cerebellum",
+      "object_name": "organ.cerebellum",
+      "name_de": "Kleinhirn",
+      "tissue_type": "organ",
+      "organ_system": "nervous",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Anterior quadrangular lobule.l",
+        "Anterior quadrangular lobule.r",
+        "Biventral lobule.l",
+        "Biventral lobule.r",
+        "Central lobule",
+        "Culmen",
+        "Declive",
+        "Flocculus.l",
+        "Flocculus.r",
+        "Folium of vermis",
+        "Gracile lobule.l",
+        "Gracile lobule.r",
+        "Inferior semilunar lobule.l",
+        "Inferior semilunar lobule.r",
+        "Lingula of cerebellum",
+        "Nodule of vermis",
+        "Posterior quadrangular lobule.l",
+        "Posterior quadrangular lobule.r",
+        "Pyramis of vermis",
+        "Superior semilunar lobule.l",
+        "Superior semilunar lobule.r",
+        "Tonsil of cerebellum.l",
+        "Tonsil of cerebellum.r",
+        "Tuber of vermis",
+        "Uvula of vermis",
+        "Wing of central lobule.l",
+        "Wing of central lobule.r"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.55,
+        0.37,
+        0.33
+      ],
+      "evaluated_before_reduction_triangles": 32580,
+      "vertices": 701,
+      "faces": 1402,
+      "triangles": 1402,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.05124540627002716,
+          0.009782304987311363,
+          1.643476963043213
+        ],
+        [
+          0.051920562982559204,
+          0.0844382792711258,
+          1.6992186307907104
+        ]
+      ]
+    },
+    {
+      "id": "brainstem",
+      "organ_id": "brain",
+      "structure_id": "organ.brainstem",
+      "object_name": "organ.brainstem",
+      "name_de": "Hirnstamm",
+      "tissue_type": "organ",
+      "organ_system": "nervous",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Midbrain.l",
+        "Midbrain.r",
+        "Pons.l",
+        "Pons.r",
+        "Medulla oblongata.l",
+        "Medulla oblongata.r"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.6,
+        0.42,
+        0.35
+      ],
+      "evaluated_before_reduction_triangles": 12140,
+      "vertices": 327,
+      "faces": 650,
+      "triangles": 650,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.021615609526634216,
+          -0.008940791711211205,
+          1.6213572025299072
+        ],
+        [
+          0.021544691175222397,
+          0.03807026520371437,
+          1.704027533531189
+        ]
+      ]
+    },
+    {
+      "id": "pituitary",
+      "organ_id": "pituitary",
+      "structure_id": "organ.pituitary",
+      "object_name": "organ.pituitary",
+      "name_de": "Hypophyse",
+      "tissue_type": "organ",
+      "organ_system": "endocrine",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Adenohypophysis",
+        "Neurohypophysis"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.55,
+        0.34,
+        0.32
+      ],
+      "evaluated_before_reduction_triangles": 1272,
+      "vertices": 62,
+      "faces": 120,
+      "triangles": 120,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.006441778969019651,
+          -0.022502578794956207,
+          1.680552363395691
+        ],
+        [
+          0.0064418078400194645,
+          -0.012885848991572857,
+          1.6937541961669922
+        ]
+      ]
+    },
+    {
+      "id": "thyroid",
+      "organ_id": "thyroid",
+      "structure_id": "organ.thyroid",
+      "object_name": "organ.thyroid",
+      "name_de": "Schilddrüse",
+      "tissue_type": "organ",
+      "organ_system": "endocrine",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Thyroid gland"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.55,
+        0.3,
+        0.22
+      ],
+      "evaluated_before_reduction_triangles": 41600,
+      "vertices": 152,
+      "faces": 300,
+      "triangles": 300,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.026258835569024086,
+          -0.03964311629533768,
+          1.5325196981430054
+        ],
+        [
+          0.026409855112433434,
+          0.0048494040966033936,
+          1.5681031942367554
+        ]
+      ]
+    },
+    {
+      "id": "trachea",
+      "organ_id": "trachea",
+      "structure_id": "organ.trachea",
+      "object_name": "organ.trachea",
+      "name_de": "Luftröhre und Hauptbronchien",
+      "tissue_type": "organ",
+      "organ_system": "respiratory",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Trachea",
+        "Left main bronchus",
+        "Right main bronchus"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.71,
+        0.65,
+        0.51
+      ],
+      "evaluated_before_reduction_triangles": 5548,
+      "vertices": 506,
+      "faces": 1000,
+      "triangles": 1000,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.022349173203110695,
+          -0.0190924983471632,
+          1.3852869272232056
+        ],
+        [
+          0.052794888615608215,
+          0.030766958370804787,
+          1.5388188362121582
+        ]
+      ]
+    },
+    {
+      "id": "lung.l",
+      "organ_id": "lung.l",
+      "structure_id": "organ.lung.l",
+      "object_name": "organ.lung.l",
+      "name_de": "Lunge – links",
+      "tissue_type": "organ",
+      "organ_system": "respiratory",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Superior lobe of left lung",
+        "Inferior lobe of left lung"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.58,
+        0.33,
+        0.3
+      ],
+      "evaluated_before_reduction_triangles": 128020,
+      "vertices": 802,
+      "faces": 1600,
+      "triangles": 1600,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          0.010016142390668392,
+          -0.10887568444013596,
+          1.2296932935714722
+        ],
+        [
+          0.1413668841123581,
+          0.09033497422933578,
+          1.5075790882110596
+        ]
+      ]
+    },
+    {
+      "id": "lung.r",
+      "organ_id": "lung.r",
+      "structure_id": "organ.lung.r",
+      "object_name": "organ.lung.r",
+      "name_de": "Lunge – rechts",
+      "tissue_type": "organ",
+      "organ_system": "respiratory",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Superior lobe of right lung",
+        "Inferior lobe of right lung",
+        "Middle lobe of right lung"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.58,
+        0.33,
+        0.3
+      ],
+      "evaluated_before_reduction_triangles": 130624,
+      "vertices": 802,
+      "faces": 1600,
+      "triangles": 1600,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.1416940987110138,
+          -0.11004627496004105,
+          1.2326871156692505
+        ],
+        [
+          -0.0030409074388444424,
+          0.09016277641057968,
+          1.5062940120697021
+        ]
+      ]
+    },
+    {
+      "id": "heart",
+      "organ_id": "heart",
+      "structure_id": "organ.heart",
+      "object_name": "organ.heart",
+      "name_de": "Herz",
+      "tissue_type": "organ",
+      "organ_system": "cardiovascular",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Left atrium",
+        "Right atrium",
+        "Left ventricle",
+        "Right ventricle"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.42,
+        0.15,
+        0.14
+      ],
+      "evaluated_before_reduction_triangles": 121512,
+      "vertices": 992,
+      "faces": 2000,
+      "triangles": 2000,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.040823422372341156,
+          -0.0885276198387146,
+          1.3024929761886597
+        ],
+        [
+          0.090665802359581,
+          0.03464763984084129,
+          1.416656732559204
+        ]
+      ]
+    },
+    {
+      "id": "thymus",
+      "organ_id": "thymus",
+      "structure_id": "organ.thymus",
+      "object_name": "organ.thymus",
+      "name_de": "Thymus",
+      "tissue_type": "organ",
+      "organ_system": "lymphatic",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Left lobe of thymus",
+        "Right lobe of thymus"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": "Adult thymic tissue is variable; atlas outline is retained as a simplified landmark.",
+      "color_linear_rgb": [
+        0.62,
+        0.47,
+        0.37
+      ],
+      "evaluated_before_reduction_triangles": 5028,
+      "vertices": 177,
+      "faces": 350,
+      "triangles": 350,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.007302835583686829,
+          -0.07362552732229233,
+          1.3819377422332764
+        ],
+        [
+          0.04691361263394356,
+          -0.03793138265609741,
+          1.4448221921920776
+        ]
+      ]
+    },
+    {
+      "id": "oesophagus",
+      "organ_id": "oesophagus",
+      "structure_id": "organ.oesophagus",
+      "object_name": "organ.oesophagus",
+      "name_de": "Speiseröhre",
+      "tissue_type": "organ",
+      "organ_system": "digestive",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Oesophagus"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.52,
+        0.3,
+        0.25
+      ],
+      "evaluated_before_reduction_triangles": 28856,
+      "vertices": 327,
+      "faces": 650,
+      "triangles": 650,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.009489106945693493,
+          -0.018602287396788597,
+          1.2586517333984375
+        ],
+        [
+          0.018982425332069397,
+          0.03678691387176514,
+          1.5544629096984863
+        ]
+      ]
+    },
+    {
+      "id": "liver",
+      "organ_id": "liver",
+      "structure_id": "organ.liver",
+      "object_name": "organ.liver",
+      "name_de": "Leber",
+      "tissue_type": "organ",
+      "organ_system": "digestive",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Liver"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.38,
+        0.18,
+        0.13
+      ],
+      "evaluated_before_reduction_triangles": 70724,
+      "vertices": 802,
+      "faces": 1600,
+      "triangles": 1600,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.11959957331418991,
+          -0.1047038584947586,
+          1.15015709400177
+        ],
+        [
+          0.0976354330778122,
+          0.05446983501315117,
+          1.3252441883087158
+        ]
+      ]
+    },
+    {
+      "id": "gallbladder",
+      "organ_id": "gallbladder",
+      "structure_id": "organ.gallbladder",
+      "object_name": "organ.gallbladder",
+      "name_de": "Gallenblase",
+      "tissue_type": "organ",
+      "organ_system": "digestive",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Gallbladder"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.34,
+        0.38,
+        0.14
+      ],
+      "evaluated_before_reduction_triangles": 722,
+      "vertices": 152,
+      "faces": 300,
+      "triangles": 300,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.06198209524154663,
+          -0.07659406214952469,
+          1.1751856803894043
+        ],
+        [
+          -0.027447445318102837,
+          -0.030952630564570427,
+          1.221103549003601
+        ]
+      ]
+    },
+    {
+      "id": "stomach",
+      "organ_id": "stomach",
+      "structure_id": "organ.stomach",
+      "object_name": "organ.stomach",
+      "name_de": "Magen",
+      "tissue_type": "organ",
+      "organ_system": "digestive",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Stomach"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.64,
+        0.35,
+        0.25
+      ],
+      "evaluated_before_reduction_triangles": 9602,
+      "vertices": 552,
+      "faces": 1100,
+      "triangles": 1100,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.028292326256632805,
+          -0.0850173756480217,
+          1.1627826690673828
+        ],
+        [
+          0.10726837813854218,
+          0.01681124046444893,
+          1.2947794198989868
+        ]
+      ]
+    },
+    {
+      "id": "duodenum",
+      "organ_id": "duodenum",
+      "structure_id": "organ.duodenum",
+      "object_name": "organ.duodenum",
+      "name_de": "Zwölffingerdarm",
+      "tissue_type": "organ",
+      "organ_system": "digestive",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Duodenum"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.66,
+        0.43,
+        0.29
+      ],
+      "evaluated_before_reduction_triangles": 1770,
+      "vertices": 327,
+      "faces": 650,
+      "triangles": 650,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.06392275542020798,
+          -0.05483762547373772,
+          1.1010276079177856
+        ],
+        [
+          0.03155091404914856,
+          -0.005587679799646139,
+          1.2045881748199463
+        ]
+      ]
+    },
+    {
+      "id": "small_intestine",
+      "organ_id": "small_intestine",
+      "structure_id": "organ.small_intestine",
+      "object_name": "organ.small_intestine",
+      "name_de": "Dünndarm",
+      "tissue_type": "organ",
+      "organ_system": "digestive",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Jejunum"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": "Simplified overall small-bowel display from source curve named Jejunum; no separate jejunum/ileum boundary is claimed.",
+      "color_linear_rgb": [
+        0.68,
+        0.45,
+        0.3
+      ],
+      "evaluated_before_reduction_triangles": 23056,
+      "vertices": 1601,
+      "faces": 3198,
+      "triangles": 3198,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.08208774030208588,
+          -0.07728447765111923,
+          0.9284912347793579
+        ],
+        [
+          0.10052967071533203,
+          -0.019114764407277107,
+          1.1477943658828735
+        ]
+      ]
+    },
+    {
+      "id": "large_intestine",
+      "organ_id": "large_intestine",
+      "structure_id": "organ.large_intestine",
+      "object_name": "organ.large_intestine",
+      "name_de": "Dickdarm",
+      "tissue_type": "organ",
+      "organ_system": "digestive",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Ascending colon",
+        "Transverse colon",
+        "Descending colon",
+        "Sigmoid colon"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.57,
+        0.34,
+        0.25
+      ],
+      "evaluated_before_reduction_triangles": 232824,
+      "vertices": 902,
+      "faces": 1800,
+      "triangles": 1800,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.11257435381412506,
+          -0.07695285975933075,
+          0.9185318350791931
+        ],
+        [
+          0.11294323205947876,
+          0.06323076784610748,
+          1.1958178281784058
+        ]
+      ]
+    },
+    {
+      "id": "appendix",
+      "organ_id": "appendix",
+      "structure_id": "organ.appendix",
+      "object_name": "organ.appendix",
+      "name_de": "Wurmfortsatz",
+      "tissue_type": "organ",
+      "organ_system": "digestive",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Vermiform appendix"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.6,
+        0.35,
+        0.28
+      ],
+      "evaluated_before_reduction_triangles": 442,
+      "vertices": 77,
+      "faces": 150,
+      "triangles": 150,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.08954165130853653,
+          -0.02246815152466297,
+          0.9907493591308594
+        ],
+        [
+          -0.019335119053721428,
+          0.016637152060866356,
+          1.0098589658737183
+        ]
+      ]
+    },
+    {
+      "id": "rectum",
+      "organ_id": "rectum",
+      "structure_id": "organ.rectum",
+      "object_name": "organ.rectum",
+      "name_de": "Mastdarm",
+      "tissue_type": "organ",
+      "organ_system": "digestive",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [],
+      "source_kind": "original_simplified_geometry",
+      "anatomical_note": "Original simplified rectal continuation; not traced from a third-party mesh.",
+      "color_linear_rgb": [
+        0.53,
+        0.3,
+        0.25
+      ],
+      "evaluated_before_reduction_triangles": 1172,
+      "vertices": 177,
+      "faces": 350,
+      "triangles": 350,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.014296277426183224,
+          0.031629182398319244,
+          0.8442737460136414
+        ],
+        [
+          0.012331727892160416,
+          0.07532552629709244,
+          0.9677773714065552
+        ]
+      ]
+    },
+    {
+      "id": "pancreas",
+      "organ_id": "pancreas",
+      "structure_id": "organ.pancreas",
+      "object_name": "organ.pancreas",
+      "name_de": "Bauchspeicheldrüse",
+      "tissue_type": "organ",
+      "organ_system": "digestive",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Pancreas"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.72,
+        0.54,
+        0.27
+      ],
+      "evaluated_before_reduction_triangles": 5222,
+      "vertices": 377,
+      "faces": 750,
+      "triangles": 750,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.04467633366584778,
+          -0.045836132019758224,
+          1.1371114253997803
+        ],
+        [
+          0.07173590362071991,
+          0.005032021552324295,
+          1.21462881565094
+        ]
+      ]
+    },
+    {
+      "id": "spleen",
+      "organ_id": "spleen",
+      "structure_id": "organ.spleen",
+      "object_name": "organ.spleen",
+      "name_de": "Milz",
+      "tissue_type": "organ",
+      "organ_system": "lymphatic",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Spleen"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.38,
+        0.2,
+        0.3
+      ],
+      "evaluated_before_reduction_triangles": 1330,
+      "vertices": 277,
+      "faces": 550,
+      "triangles": 550,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          0.05640236288309097,
+          -0.04132814332842827,
+          1.1866952180862427
+        ],
+        [
+          0.1124042496085167,
+          0.05194013938307762,
+          1.2604862451553345
+        ]
+      ]
+    },
+    {
+      "id": "kidney.l",
+      "organ_id": "kidney.l",
+      "structure_id": "organ.kidney.l",
+      "object_name": "organ.kidney.l",
+      "name_de": "Niere – links",
+      "tissue_type": "organ",
+      "organ_system": "urinary",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [],
+      "source_kind": "original_simplified_geometry",
+      "anatomical_note": "Original simplified bean-shaped kidney; NC Z-Anatomy kidney mesh explicitly excluded. Position follows ureter/adrenal landmarks, not a kidney source mesh.",
+      "color_linear_rgb": [
+        0.42,
+        0.22,
+        0.2
+      ],
+      "evaluated_before_reduction_triangles": 1216,
+      "vertices": 402,
+      "faces": 800,
+      "triangles": 800,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          0.033565156161785126,
+          -0.006575046572834253,
+          1.1142538785934448
+        ],
+        [
+          0.09088960289955139,
+          0.03712514415383339,
+          1.227822184562683
+        ]
+      ]
+    },
+    {
+      "id": "adrenal.l",
+      "organ_id": "adrenal.l",
+      "structure_id": "organ.adrenal.l",
+      "object_name": "organ.adrenal.l",
+      "name_de": "Nebenniere – links",
+      "tissue_type": "organ",
+      "organ_system": "endocrine",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Suprarenal gland.l"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.72,
+        0.58,
+        0.3
+      ],
+      "evaluated_before_reduction_triangles": 3996,
+      "vertices": 112,
+      "faces": 220,
+      "triangles": 220,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          0.02717832289636135,
+          0.014242302626371384,
+          1.1990660429000854
+        ],
+        [
+          0.07550253719091415,
+          0.034764498472213745,
+          1.2462247610092163
+        ]
+      ]
+    },
+    {
+      "id": "ureter.l",
+      "organ_id": "ureter.l",
+      "structure_id": "organ.ureter.l",
+      "object_name": "organ.ureter.l",
+      "name_de": "Harnleiter – links",
+      "tissue_type": "organ",
+      "organ_system": "urinary",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Ureter.l"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.65,
+        0.49,
+        0.37
+      ],
+      "evaluated_before_reduction_triangles": 2416,
+      "vertices": 112,
+      "faces": 220,
+      "triangles": 220,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          0.023277010768651962,
+          -0.02012106031179428,
+          0.9204625487327576
+        ],
+        [
+          0.04439393803477287,
+          0.037508416920900345,
+          1.1699610948562622
+        ]
+      ]
+    },
+    {
+      "id": "kidney.r",
+      "organ_id": "kidney.r",
+      "structure_id": "organ.kidney.r",
+      "object_name": "organ.kidney.r",
+      "name_de": "Niere – rechts",
+      "tissue_type": "organ",
+      "organ_system": "urinary",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [],
+      "source_kind": "original_simplified_geometry",
+      "anatomical_note": "Original simplified bean-shaped kidney; NC Z-Anatomy kidney mesh explicitly excluded. Position follows ureter/adrenal landmarks, not a kidney source mesh.",
+      "color_linear_rgb": [
+        0.42,
+        0.22,
+        0.2
+      ],
+      "evaluated_before_reduction_triangles": 1216,
+      "vertices": 402,
+      "faces": 800,
+      "triangles": 800,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.08454275876283646,
+          -0.01576468162238598,
+          1.0949770212173462
+        ],
+        [
+          -0.027456900104880333,
+          0.027855517342686653,
+          1.2087278366088867
+        ]
+      ]
+    },
+    {
+      "id": "adrenal.r",
+      "organ_id": "adrenal.r",
+      "structure_id": "organ.adrenal.r",
+      "object_name": "organ.adrenal.r",
+      "name_de": "Nebenniere – rechts",
+      "tissue_type": "organ",
+      "organ_system": "endocrine",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Suprarenal gland.r"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.72,
+        0.58,
+        0.3
+      ],
+      "evaluated_before_reduction_triangles": 2294,
+      "vertices": 112,
+      "faces": 220,
+      "triangles": 220,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.0616682730615139,
+          -0.003964136820286512,
+          1.1804250478744507
+        ],
+        [
+          -0.030098438262939453,
+          0.02226821891963482,
+          1.225202202796936
+        ]
+      ]
+    },
+    {
+      "id": "ureter.r",
+      "organ_id": "ureter.r",
+      "structure_id": "organ.ureter.r",
+      "object_name": "organ.ureter.r",
+      "name_de": "Harnleiter – rechts",
+      "tissue_type": "organ",
+      "organ_system": "urinary",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Ureter.r"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.65,
+        0.49,
+        0.37
+      ],
+      "evaluated_before_reduction_triangles": 2656,
+      "vertices": 112,
+      "faces": 220,
+      "triangles": 220,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.04237185791134834,
+          -0.019633248448371887,
+          0.9170610904693604
+        ],
+        [
+          -0.008900942280888557,
+          0.031413327902555466,
+          1.1507824659347534
+        ]
+      ]
+    },
+    {
+      "id": "urinary_bladder",
+      "organ_id": "urinary_bladder",
+      "structure_id": "organ.urinary_bladder",
+      "object_name": "organ.urinary_bladder",
+      "name_de": "Harnblase",
+      "tissue_type": "organ",
+      "organ_system": "urinary",
+      "default_visible": true,
+      "clickable": true,
+      "source_names": [
+        "Urinary bladder"
+      ],
+      "source_kind": "Z-Anatomy / BodyParts3D",
+      "anatomical_note": null,
+      "color_linear_rgb": [
+        0.68,
+        0.52,
+        0.36
+      ],
+      "evaluated_before_reduction_triangles": 3036,
+      "vertices": 227,
+      "faces": 450,
+      "triangles": 450,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_blender_m": [
+        [
+          -0.03731279820203781,
+          -0.045112352818250656,
+          0.8739584684371948
+        ],
+        [
+          0.03819384053349495,
+          0.044111113995313644,
+          0.9279027581214905
+        ]
+      ]
+    }
+  ],
+  "selection_note": "28 editable organ meshes; 26 organ selections. Cerebrum, cerebellum and brainstem share organ_id brain."
+}

@@ -1,0 +1,1960 @@
+{
+  "schema_version": 2,
+  "units": "metres",
+  "blender_up": "+Z",
+  "gltf_up": "+Y",
+  "anatomical_left": "+X",
+  "groups": [
+    {
+      "id": "pectoralis_major.l",
+      "name_de": "Großer Brustmuskel – links",
+      "name_latin": "Musculus pectoralis major",
+      "side": "l",
+      "region": "chest",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Clavicular head of pectoralis major muscle.l",
+        "Sternocostal head of pectoralis major muscle.l",
+        "(Abdominal part of pectoralis major muscle).l"
+      ],
+      "tendon_source_names": [
+        "Clavicular head of pectoralis major muscle.l.001",
+        "Sternocostal head of pectoralis major muscle.l.001",
+        "(Abdominal part of pectoralis major muscle).l.001"
+      ],
+      "object_name": "muscle.pectoralis_major.l",
+      "structure_id": "muscle.pectoralis_major.l"
+    },
+    {
+      "id": "pectoralis_major.r",
+      "name_de": "Großer Brustmuskel – rechts",
+      "name_latin": "Musculus pectoralis major",
+      "side": "r",
+      "region": "chest",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Clavicular head of pectoralis major muscle.r",
+        "Sternocostal head of pectoralis major muscle.r",
+        "(Abdominal part of pectoralis major muscle).r"
+      ],
+      "tendon_source_names": [
+        "Clavicular head of pectoralis major muscle.r.001",
+        "Sternocostal head of pectoralis major muscle.r.001",
+        "(Abdominal part of pectoralis major muscle).r.001"
+      ],
+      "object_name": "muscle.pectoralis_major.r",
+      "structure_id": "muscle.pectoralis_major.r"
+    },
+    {
+      "id": "deltoideus_anterior.l",
+      "name_de": "Schulter – vorne – links",
+      "name_latin": "Musculus deltoideus, pars clavicularis",
+      "side": "l",
+      "region": "shoulder",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Clavicular part of deltoid muscle.l.001"
+      ],
+      "tendon_source_names": [
+        "Clavicular part of deltoid muscle.l"
+      ],
+      "object_name": "muscle.deltoideus_anterior.l",
+      "structure_id": "muscle.deltoideus_anterior.l"
+    },
+    {
+      "id": "deltoideus_anterior.r",
+      "name_de": "Schulter – vorne – rechts",
+      "name_latin": "Musculus deltoideus, pars clavicularis",
+      "side": "r",
+      "region": "shoulder",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Clavicular part of deltoid muscle.r.001"
+      ],
+      "tendon_source_names": [
+        "Clavicular part of deltoid muscle.r"
+      ],
+      "object_name": "muscle.deltoideus_anterior.r",
+      "structure_id": "muscle.deltoideus_anterior.r"
+    },
+    {
+      "id": "deltoideus_lateral.l",
+      "name_de": "Schulter – seitlich – links",
+      "name_latin": "Musculus deltoideus, pars acromialis",
+      "side": "l",
+      "region": "shoulder",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Acromial part of deltoid muscle.l.001"
+      ],
+      "tendon_source_names": [
+        "Acromial part of deltoid muscle.l"
+      ],
+      "object_name": "muscle.deltoideus_lateral.l",
+      "structure_id": "muscle.deltoideus_lateral.l"
+    },
+    {
+      "id": "deltoideus_lateral.r",
+      "name_de": "Schulter – seitlich – rechts",
+      "name_latin": "Musculus deltoideus, pars acromialis",
+      "side": "r",
+      "region": "shoulder",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Acromial part of deltoid muscle.r.001"
+      ],
+      "tendon_source_names": [
+        "Acromial part of deltoid muscle.r"
+      ],
+      "object_name": "muscle.deltoideus_lateral.r",
+      "structure_id": "muscle.deltoideus_lateral.r"
+    },
+    {
+      "id": "deltoideus_posterior.l",
+      "name_de": "Schulter – hinten – links",
+      "name_latin": "Musculus deltoideus, pars spinalis",
+      "side": "l",
+      "region": "shoulder",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Scapular spinal part of deltoid muscle.l"
+      ],
+      "tendon_source_names": [
+        "Scapular spinal part of deltoid muscle.l.001"
+      ],
+      "object_name": "muscle.deltoideus_posterior.l",
+      "structure_id": "muscle.deltoideus_posterior.l"
+    },
+    {
+      "id": "deltoideus_posterior.r",
+      "name_de": "Schulter – hinten – rechts",
+      "name_latin": "Musculus deltoideus, pars spinalis",
+      "side": "r",
+      "region": "shoulder",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Scapular spinal part of deltoid muscle.r"
+      ],
+      "tendon_source_names": [
+        "Scapular spinal part of deltoid muscle.r.001"
+      ],
+      "object_name": "muscle.deltoideus_posterior.r",
+      "structure_id": "muscle.deltoideus_posterior.r"
+    },
+    {
+      "id": "biceps_brachii.l",
+      "name_de": "Bizeps – links",
+      "name_latin": "Musculus biceps brachii",
+      "side": "l",
+      "region": "upper_arm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Long head of biceps brachii.l",
+        "Short head of biceps brachii.l"
+      ],
+      "tendon_source_names": [
+        "Long head of biceps brachii.l.001",
+        "Short head of biceps brachii.l.001"
+      ],
+      "object_name": "muscle.biceps_brachii.l",
+      "structure_id": "muscle.biceps_brachii.l"
+    },
+    {
+      "id": "biceps_brachii.r",
+      "name_de": "Bizeps – rechts",
+      "name_latin": "Musculus biceps brachii",
+      "side": "r",
+      "region": "upper_arm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Long head of biceps brachii.r",
+        "Short head of biceps brachii.r"
+      ],
+      "tendon_source_names": [
+        "Long head of biceps brachii.r.001",
+        "Short head of biceps brachii.r.001"
+      ],
+      "object_name": "muscle.biceps_brachii.r",
+      "structure_id": "muscle.biceps_brachii.r"
+    },
+    {
+      "id": "triceps_brachii.l",
+      "name_de": "Trizeps – links",
+      "name_latin": "Musculus triceps brachii",
+      "side": "l",
+      "region": "upper_arm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Long head of triceps brachii.l",
+        "Lateral head of triceps brachii.l.001",
+        "Medial head of triceps brachii.l"
+      ],
+      "tendon_source_names": [
+        "Long head of triceps brachii.l.001",
+        "Lateral head of triceps brachii.l",
+        "Medial head of triceps brachii.l.001"
+      ],
+      "object_name": "muscle.triceps_brachii.l",
+      "structure_id": "muscle.triceps_brachii.l"
+    },
+    {
+      "id": "triceps_brachii.r",
+      "name_de": "Trizeps – rechts",
+      "name_latin": "Musculus triceps brachii",
+      "side": "r",
+      "region": "upper_arm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Long head of triceps brachii.r",
+        "Lateral head of triceps brachii.r.001",
+        "Medial head of triceps brachii.r"
+      ],
+      "tendon_source_names": [
+        "Long head of triceps brachii.r.001",
+        "Lateral head of triceps brachii.r",
+        "Medial head of triceps brachii.r.001"
+      ],
+      "object_name": "muscle.triceps_brachii.r",
+      "structure_id": "muscle.triceps_brachii.r"
+    },
+    {
+      "id": "brachialis.l",
+      "name_de": "Armbeuger – links",
+      "name_latin": "Musculus brachialis",
+      "side": "l",
+      "region": "upper_arm",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Brachialis muscle.l.001"
+      ],
+      "tendon_source_names": [
+        "Brachialis muscle.l"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.brachialis.l",
+      "structure_id": "muscle.brachialis.l"
+    },
+    {
+      "id": "brachialis.r",
+      "name_de": "Armbeuger – rechts",
+      "name_latin": "Musculus brachialis",
+      "side": "r",
+      "region": "upper_arm",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Brachialis muscle.r.001"
+      ],
+      "tendon_source_names": [
+        "Brachialis muscle.r"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.brachialis.r",
+      "structure_id": "muscle.brachialis.r"
+    },
+    {
+      "id": "brachioradialis.l",
+      "name_de": "Oberarmspeichenmuskel – links",
+      "name_latin": "Musculus brachioradialis",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Brachioradialis muscle.l"
+      ],
+      "tendon_source_names": [
+        "Brachioradialis muscle.l.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.brachioradialis.l",
+      "structure_id": "muscle.brachioradialis.l"
+    },
+    {
+      "id": "brachioradialis.r",
+      "name_de": "Oberarmspeichenmuskel – rechts",
+      "name_latin": "Musculus brachioradialis",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Brachioradialis muscle.r"
+      ],
+      "tendon_source_names": [
+        "Brachioradialis muscle.r.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.brachioradialis.r",
+      "structure_id": "muscle.brachioradialis.r"
+    },
+    {
+      "id": "flexor_carpi_radialis.l",
+      "name_de": "Handgelenkbeuger – speichenseitig – links",
+      "name_latin": "Musculus flexor carpi radialis",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Flexor carpi radialis.l"
+      ],
+      "tendon_source_names": [
+        "Flexor carpi radialis.l.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.flexor_carpi_radialis.l",
+      "structure_id": "muscle.flexor_carpi_radialis.l"
+    },
+    {
+      "id": "flexor_carpi_radialis.r",
+      "name_de": "Handgelenkbeuger – speichenseitig – rechts",
+      "name_latin": "Musculus flexor carpi radialis",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Flexor carpi radialis.r"
+      ],
+      "tendon_source_names": [
+        "Flexor carpi radialis.r.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.flexor_carpi_radialis.r",
+      "structure_id": "muscle.flexor_carpi_radialis.r"
+    },
+    {
+      "id": "flexor_carpi_ulnaris.l",
+      "name_de": "Handgelenkbeuger – ellenseitig – links",
+      "name_latin": "Musculus flexor carpi ulnaris",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Humeral head of flexor carpi ulnaris.l.001",
+        "Ulnar head of flexor carpi ulnaris.l"
+      ],
+      "tendon_source_names": [
+        "Humeral head of flexor carpi ulnaris.l",
+        "Ulnar head of flexor carpi ulnaris.l.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.flexor_carpi_ulnaris.l",
+      "structure_id": "muscle.flexor_carpi_ulnaris.l"
+    },
+    {
+      "id": "flexor_carpi_ulnaris.r",
+      "name_de": "Handgelenkbeuger – ellenseitig – rechts",
+      "name_latin": "Musculus flexor carpi ulnaris",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Humeral head of flexor carpi ulnaris.r.001",
+        "Ulnar head of flexor carpi ulnaris.r"
+      ],
+      "tendon_source_names": [
+        "Humeral head of flexor carpi ulnaris.r",
+        "Ulnar head of flexor carpi ulnaris.r.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.flexor_carpi_ulnaris.r",
+      "structure_id": "muscle.flexor_carpi_ulnaris.r"
+    },
+    {
+      "id": "flexor_digitorum_superficialis.l",
+      "name_de": "Oberflächlicher Fingerbeuger – links",
+      "name_latin": "Musculus flexor digitorum superficialis",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Humero-ulnar head of flexor digitorum superficialis.l",
+        "Radial head of flexor digitorum superficialis.l.001"
+      ],
+      "tendon_source_names": [
+        "Humero-ulnar head of flexor digitorum superficialis.l.001",
+        "Radial head of flexor digitorum superficialis.l"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.flexor_digitorum_superficialis.l",
+      "structure_id": "muscle.flexor_digitorum_superficialis.l"
+    },
+    {
+      "id": "flexor_digitorum_superficialis.r",
+      "name_de": "Oberflächlicher Fingerbeuger – rechts",
+      "name_latin": "Musculus flexor digitorum superficialis",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Humero-ulnar head of flexor digitorum superficialis.r",
+        "Radial head of flexor digitorum superficialis.r.001"
+      ],
+      "tendon_source_names": [
+        "Humero-ulnar head of flexor digitorum superficialis.r.001",
+        "Radial head of flexor digitorum superficialis.r"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.flexor_digitorum_superficialis.r",
+      "structure_id": "muscle.flexor_digitorum_superficialis.r"
+    },
+    {
+      "id": "palmaris_longus.l",
+      "name_de": "Langer Hohlhandmuskel – links",
+      "name_latin": "Musculus palmaris longus",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Palmaris longus muscle.l"
+      ],
+      "tendon_source_names": [
+        "Palmaris longus muscle.l.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.palmaris_longus.l",
+      "structure_id": "muscle.palmaris_longus.l"
+    },
+    {
+      "id": "palmaris_longus.r",
+      "name_de": "Langer Hohlhandmuskel – rechts",
+      "name_latin": "Musculus palmaris longus",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Palmaris longus muscle.r"
+      ],
+      "tendon_source_names": [
+        "Palmaris longus muscle.r.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.palmaris_longus.r",
+      "structure_id": "muscle.palmaris_longus.r"
+    },
+    {
+      "id": "pronator_teres.l",
+      "name_de": "Runder Einwärtsdreher – links",
+      "name_latin": "Musculus pronator teres",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Superficial head of pronator teres.l.001",
+        "Deep head of pronator teres.l.001"
+      ],
+      "tendon_source_names": [
+        "Superficial head of pronator teres.l",
+        "Deep head of pronator teres.l"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.pronator_teres.l",
+      "structure_id": "muscle.pronator_teres.l"
+    },
+    {
+      "id": "pronator_teres.r",
+      "name_de": "Runder Einwärtsdreher – rechts",
+      "name_latin": "Musculus pronator teres",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Superficial head of pronator teres.r.001",
+        "Deep head of pronator teres.r.001"
+      ],
+      "tendon_source_names": [
+        "Superficial head of pronator teres.r",
+        "Deep head of pronator teres.r"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.pronator_teres.r",
+      "structure_id": "muscle.pronator_teres.r"
+    },
+    {
+      "id": "extensor_carpi_radialis_longus.l",
+      "name_de": "Langer speichenseitiger Handgelenkstrecker – links",
+      "name_latin": "Musculus extensor carpi radialis longus",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Extensor carpi radialis longus.l"
+      ],
+      "tendon_source_names": [
+        "Extensor carpi radialis longus.l.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.extensor_carpi_radialis_longus.l",
+      "structure_id": "muscle.extensor_carpi_radialis_longus.l"
+    },
+    {
+      "id": "extensor_carpi_radialis_longus.r",
+      "name_de": "Langer speichenseitiger Handgelenkstrecker – rechts",
+      "name_latin": "Musculus extensor carpi radialis longus",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Extensor carpi radialis longus.r"
+      ],
+      "tendon_source_names": [
+        "Extensor carpi radialis longus.r.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.extensor_carpi_radialis_longus.r",
+      "structure_id": "muscle.extensor_carpi_radialis_longus.r"
+    },
+    {
+      "id": "extensor_carpi_radialis_brevis.l",
+      "name_de": "Kurzer speichenseitiger Handgelenkstrecker – links",
+      "name_latin": "Musculus extensor carpi radialis brevis",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Extensor carpi radialis brevis.l"
+      ],
+      "tendon_source_names": [
+        "Extensor carpi radialis brevis.l.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.extensor_carpi_radialis_brevis.l",
+      "structure_id": "muscle.extensor_carpi_radialis_brevis.l"
+    },
+    {
+      "id": "extensor_carpi_radialis_brevis.r",
+      "name_de": "Kurzer speichenseitiger Handgelenkstrecker – rechts",
+      "name_latin": "Musculus extensor carpi radialis brevis",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Extensor carpi radialis brevis.r"
+      ],
+      "tendon_source_names": [
+        "Extensor carpi radialis brevis.r.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.extensor_carpi_radialis_brevis.r",
+      "structure_id": "muscle.extensor_carpi_radialis_brevis.r"
+    },
+    {
+      "id": "extensor_carpi_ulnaris.l",
+      "name_de": "Ellenseitiger Handgelenkstrecker – links",
+      "name_latin": "Musculus extensor carpi ulnaris",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Humeral head of extensor carpi ulnaris.l",
+        "Ulnar head of extensor carpi ulnaris.l"
+      ],
+      "tendon_source_names": [
+        "Humeral head of extensor carpi ulnaris.l.001",
+        "Ulnar head of extensor carpi ulnaris.l.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.extensor_carpi_ulnaris.l",
+      "structure_id": "muscle.extensor_carpi_ulnaris.l"
+    },
+    {
+      "id": "extensor_carpi_ulnaris.r",
+      "name_de": "Ellenseitiger Handgelenkstrecker – rechts",
+      "name_latin": "Musculus extensor carpi ulnaris",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Humeral head of extensor carpi ulnaris.r",
+        "Ulnar head of extensor carpi ulnaris.r"
+      ],
+      "tendon_source_names": [
+        "Humeral head of extensor carpi ulnaris.r.001",
+        "Ulnar head of extensor carpi ulnaris.r.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.extensor_carpi_ulnaris.r",
+      "structure_id": "muscle.extensor_carpi_ulnaris.r"
+    },
+    {
+      "id": "extensor_digitorum.l",
+      "name_de": "Fingerstrecker – links",
+      "name_latin": "Musculus extensor digitorum",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Extensor digitorum.l"
+      ],
+      "tendon_source_names": [
+        "Extensor digitorum.l.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.extensor_digitorum.l",
+      "structure_id": "muscle.extensor_digitorum.l"
+    },
+    {
+      "id": "extensor_digitorum.r",
+      "name_de": "Fingerstrecker – rechts",
+      "name_latin": "Musculus extensor digitorum",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Extensor digitorum.r"
+      ],
+      "tendon_source_names": [
+        "Extensor digitorum.r.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.extensor_digitorum.r",
+      "structure_id": "muscle.extensor_digitorum.r"
+    },
+    {
+      "id": "abductor_pollicis_longus.l",
+      "name_de": "Langer Daumenabspreizer – links",
+      "name_latin": "Musculus abductor pollicis longus",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Abductor pollicis longus.l"
+      ],
+      "tendon_source_names": [
+        "Abductor pollicis longus.l.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.abductor_pollicis_longus.l",
+      "structure_id": "muscle.abductor_pollicis_longus.l"
+    },
+    {
+      "id": "abductor_pollicis_longus.r",
+      "name_de": "Langer Daumenabspreizer – rechts",
+      "name_latin": "Musculus abductor pollicis longus",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Abductor pollicis longus.r"
+      ],
+      "tendon_source_names": [
+        "Abductor pollicis longus.r.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.abductor_pollicis_longus.r",
+      "structure_id": "muscle.abductor_pollicis_longus.r"
+    },
+    {
+      "id": "extensor_pollicis_brevis.l",
+      "name_de": "Kurzer Daumenstrecker – links",
+      "name_latin": "Musculus extensor pollicis brevis",
+      "side": "l",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Extensor pollicis brevis.l"
+      ],
+      "tendon_source_names": [
+        "Extensor pollicis brevis.l.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.extensor_pollicis_brevis.l",
+      "structure_id": "muscle.extensor_pollicis_brevis.l"
+    },
+    {
+      "id": "extensor_pollicis_brevis.r",
+      "name_de": "Kurzer Daumenstrecker – rechts",
+      "name_latin": "Musculus extensor pollicis brevis",
+      "side": "r",
+      "region": "forearm",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Extensor pollicis brevis.r"
+      ],
+      "tendon_source_names": [
+        "Extensor pollicis brevis.r.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the hand: retain only the forearm-to-wrist transition; omit distal tendons inside the white hand.",
+      "object_name": "muscle.extensor_pollicis_brevis.r",
+      "structure_id": "muscle.extensor_pollicis_brevis.r"
+    },
+    {
+      "id": "anconeus.l",
+      "name_de": "Ellenbogenmuskel – links",
+      "name_latin": "Musculus anconeus",
+      "side": "l",
+      "region": "upper_arm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Anconeus muscle.l.001"
+      ],
+      "tendon_source_names": [
+        "Anconeus muscle.l"
+      ],
+      "object_name": "muscle.anconeus.l",
+      "structure_id": "muscle.anconeus.l"
+    },
+    {
+      "id": "anconeus.r",
+      "name_de": "Ellenbogenmuskel – rechts",
+      "name_latin": "Musculus anconeus",
+      "side": "r",
+      "region": "upper_arm",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Anconeus muscle.r.001"
+      ],
+      "tendon_source_names": [
+        "Anconeus muscle.r"
+      ],
+      "object_name": "muscle.anconeus.r",
+      "structure_id": "muscle.anconeus.r"
+    },
+    {
+      "id": "obliquus_externus.l",
+      "name_de": "Äußerer schräger Bauchmuskel – links",
+      "name_latin": "Musculus obliquus externus abdominis",
+      "side": "l",
+      "region": "abdomen",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "External abdominal oblique muscle.l"
+      ],
+      "tendon_source_names": [],
+      "object_name": "muscle.obliquus_externus.l",
+      "structure_id": "muscle.obliquus_externus.l"
+    },
+    {
+      "id": "obliquus_externus.r",
+      "name_de": "Äußerer schräger Bauchmuskel – rechts",
+      "name_latin": "Musculus obliquus externus abdominis",
+      "side": "r",
+      "region": "abdomen",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "External abdominal oblique muscle.r"
+      ],
+      "tendon_source_names": [],
+      "object_name": "muscle.obliquus_externus.r",
+      "structure_id": "muscle.obliquus_externus.r"
+    },
+    {
+      "id": "serratus_anterior.l",
+      "name_de": "Vorderer Sägemuskel – links",
+      "name_latin": "Musculus serratus anterior",
+      "side": "l",
+      "region": "thorax",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Serratus anterior muscle.l"
+      ],
+      "tendon_source_names": [],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.serratus_anterior.l",
+      "structure_id": "muscle.serratus_anterior.l"
+    },
+    {
+      "id": "serratus_anterior.r",
+      "name_de": "Vorderer Sägemuskel – rechts",
+      "name_latin": "Musculus serratus anterior",
+      "side": "r",
+      "region": "thorax",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Serratus anterior muscle.r"
+      ],
+      "tendon_source_names": [],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.serratus_anterior.r",
+      "structure_id": "muscle.serratus_anterior.r"
+    },
+    {
+      "id": "trapezius.l",
+      "name_de": "Trapezmuskel – links",
+      "name_latin": "Musculus trapezius",
+      "side": "l",
+      "region": "back",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Ascending part of trapezius muscle.l",
+        "Transverse part of trapezius muscle.l",
+        "Descending part of trapezius muscle.l"
+      ],
+      "tendon_source_names": [
+        "Ascending part of trapezius muscle.l.001",
+        "Transverse part of trapezius muscle.l.001",
+        "Descending part of trapezius muscle.l.001"
+      ],
+      "object_name": "muscle.trapezius.l",
+      "structure_id": "muscle.trapezius.l"
+    },
+    {
+      "id": "trapezius.r",
+      "name_de": "Trapezmuskel – rechts",
+      "name_latin": "Musculus trapezius",
+      "side": "r",
+      "region": "back",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Ascending part of trapezius muscle.r",
+        "Transverse part of trapezius muscle.r",
+        "Descending part of trapezius muscle.r"
+      ],
+      "tendon_source_names": [
+        "Ascending part of trapezius muscle.r.001",
+        "Transverse part of trapezius muscle.r.001",
+        "Descending part of trapezius muscle.r.001"
+      ],
+      "object_name": "muscle.trapezius.r",
+      "structure_id": "muscle.trapezius.r"
+    },
+    {
+      "id": "latissimus_dorsi.l",
+      "name_de": "Breiter Rückenmuskel – links",
+      "name_latin": "Musculus latissimus dorsi",
+      "side": "l",
+      "region": "back",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Latissimus dorsi muscle.l"
+      ],
+      "tendon_source_names": [
+        "Latissimus dorsi muscle.l.001"
+      ],
+      "object_name": "muscle.latissimus_dorsi.l",
+      "structure_id": "muscle.latissimus_dorsi.l"
+    },
+    {
+      "id": "latissimus_dorsi.r",
+      "name_de": "Breiter Rückenmuskel – rechts",
+      "name_latin": "Musculus latissimus dorsi",
+      "side": "r",
+      "region": "back",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Latissimus dorsi muscle.r"
+      ],
+      "tendon_source_names": [
+        "Latissimus dorsi muscle.r.001"
+      ],
+      "object_name": "muscle.latissimus_dorsi.r",
+      "structure_id": "muscle.latissimus_dorsi.r"
+    },
+    {
+      "id": "infraspinatus.l",
+      "name_de": "Untergrätenmuskel – links",
+      "name_latin": "Musculus infraspinatus",
+      "side": "l",
+      "region": "back",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Infraspinatus muscle.l"
+      ],
+      "tendon_source_names": [
+        "Infraspinatus muscle.l.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.infraspinatus.l",
+      "structure_id": "muscle.infraspinatus.l"
+    },
+    {
+      "id": "infraspinatus.r",
+      "name_de": "Untergrätenmuskel – rechts",
+      "name_latin": "Musculus infraspinatus",
+      "side": "r",
+      "region": "back",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Infraspinatus muscle.r"
+      ],
+      "tendon_source_names": [
+        "Infraspinatus muscle.r.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.infraspinatus.r",
+      "structure_id": "muscle.infraspinatus.r"
+    },
+    {
+      "id": "teres_major.l",
+      "name_de": "Großer Rundmuskel – links",
+      "name_latin": "Musculus teres major",
+      "side": "l",
+      "region": "back",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Teres major muscle.l"
+      ],
+      "tendon_source_names": [],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.teres_major.l",
+      "structure_id": "muscle.teres_major.l"
+    },
+    {
+      "id": "teres_major.r",
+      "name_de": "Großer Rundmuskel – rechts",
+      "name_latin": "Musculus teres major",
+      "side": "r",
+      "region": "back",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Teres major muscle.r"
+      ],
+      "tendon_source_names": [],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.teres_major.r",
+      "structure_id": "muscle.teres_major.r"
+    },
+    {
+      "id": "teres_minor.l",
+      "name_de": "Kleiner Rundmuskel – links",
+      "name_latin": "Musculus teres minor",
+      "side": "l",
+      "region": "back",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Teres minor muscle.l"
+      ],
+      "tendon_source_names": [],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.teres_minor.l",
+      "structure_id": "muscle.teres_minor.l"
+    },
+    {
+      "id": "teres_minor.r",
+      "name_de": "Kleiner Rundmuskel – rechts",
+      "name_latin": "Musculus teres minor",
+      "side": "r",
+      "region": "back",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Teres minor muscle.r"
+      ],
+      "tendon_source_names": [],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.teres_minor.r",
+      "structure_id": "muscle.teres_minor.r"
+    },
+    {
+      "id": "erector_spinae.l",
+      "name_de": "Rückenstrecker – links",
+      "name_latin": "Musculus erector spinae (thoracolumbale Gruppe)",
+      "side": "l",
+      "region": "back",
+      "superficial": false,
+      "exposure": "covered_optional",
+      "default_visible": false,
+      "source_names": [
+        "Iliocostalis lumborum muscle.l",
+        "Iliocostalis thoracis muscle.l",
+        "Longissimus thoracis muscle.l",
+        "Spinalis thoracis muscle.l"
+      ],
+      "tendon_source_names": [],
+      "notes_de": "Thorakolumbale Rückenstreckergruppe unter Faszie und teilweise Trapezius/Latissimus. Optional für Schichtenansicht; nicht künstlich auf die sichtbare Hautoberfläche verlegen. Kein oberflächlich durchgehend freiliegender Muskel.",
+      "object_name": "muscle.erector_spinae.l",
+      "structure_id": "muscle.erector_spinae.l"
+    },
+    {
+      "id": "erector_spinae.r",
+      "name_de": "Rückenstrecker – rechts",
+      "name_latin": "Musculus erector spinae (thoracolumbale Gruppe)",
+      "side": "r",
+      "region": "back",
+      "superficial": false,
+      "exposure": "covered_optional",
+      "default_visible": false,
+      "source_names": [
+        "Iliocostalis lumborum muscle.r",
+        "Iliocostalis thoracis muscle.r",
+        "Longissimus thoracis muscle.r",
+        "Spinalis thoracis muscle.r"
+      ],
+      "tendon_source_names": [],
+      "notes_de": "Thorakolumbale Rückenstreckergruppe unter Faszie und teilweise Trapezius/Latissimus. Optional für Schichtenansicht; nicht künstlich auf die sichtbare Hautoberfläche verlegen. Kein oberflächlich durchgehend freiliegender Muskel.",
+      "object_name": "muscle.erector_spinae.r",
+      "structure_id": "muscle.erector_spinae.r"
+    },
+    {
+      "id": "sternocleidomastoideus.l",
+      "name_de": "Kopfwender – links",
+      "name_latin": "Musculus sternocleidomastoideus",
+      "side": "l",
+      "region": "neck",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Sternocleidomastoid muscle.l"
+      ],
+      "tendon_source_names": [
+        "Sternocleidomastoid muscle.l.001"
+      ],
+      "object_name": "muscle.sternocleidomastoideus.l",
+      "structure_id": "muscle.sternocleidomastoideus.l"
+    },
+    {
+      "id": "sternocleidomastoideus.r",
+      "name_de": "Kopfwender – rechts",
+      "name_latin": "Musculus sternocleidomastoideus",
+      "side": "r",
+      "region": "neck",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Sternocleidomastoid muscle.r"
+      ],
+      "tendon_source_names": [
+        "Sternocleidomastoid muscle.r.001"
+      ],
+      "object_name": "muscle.sternocleidomastoideus.r",
+      "structure_id": "muscle.sternocleidomastoideus.r"
+    },
+    {
+      "id": "gluteus_maximus.l",
+      "name_de": "Großer Gesäßmuskel – links",
+      "name_latin": "Musculus gluteus maximus",
+      "side": "l",
+      "region": "hip",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Gluteus maximus muscle.l"
+      ],
+      "tendon_source_names": [],
+      "object_name": "muscle.gluteus_maximus.l",
+      "structure_id": "muscle.gluteus_maximus.l"
+    },
+    {
+      "id": "gluteus_maximus.r",
+      "name_de": "Großer Gesäßmuskel – rechts",
+      "name_latin": "Musculus gluteus maximus",
+      "side": "r",
+      "region": "hip",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Gluteus maximus muscle.r"
+      ],
+      "tendon_source_names": [],
+      "object_name": "muscle.gluteus_maximus.r",
+      "structure_id": "muscle.gluteus_maximus.r"
+    },
+    {
+      "id": "gluteus_medius.l",
+      "name_de": "Mittlerer Gesäßmuskel – links",
+      "name_latin": "Musculus gluteus medius",
+      "side": "l",
+      "region": "hip",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Gluteus medius muscle.l.001"
+      ],
+      "tendon_source_names": [
+        "Gluteus medius muscle.l"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.gluteus_medius.l",
+      "structure_id": "muscle.gluteus_medius.l"
+    },
+    {
+      "id": "gluteus_medius.r",
+      "name_de": "Mittlerer Gesäßmuskel – rechts",
+      "name_latin": "Musculus gluteus medius",
+      "side": "r",
+      "region": "hip",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Gluteus medius muscle.r.001"
+      ],
+      "tendon_source_names": [
+        "Gluteus medius muscle.r"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.gluteus_medius.r",
+      "structure_id": "muscle.gluteus_medius.r"
+    },
+    {
+      "id": "tensor_fasciae_latae.l",
+      "name_de": "Schenkelbindenspanner – links",
+      "name_latin": "Musculus tensor fasciae latae",
+      "side": "l",
+      "region": "hip",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Tensor fasciae latae.l.001"
+      ],
+      "tendon_source_names": [
+        "Tensor fasciae latae.l"
+      ],
+      "object_name": "muscle.tensor_fasciae_latae.l",
+      "structure_id": "muscle.tensor_fasciae_latae.l"
+    },
+    {
+      "id": "tensor_fasciae_latae.r",
+      "name_de": "Schenkelbindenspanner – rechts",
+      "name_latin": "Musculus tensor fasciae latae",
+      "side": "r",
+      "region": "hip",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Tensor fasciae latae.r.001"
+      ],
+      "tendon_source_names": [
+        "Tensor fasciae latae.r"
+      ],
+      "object_name": "muscle.tensor_fasciae_latae.r",
+      "structure_id": "muscle.tensor_fasciae_latae.r"
+    },
+    {
+      "id": "rectus_femoris.l",
+      "name_de": "Gerader Oberschenkelmuskel – links",
+      "name_latin": "Musculus rectus femoris",
+      "side": "l",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Rectus femoris muscle.l.001"
+      ],
+      "tendon_source_names": [
+        "Rectus femoris muscle.l"
+      ],
+      "object_name": "muscle.rectus_femoris.l",
+      "structure_id": "muscle.rectus_femoris.l"
+    },
+    {
+      "id": "rectus_femoris.r",
+      "name_de": "Gerader Oberschenkelmuskel – rechts",
+      "name_latin": "Musculus rectus femoris",
+      "side": "r",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Rectus femoris muscle.r.001"
+      ],
+      "tendon_source_names": [
+        "Rectus femoris muscle.r"
+      ],
+      "object_name": "muscle.rectus_femoris.r",
+      "structure_id": "muscle.rectus_femoris.r"
+    },
+    {
+      "id": "vastus_lateralis.l",
+      "name_de": "Äußerer Quadrizepsanteil – links",
+      "name_latin": "Musculus vastus lateralis",
+      "side": "l",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Vastus lateralis muscle.l.001"
+      ],
+      "tendon_source_names": [
+        "Vastus lateralis muscle.l"
+      ],
+      "object_name": "muscle.vastus_lateralis.l",
+      "structure_id": "muscle.vastus_lateralis.l"
+    },
+    {
+      "id": "vastus_lateralis.r",
+      "name_de": "Äußerer Quadrizepsanteil – rechts",
+      "name_latin": "Musculus vastus lateralis",
+      "side": "r",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Vastus lateralis muscle.r.001"
+      ],
+      "tendon_source_names": [
+        "Vastus lateralis muscle.r"
+      ],
+      "object_name": "muscle.vastus_lateralis.r",
+      "structure_id": "muscle.vastus_lateralis.r"
+    },
+    {
+      "id": "vastus_medialis.l",
+      "name_de": "Innerer Quadrizepsanteil – links",
+      "name_latin": "Musculus vastus medialis",
+      "side": "l",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Vastus medialis muscle.l"
+      ],
+      "tendon_source_names": [
+        "Vastus medialis muscle.l.001"
+      ],
+      "object_name": "muscle.vastus_medialis.l",
+      "structure_id": "muscle.vastus_medialis.l"
+    },
+    {
+      "id": "vastus_medialis.r",
+      "name_de": "Innerer Quadrizepsanteil – rechts",
+      "name_latin": "Musculus vastus medialis",
+      "side": "r",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Vastus medialis muscle.r"
+      ],
+      "tendon_source_names": [
+        "Vastus medialis muscle.r.001"
+      ],
+      "object_name": "muscle.vastus_medialis.r",
+      "structure_id": "muscle.vastus_medialis.r"
+    },
+    {
+      "id": "adductor_longus.l",
+      "name_de": "Langer Adduktor – links",
+      "name_latin": "Musculus adductor longus",
+      "side": "l",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Adductor longus.l.001"
+      ],
+      "tendon_source_names": [
+        "Adductor longus.l"
+      ],
+      "object_name": "muscle.adductor_longus.l",
+      "structure_id": "muscle.adductor_longus.l"
+    },
+    {
+      "id": "adductor_longus.r",
+      "name_de": "Langer Adduktor – rechts",
+      "name_latin": "Musculus adductor longus",
+      "side": "r",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Adductor longus.r.001"
+      ],
+      "tendon_source_names": [
+        "Adductor longus.r"
+      ],
+      "object_name": "muscle.adductor_longus.r",
+      "structure_id": "muscle.adductor_longus.r"
+    },
+    {
+      "id": "adductor_magnus.l",
+      "name_de": "Großer Adduktor – links",
+      "name_latin": "Musculus adductor magnus",
+      "side": "l",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Adductor magnus.l"
+      ],
+      "tendon_source_names": [
+        "Adductor magnus.l.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.adductor_magnus.l",
+      "structure_id": "muscle.adductor_magnus.l"
+    },
+    {
+      "id": "adductor_magnus.r",
+      "name_de": "Großer Adduktor – rechts",
+      "name_latin": "Musculus adductor magnus",
+      "side": "r",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Adductor magnus.r"
+      ],
+      "tendon_source_names": [
+        "Adductor magnus.r.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.adductor_magnus.r",
+      "structure_id": "muscle.adductor_magnus.r"
+    },
+    {
+      "id": "gracilis.l",
+      "name_de": "Schlanker Oberschenkelmuskel – links",
+      "name_latin": "Musculus gracilis",
+      "side": "l",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Gracilis muscle.l"
+      ],
+      "tendon_source_names": [
+        "Gracilis muscle.l.001"
+      ],
+      "object_name": "muscle.gracilis.l",
+      "structure_id": "muscle.gracilis.l"
+    },
+    {
+      "id": "gracilis.r",
+      "name_de": "Schlanker Oberschenkelmuskel – rechts",
+      "name_latin": "Musculus gracilis",
+      "side": "r",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Gracilis muscle.r"
+      ],
+      "tendon_source_names": [
+        "Gracilis muscle.r.001"
+      ],
+      "object_name": "muscle.gracilis.r",
+      "structure_id": "muscle.gracilis.r"
+    },
+    {
+      "id": "sartorius.l",
+      "name_de": "Schneidermuskel – links",
+      "name_latin": "Musculus sartorius",
+      "side": "l",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Sartorius muscle.l"
+      ],
+      "tendon_source_names": [
+        "Sartorius muscle.l.001"
+      ],
+      "object_name": "muscle.sartorius.l",
+      "structure_id": "muscle.sartorius.l"
+    },
+    {
+      "id": "sartorius.r",
+      "name_de": "Schneidermuskel – rechts",
+      "name_latin": "Musculus sartorius",
+      "side": "r",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Sartorius muscle.r"
+      ],
+      "tendon_source_names": [
+        "Sartorius muscle.r.001"
+      ],
+      "object_name": "muscle.sartorius.r",
+      "structure_id": "muscle.sartorius.r"
+    },
+    {
+      "id": "biceps_femoris.l",
+      "name_de": "Beinbizeps – links",
+      "name_latin": "Musculus biceps femoris",
+      "side": "l",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Long head of biceps femoris.l",
+        "Short head of biceps femoris.l"
+      ],
+      "tendon_source_names": [
+        "Long head of biceps femoris.l.001",
+        "Short head of biceps femoris.l.001"
+      ],
+      "object_name": "muscle.biceps_femoris.l",
+      "structure_id": "muscle.biceps_femoris.l"
+    },
+    {
+      "id": "biceps_femoris.r",
+      "name_de": "Beinbizeps – rechts",
+      "name_latin": "Musculus biceps femoris",
+      "side": "r",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Long head of biceps femoris.r",
+        "Short head of biceps femoris.r"
+      ],
+      "tendon_source_names": [
+        "Long head of biceps femoris.r.001",
+        "Short head of biceps femoris.r.001"
+      ],
+      "object_name": "muscle.biceps_femoris.r",
+      "structure_id": "muscle.biceps_femoris.r"
+    },
+    {
+      "id": "semitendinosus.l",
+      "name_de": "Halbsehnenmuskel – links",
+      "name_latin": "Musculus semitendinosus",
+      "side": "l",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Semitendinosus muscle.l"
+      ],
+      "tendon_source_names": [
+        "Semitendinosus muscle.l.001"
+      ],
+      "object_name": "muscle.semitendinosus.l",
+      "structure_id": "muscle.semitendinosus.l"
+    },
+    {
+      "id": "semitendinosus.r",
+      "name_de": "Halbsehnenmuskel – rechts",
+      "name_latin": "Musculus semitendinosus",
+      "side": "r",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Semitendinosus muscle.r"
+      ],
+      "tendon_source_names": [
+        "Semitendinosus muscle.r.001"
+      ],
+      "object_name": "muscle.semitendinosus.r",
+      "structure_id": "muscle.semitendinosus.r"
+    },
+    {
+      "id": "semimembranosus.l",
+      "name_de": "Plattsehnenmuskel – links",
+      "name_latin": "Musculus semimembranosus",
+      "side": "l",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Semimembranosus muscle.l"
+      ],
+      "tendon_source_names": [
+        "Semimembranosus muscle.l.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.semimembranosus.l",
+      "structure_id": "muscle.semimembranosus.l"
+    },
+    {
+      "id": "semimembranosus.r",
+      "name_de": "Plattsehnenmuskel – rechts",
+      "name_latin": "Musculus semimembranosus",
+      "side": "r",
+      "region": "thigh",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Semimembranosus muscle.r"
+      ],
+      "tendon_source_names": [
+        "Semimembranosus muscle.r.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "object_name": "muscle.semimembranosus.r",
+      "structure_id": "muscle.semimembranosus.r"
+    },
+    {
+      "id": "gastrocnemius_medialis.l",
+      "name_de": "Wade – innerer Kopf – links",
+      "name_latin": "Musculus gastrocnemius, caput mediale",
+      "side": "l",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Medial head of gastrocnemius.l.001"
+      ],
+      "tendon_source_names": [
+        "Medial head of gastrocnemius.l"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.gastrocnemius_medialis.l",
+      "structure_id": "muscle.gastrocnemius_medialis.l"
+    },
+    {
+      "id": "gastrocnemius_medialis.r",
+      "name_de": "Wade – innerer Kopf – rechts",
+      "name_latin": "Musculus gastrocnemius, caput mediale",
+      "side": "r",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Medial head of gastrocnemius.r.001"
+      ],
+      "tendon_source_names": [
+        "Medial head of gastrocnemius.r"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.gastrocnemius_medialis.r",
+      "structure_id": "muscle.gastrocnemius_medialis.r"
+    },
+    {
+      "id": "gastrocnemius_lateralis.l",
+      "name_de": "Wade – äußerer Kopf – links",
+      "name_latin": "Musculus gastrocnemius, caput laterale",
+      "side": "l",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Lateral head of gastrocnemius.l.001"
+      ],
+      "tendon_source_names": [
+        "Lateral head of gastrocnemius.l"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.gastrocnemius_lateralis.l",
+      "structure_id": "muscle.gastrocnemius_lateralis.l"
+    },
+    {
+      "id": "gastrocnemius_lateralis.r",
+      "name_de": "Wade – äußerer Kopf – rechts",
+      "name_latin": "Musculus gastrocnemius, caput laterale",
+      "side": "r",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Lateral head of gastrocnemius.r.001"
+      ],
+      "tendon_source_names": [
+        "Lateral head of gastrocnemius.r"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.gastrocnemius_lateralis.r",
+      "structure_id": "muscle.gastrocnemius_lateralis.r"
+    },
+    {
+      "id": "soleus.l",
+      "name_de": "Schollenmuskel – links",
+      "name_latin": "Musculus soleus",
+      "side": "l",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Soleus muscle.l"
+      ],
+      "tendon_source_names": [
+        "Soleus muscle.l.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.soleus.l",
+      "structure_id": "muscle.soleus.l"
+    },
+    {
+      "id": "soleus.r",
+      "name_de": "Schollenmuskel – rechts",
+      "name_latin": "Musculus soleus",
+      "side": "r",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Soleus muscle.r"
+      ],
+      "tendon_source_names": [
+        "Soleus muscle.r.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.soleus.r",
+      "structure_id": "muscle.soleus.r"
+    },
+    {
+      "id": "tibialis_anterior.l",
+      "name_de": "Vorderer Schienbeinmuskel – links",
+      "name_latin": "Musculus tibialis anterior",
+      "side": "l",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Tibialis anterior muscle.l"
+      ],
+      "tendon_source_names": [
+        "Tibialis anterior muscle.l.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.tibialis_anterior.l",
+      "structure_id": "muscle.tibialis_anterior.l"
+    },
+    {
+      "id": "tibialis_anterior.r",
+      "name_de": "Vorderer Schienbeinmuskel – rechts",
+      "name_latin": "Musculus tibialis anterior",
+      "side": "r",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Tibialis anterior muscle.r"
+      ],
+      "tendon_source_names": [
+        "Tibialis anterior muscle.r.001"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.tibialis_anterior.r",
+      "structure_id": "muscle.tibialis_anterior.r"
+    },
+    {
+      "id": "fibularis_longus.l",
+      "name_de": "Langer Wadenbeinmuskel – links",
+      "name_latin": "Musculus fibularis longus",
+      "side": "l",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Fibularis longus muscle.l.001"
+      ],
+      "tendon_source_names": [
+        "Fibularis longus muscle.l"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.fibularis_longus.l",
+      "structure_id": "muscle.fibularis_longus.l"
+    },
+    {
+      "id": "fibularis_longus.r",
+      "name_de": "Langer Wadenbeinmuskel – rechts",
+      "name_latin": "Musculus fibularis longus",
+      "side": "r",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Fibularis longus muscle.r.001"
+      ],
+      "tendon_source_names": [
+        "Fibularis longus muscle.r"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.fibularis_longus.r",
+      "structure_id": "muscle.fibularis_longus.r"
+    },
+    {
+      "id": "fibularis_brevis.l",
+      "name_de": "Kurzer Wadenbeinmuskel – links",
+      "name_latin": "Musculus fibularis brevis",
+      "side": "l",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Fibularis brevis muscle.l"
+      ],
+      "tendon_source_names": [
+        "Fibularis brevis muscle.l.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.fibularis_brevis.l",
+      "structure_id": "muscle.fibularis_brevis.l"
+    },
+    {
+      "id": "fibularis_brevis.r",
+      "name_de": "Kurzer Wadenbeinmuskel – rechts",
+      "name_latin": "Musculus fibularis brevis",
+      "side": "r",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "partially_exposed",
+      "default_visible": true,
+      "source_names": [
+        "Fibularis brevis muscle.r"
+      ],
+      "tendon_source_names": [
+        "Fibularis brevis muscle.r.001"
+      ],
+      "notes_de": "Nur die anatomisch freiliegenden Anteile sind in einer geschlossenen Oberflächenansicht sichtbar. Überdeckte Teile nicht für bessere Klickbarkeit nach außen verschieben.",
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.fibularis_brevis.r",
+      "structure_id": "muscle.fibularis_brevis.r"
+    },
+    {
+      "id": "extensor_digitorum_longus.l",
+      "name_de": "Langer Zehenstrecker – links",
+      "name_latin": "Musculus extensor digitorum longus",
+      "side": "l",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Extensor digitorum longus.l.001"
+      ],
+      "tendon_source_names": [
+        "Extensor digitorum longus.l"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.extensor_digitorum_longus.l",
+      "structure_id": "muscle.extensor_digitorum_longus.l"
+    },
+    {
+      "id": "extensor_digitorum_longus.r",
+      "name_de": "Langer Zehenstrecker – rechts",
+      "name_latin": "Musculus extensor digitorum longus",
+      "side": "r",
+      "region": "lower_leg",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Extensor digitorum longus.r.001"
+      ],
+      "tendon_source_names": [
+        "Extensor digitorum longus.r"
+      ],
+      "tendon_handling": "Optional tendon sources may extend into the foot: retain only the ankle transition; omit distal tendons inside the white foot.",
+      "object_name": "muscle.extensor_digitorum_longus.r",
+      "structure_id": "muscle.extensor_digitorum_longus.r"
+    },
+    {
+      "id": "rectus_abdominis.upper.l",
+      "name_de": "Oberer gerader Bauchmuskel – links",
+      "name_latin": "Musculus rectus abdominis",
+      "side": "l",
+      "region": "abdomen",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Rectus abdominis muscle.l.001"
+      ],
+      "tendon_source_names": [
+        "Rectus abdominis muscle.l"
+      ],
+      "object_name": "muscle.rectus_abdominis.upper.l",
+      "structure_id": "muscle.rectus_abdominis.upper.l",
+      "parent_muscle_id": "rectus_abdominis.l",
+      "training_segment": "abs-upper",
+      "training_region": true,
+      "anatomical_note": "Upper and lower are selectable training regions of the same rectus abdominis, not separate anatomical muscles."
+    },
+    {
+      "id": "rectus_abdominis.lower.l",
+      "name_de": "Unterer gerader Bauchmuskel – links",
+      "name_latin": "Musculus rectus abdominis",
+      "side": "l",
+      "region": "abdomen",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Rectus abdominis muscle.l.001"
+      ],
+      "tendon_source_names": [
+        "Rectus abdominis muscle.l"
+      ],
+      "object_name": "muscle.rectus_abdominis.lower.l",
+      "structure_id": "muscle.rectus_abdominis.lower.l",
+      "parent_muscle_id": "rectus_abdominis.l",
+      "training_segment": "abs-lower",
+      "training_region": true,
+      "anatomical_note": "Upper and lower are selectable training regions of the same rectus abdominis, not separate anatomical muscles."
+    },
+    {
+      "id": "rectus_abdominis.upper.r",
+      "name_de": "Oberer gerader Bauchmuskel – rechts",
+      "name_latin": "Musculus rectus abdominis",
+      "side": "r",
+      "region": "abdomen",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Rectus abdominis muscle.r.001"
+      ],
+      "tendon_source_names": [
+        "Rectus abdominis muscle.r"
+      ],
+      "object_name": "muscle.rectus_abdominis.upper.r",
+      "structure_id": "muscle.rectus_abdominis.upper.r",
+      "parent_muscle_id": "rectus_abdominis.r",
+      "training_segment": "abs-upper",
+      "training_region": true,
+      "anatomical_note": "Upper and lower are selectable training regions of the same rectus abdominis, not separate anatomical muscles."
+    },
+    {
+      "id": "rectus_abdominis.lower.r",
+      "name_de": "Unterer gerader Bauchmuskel – rechts",
+      "name_latin": "Musculus rectus abdominis",
+      "side": "r",
+      "region": "abdomen",
+      "superficial": true,
+      "exposure": "superficial",
+      "default_visible": true,
+      "source_names": [
+        "Rectus abdominis muscle.r.001"
+      ],
+      "tendon_source_names": [
+        "Rectus abdominis muscle.r"
+      ],
+      "object_name": "muscle.rectus_abdominis.lower.r",
+      "structure_id": "muscle.rectus_abdominis.lower.r",
+      "parent_muscle_id": "rectus_abdominis.r",
+      "training_segment": "abs-lower",
+      "training_region": true,
+      "anatomical_note": "Upper and lower are selectable training regions of the same rectus abdominis, not separate anatomical muscles."
+    }
+  ],
+  "training_region_note": "Upper and lower are selectable training regions of the same rectus abdominis, not separate anatomical muscles."
+}

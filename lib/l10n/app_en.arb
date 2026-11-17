@@ -1,0 +1,1497 @@
+{
+  "@@locale": "en",
+  "appTitle": "Kaizen",
+  "common_ok": "OK",
+  "common_cancel": "Cancel",
+  "common_save": "Save",
+  "common_continue": "Continue",
+  "common_delete": "Delete",
+  "common_reset": "Reset",
+  "common_create": "Create",
+  "common_add": "Add",
+  "common_rename": "Rename",
+  "common_close": "Close",
+  "common_skip": "Skip",
+  "common_done": "Done",
+  "common_filter": "Filter",
+  "common_info": "Info",
+  "common_search": "Search…",
+  "common_name": "Name",
+  "nav_home": "Home",
+  "nav_profile": "Profile",
+  "onboarding_welcomeTitle": "Welcome to Kaizen",
+  "onboarding_profileNameLabel": "Profile name",
+  "onboarding_profileNameHint": "Enter your name",
+  "onboarding_stepProfileTitle": "Let's get to know you",
+  "onboarding_stepProfileSubtitle": "Your data helps us calculate your daily targets.",
+  "onboarding_stepGoalTitle": "What's your goal?",
+  "onboarding_stepGoalSubtitle": "We'll adjust your calories and macros accordingly.",
+  "onboarding_stepMacrosTitle": "Your daily targets",
+  "onboarding_stepMacrosSubtitle": "Calculated just for you — you can change this anytime in Profile.",
+  "onboarding_stepScheduleTitle": "Your weekly plan",
+  "onboarding_stepScheduleSubtitle": "Pick training days and optional times. Leave empty if you're not sure yet.",
+  "onboarding_stepScheduleLaterHint": "You can adjust your weekly plan anytime in Profile → Edit profile.",
+  "onboarding_skipSchedule": "Skip for now",
+  "onboarding_stepNotificationsTitle": "Stay on track",
+  "onboarding_stepNotificationsSubtitle": "Allow reminders 15 minutes before each scheduled session.",
+  "onboarding_stepMorningTitle": "Your morning workout",
+  "onboarding_stepMorningSubtitle": "Build your personal morning routine — ideally once daily, best in the morning.",
+  "onboarding_enableNotifications": "Enable training reminders",
+  "onboarding_skipNotifications": "Not now",
+  "onboarding_next": "Continue",
+  "onboarding_finish": "Get started",
+  "onboarding_back": "Back",
+  "onboarding_morningSelected": "Selected exercises",
+  "onboarding_morningPickFrom": "Add from catalog",
+  "onboarding_morningTabStretch": "Stretch / Yoga",
+  "onboarding_morningTabCalisthenics": "Calisthenics",
+  "onboarding_morningTabGym": "Gym",
+  "onboarding_morningMinOne": "Keep at least one exercise in your morning workout.",
+  "schedule_editorHint": "Tap a day to train. Tap the time to set when — optional.",
+  "schedule_editorTitle": "Weekly training plan",
+  "schedule_tapToEdit": "Tap to edit",
+  "schedule_emptySummary": "Nothing planned yet",
+  "schedule_activityGym": "Gym",
+  "schedule_activityCalisthenics": "Bodyweight",
+  "schedule_activityShortGym": "Gym",
+  "schedule_activityShortCalisthenics": "BW",
+  "schedule_activityShortRunning": "Run",
+  "schedule_activityShortStretch": "Str",
+  "profile_trainingReminders": "Training reminders",
+  "profile_trainingRemindersSubtitle": "Notifications 15 minutes before scheduled workouts",
+  "profile_fastingHud": "Intermittent fasting",
+  "profile_fastingHudSubtitle": "Show eating window timer on the home screen",
+  "profile_waterTracking": "Water tracking",
+  "profile_waterTrackingSubtitle": "Show a water progress bar on the home screen",
+  "profile_waterGoal": "Daily water goal",
+  "profile_waterGoalHint": "Recommended from your profile: {liters} L",
+  "@profile_waterGoalHint": {
+    "placeholders": {
+      "liters": {}
+    }
+  },
+  "fasting_setupTitle": "Eating window",
+  "fasting_setupSubtitle": "Drag the green zone to choose when you can eat — from morning (left) to evening (right).",
+  "fasting_save": "Save",
+  "fasting_reminders": "Reminders",
+  "fasting_remindersSubtitle": "15 min before eating opens, 30 min before it closes",
+  "fasting_windowLabel": "Eating window",
+  "fasting_configureTap": "Tap to set eating window",
+  "fasting_untilEating": "Eat in",
+  "fasting_untilEatingEnd": "Eating ends in",
+  "fasting_notificationOpenTitle": "Eating window soon",
+  "fasting_notificationOpenBody": "You can eat at {time}",
+  "@fasting_notificationOpenBody": {
+    "placeholders": {
+      "time": {}
+    }
+  },
+  "fasting_notificationCloseTitle": "Eating window ending",
+  "fasting_notificationCloseBody": "Eating window closes at {time}",
+  "@fasting_notificationCloseBody": {
+    "placeholders": {
+      "time": {}
+    }
+  },
+  "fasting_notificationChannelName": "Fasting reminders",
+  "fasting_notificationChannelDesc": "Reminders before your eating window opens and closes",
+  "schedule_activityNineMin": "9min",
+  "schedule_activityMorning": "Morning",
+  "schedule_activityRunning": "Running",
+  "schedule_activityStretch": "Stretch",
+  "schedule_editInProfile": "Weekly plan",
+  "notification_trainingReminderTitle": "Training soon",
+  "notification_trainingReminderBody": "{activity} in 15 min · {time}",
+  "@notification_trainingReminderBody": {
+    "placeholders": {
+      "activity": {"type": "String"},
+      "time": {"type": "String"}
+    }
+  },
+  "notification_trainingChannelName": "Training reminders",
+  "notification_trainingChannelDesc": "Reminders before scheduled workouts",
+  "installHint_title": "Welcome to Kaizen",
+  "installHint_body": "Take a quick tour of the app to learn the main areas. You can skip it for now and restart anytime from Profile → Settings → App tour.",
+  "installHint_startTour": "Start tour",
+  "installHint_gotIt": "Got it",
+  "start_featured": "FEATURED",
+  "start_categories": "CATEGORIES",
+  "start_days": "DAYS",
+  "start_open": "Open",
+  "start_heroPickGallery": "Choose from gallery",
+  "start_heroTakePhoto": "Take photo",
+  "start_heroResetDefault": "Reset to default",
+  "start_cameraGalleryError": "Could not open camera/gallery.",
+  "start_cameraGalleryErrorWithDetail": "Camera/gallery error: {detail}",
+  "@start_cameraGalleryErrorWithDetail": {
+    "description": "Localized string for start_cameraGalleryErrorWithDetail",
+    "placeholders": {
+      "detail": {}
+    }
+  },
+  "start_imageSaveFailed": "Could not save image.",
+  "home_bodyViewRecovery": "Recovery",
+  "home_bodyViewAfterburn": "Afterburn",
+  "home_bodyViewTrained": "Trained",
+  "home_bodyViewOrgans": "Organs",
+  "home_bodyViewSkeleton": "Joints and tendons",
+  "home_bodyStillToTrain": "Still to train this week",
+  "home_statusRecoveryReady": "All groups ready",
+  "home_statusRecoveryRecovering": "{count} groups recovering",
+  "@home_statusRecoveryRecovering": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "home_statusAfterburnNone": "No active afterburn",
+  "home_statusAfterburnActive": "+{kcal} kcal afterburn",
+  "@home_statusAfterburnActive": {
+    "placeholders": {
+      "kcal": { "type": "String" }
+    }
+  },
+  "home_statusTrainedComplete": "Full body covered",
+  "home_statusTrainedWeek": "{trained}/{total} groups this week",
+  "@home_statusTrainedWeek": {
+    "placeholders": {
+      "trained": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "home_statusTrainedPending": "{trained}/{total} groups · open: {muscles}",
+  "@home_statusTrainedPending": {
+    "placeholders": {
+      "trained": { "type": "int" },
+      "total": { "type": "int" },
+      "muscles": {}
+    }
+  },
+  "home_statusOrgansGood": "Nutrition on track",
+  "home_statusOrgansAttention": "{count} organs need attention",
+  "@home_statusOrgansAttention": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "home_statusJointsNone": "No joint focus yet",
+  "home_statusJointsStrengthened": "{count} joints this week",
+  "@home_statusJointsStrengthened": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "home_organRecommended": "Recommended",
+  "home_organGoodFoods": "Good — last 30 days",
+  "home_organBadFoods": "Straining — last 30 days",
+  "home_organStatusGood": "Well supported",
+  "home_organStatusMixed": "Mixed",
+  "home_organStatusCareful": "Needs attention",
+  "home_organStatusNoData": "No data yet",
+  "home_organStatusGoodActive": "Glowing green (24h)",
+  "home_organGoodFoods24h": "Helpful foods — last 24 hours",
+  "home_organsHint": "Tap an organ for details.",
+  "home_bodyTabIntroRecoveryTitle": "Recovery",
+  "home_bodyTabIntroRecoveryBody": "Yellow shows trained muscles. A muscle turns red when two moderate workouts target it directly or three moderate workouts involve it within 24 hours. Six direct gym sets also qualify. Red lasts for 24 hours after the qualifying workout. Yellow clears 48 hours after the last workout.",
+  "home_bodyTabIntroAfterburnTitle": "Afterburn",
+  "home_bodyTabIntroAfterburnBody": "Outlined muscle groups still burn extra calories after training (EPOC). The more intense the workout, the longer afterburn lasts. Train regularly to benefit from the effect.",
+  "home_bodyTabIntroTrainedTitle": "Trained",
+  "home_bodyTabIntroTrainedBody": "Blue muscle groups were trained this week. Unmarked groups are still open — keep a balanced weekly plan in view.",
+  "home_bodyTabIntroOrgansTitle": "Organs",
+  "home_bodyTabIntroOrgansBody": "See how your organs are doing based on your nutrition. An organ glows green for only 24 hours after you log a helpful food. Eat healthy and varied — then your organs light up green. Tap an organ for details and recommendations.",
+  "home_bodyTabIntroSkeletonTitle": "Skeleton",
+  "home_bodyTabIntroSkeletonBody": "Green joints were strengthened this week with suitable exercises. Unmarked joints still need attention — focus on mobility and targeted training.",
+  "home_skeletonHint": "Green joints were strengthened this week.",
+  "home_jointTrainedThisWeek": "Strengthened this week",
+  "home_jointNotTrainedThisWeek": "Not trained this week",
+  "home_muscleExercises": "Good exercises",
+  "home_muscleChest": "Chest",
+  "home_muscleBack": "Back",
+  "home_muscleShoulders": "Shoulders",
+  "home_muscleBiceps": "Biceps",
+  "home_muscleTriceps": "Triceps",
+  "home_muscleAbs": "Abs",
+  "home_muscleLegs": "Legs",
+  "home_muscleForearms": "Forearms",
+  "home_muscleNeck": "Neck",
+  "home_bodyRecoveryHint": "Within 24 hours, two moderate workouts targeting a muscle, three involving it, or six direct gym sets turn it red. Red turns yellow after 24 hours.",
+  "home_bodyAfterburnHint": "A blue glow around a muscle shows that its estimated afterburn window is still active.",
+  "home_bodyAfterburnTitle": "Afterburn so far",
+  "home_bodyAfterburnKcalValue": "+{kcal} kcal",
+  "@home_bodyAfterburnKcalValue": {
+    "placeholders": {
+      "kcal": {
+        "type": "String"
+      }
+    }
+  },
+  "home_bodyLegendRecoveryRed": "High load <24h",
+  "home_bodyLegendRecoveryYellow": "Trained <48h",
+  "home_bodyLegendAfterburn": "Blue glow during afterburn",
+  "home_bodyStreakLabel": "STREAK",
+  "home_startIntro": "Start introduction",
+  "home_hudTodaysAnalytics": "Today's analytics",
+  "home_hudCubeDaily": "Daily",
+  "home_hudCubeAnalytics": "Analytics",
+  "home_hudSteps": "Steps: {count}",
+  "@home_hudSteps": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "home_hudBurned": "Burned: {kcal} kcal",
+  "@home_hudBurned": {
+    "placeholders": { "kcal": { "type": "int" } }
+  },
+  "home_hudDistanceRan": "Distance ran: {distance}",
+  "@home_hudDistanceRan": {
+    "placeholders": { "distance": {} }
+  },
+  "home_hudWorkouts": "Workouts: {count}",
+  "@home_hudWorkouts": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "home_hudCaloriesIn": "Calories in: {kcal} kcal",
+  "@home_hudCaloriesIn": {
+    "placeholders": {
+      "kcal": { "type": "int" }
+    }
+  },
+  "home_hudProtein": "Protein: {grams}g",
+  "@home_hudProtein": {
+    "placeholders": {
+      "grams": { "type": "int" }
+    }
+  },
+  "home_hudCarbs": "Carbs: {grams}g",
+  "@home_hudCarbs": {
+    "placeholders": {
+      "grams": { "type": "int" }
+    }
+  },
+  "home_hudFats": "Fats: {grams}g",
+  "@home_hudFats": {
+    "placeholders": {
+      "grams": { "type": "int" }
+    }
+  },
+  "home_hudRecoveryNoData": "Recovery: no data",
+  "home_hudRecovery": "Recovery: {sleep}, {quality}",
+  "@home_hudRecovery": {
+    "placeholders": { "sleep": {}, "quality": {} }
+  },
+  "home_hudSleepNone": "no sleep data",
+  "home_hudSleepDuration": "{hours}h {minutes}m of sleep",
+  "@home_hudSleepDuration": {
+    "placeholders": {
+      "hours": { "type": "int" },
+      "minutes": { "type": "int" }
+    }
+  },
+  "home_hudSleepDurationHours": "{hours}h of sleep",
+  "@home_hudSleepDurationHours": {
+    "placeholders": { "hours": { "type": "int" } }
+  },
+  "home_hudSleepDurationMinutes": "{minutes}m of sleep",
+  "@home_hudSleepDurationMinutes": {
+    "placeholders": { "minutes": { "type": "int" } }
+  },
+  "home_hudSleepQualityBad": "bad quality",
+  "home_hudSleepQualityGood": "good quality",
+  "home_hudSleepQualityPerfect": "perfect quality",
+  "home_hudSummaryDoingWell": "Doing well this week.",
+  "home_hudSummaryNoneToday": "Get moving today.",
+  "home_hudSummaryOneToday": "Great! Keep it up.",
+  "home_hudSummaryTwoPlusToday": "You're incredible!",
+  "home_hudSummaryEatHealthy": "Eating healthy.",
+  "home_hudSummaryMoveToday": "Move your body today.",
+  "home_hudSummaryStretchToday": "You have done a good stretching session today, keep going.",
+  "home_hudSummaryShortWorkoutToday": "Great work! You've done a short workout.",
+  "home_hudSummaryRunToday": "Keep it up. That was a great run!",
+  "home_hudSummaryHardTrainingToday": "You're incredible!",
+  "home_hudTabRecoveryRest": "Rest your {muscles} today.",
+  "@home_hudTabRecoveryRest": {
+    "placeholders": { "muscles": { "type": "String" } }
+  },
+  "home_hudTabRecoveryAllReady": "All groups ready to train.",
+  "home_hudTabAfterburnEpoc": "Calculated via EPOC. Afterburn can last up to {hours}h depending on workout intensity.",
+  "@home_hudTabAfterburnEpoc": {
+    "placeholders": { "hours": { "type": "int" } }
+  },
+  "home_hudTabAfterburnActive": "+{kcal} kcal burned · {remaining} left",
+  "@home_hudTabAfterburnActive": {
+    "placeholders": {
+      "kcal": { "type": "int" },
+      "remaining": { "type": "String" }
+    }
+  },
+  "home_hudTabAfterburnNone": "No active afterburn right now.",
+  "home_hudTabAfterburnUnknownRemaining": "still active",
+  "home_hudTabTrainedOpen": "Still to train: {muscles}",
+  "@home_hudTabTrainedOpen": {
+    "placeholders": { "muscles": { "type": "String" } }
+  },
+  "home_hudTabTrainedComplete": "All muscle groups trained this week.",
+  "home_hudTabOrgansNeed": "Needs better nutrition: {organs}",
+  "@home_hudTabOrgansNeed": {
+    "placeholders": { "organs": { "type": "String" } }
+  },
+  "home_hudTabOrgansAllGood": "All organs well supported.",
+  "home_hudTabOrgansEatToday": "Eat healthy today.",
+  "home_hudTabJointsNeed": "Strengthen this week: {joints}",
+  "@home_hudTabJointsNeed": {
+    "placeholders": { "joints": { "type": "String" } }
+  },
+  "home_hudTabJointsAllDone": "All joints covered this week.",
+  "home_hudTabDurationHoursMinutes": "{hours}h {minutes}m",
+  "@home_hudTabDurationHoursMinutes": {
+    "placeholders": {
+      "hours": { "type": "int" },
+      "minutes": { "type": "int" }
+    }
+  },
+  "home_hudTabDurationHours": "{hours}h",
+  "@home_hudTabDurationHours": {
+    "placeholders": { "hours": { "type": "int" } }
+  },
+  "home_hudTabDurationMinutes": "{minutes}m",
+  "@home_hudTabDurationMinutes": {
+    "placeholders": { "minutes": { "type": "int" } }
+  },
+  "home_hudMuscleChest": "Chest",
+  "home_hudMuscleBack": "Back",
+  "home_hudMuscleShoulders": "Shoulders",
+  "home_hudMuscleBiceps": "Biceps",
+  "home_hudMuscleTriceps": "Triceps",
+  "home_hudMuscleAbs": "Abs",
+  "home_hudMuscleLegs": "Legs",
+  "home_hudMuscleForearms": "Forearms",
+  "home_hudMuscleNeck": "Neck",
+  "home_hudOrganBrain": "Brain",
+  "home_hudOrganHeart": "Heart",
+  "home_hudOrganLungs": "Lungs",
+  "home_hudOrganLiver": "Liver",
+  "home_hudOrganStomach": "Stomach",
+  "home_hudOrganIntestines": "Intestines",
+  "home_hudOrganKidneys": "Kidneys",
+  "home_hudJointNeck": "Neck",
+  "home_hudJointShoulders": "Shoulders",
+  "home_hudJointElbows": "Elbows",
+  "home_hudJointWrists": "Wrists",
+  "home_hudJointSpine": "Spine",
+  "home_hudJointHips": "Hips",
+  "home_hudJointKnees": "Knees",
+  "home_hudJointShins": "Shins",
+  "home_hudJointAnkles": "Ankles",
+  "home_bodyFront": "Front",
+  "home_bodyBack": "Back",
+  "category_9min_title": "9min",
+  "category_9min_description": "A short workout that activates your whole body in little time. Great as a warmup or morning workout.",
+  "category_hercules_title": "Optimized for runners",
+  "category_hercules_description": "Build your own routine optimized for runners. The default includes the 9min workout, stretching, and extra exercises to strengthen leg tendons and joints.",
+  "category_onlyStretch_title": "Stretch",
+  "category_onlyStretch_description": "A short stretching routine optimized for people who sit too long.",
+  "category_wakeup_title": "Full-Body Wake-Up",
+  "category_wakeup_description": "A fixed full-body activation program with 20 exercises. Mobility, strength and stretching in ~20 minutes.",
+  "category_gym_title": "Gym",
+  "category_gym_description": "Create your own workouts and add them to your daily training log.",
+  "category_calisthenics_title": "Bodyweight",
+  "category_calisthenics_description": "Create your own workouts and add them to your daily training log.",
+  "category_running_title": "Run",
+  "category_running_description": "Create routes or start a free run and live-track distance, elevation and pace.",
+  "category_workout_title": "Workout",
+  "category_workout_description": "Gym, calisthenics, stretch and morning workouts — search, filter and start.",
+  "category_food_title": "Food and meals",
+  "category_food_description": "Create your own meals and add them to your daily intake, add food directly, or just scan it.",
+  "category_friends_title": "Friends",
+  "category_friends_description": "Compete in challenges and follow friends live on the running map.",
+  "tour_stepMannequinTitle": "Your body at a glance",
+  "tour_stepMannequinDescription": "The body model updates based on your logged workouts, foods and meals. Its highlights give you an estimate of training load, nutrition and recovery, helping you see which muscles were used and when they are expected to recover.",
+  "tour_stepWorkoutTitle": "Workout",
+  "tour_stepWorkoutDescription": "All your workouts live here: 9 min, morning workout, stretch, gym and bodyweight. Tap in to search, create your own, or start right away.",
+  "tour_stepFriendsTitle": "Friends",
+  "tour_stepFriendsDescription": "Join challenges and follow friends live on the running map.",
+  "tour_step9minTitle": "9 Min Workout",
+  "tour_step9minDescription": "This is a short workout which activates your whole body in short time. Use as a good warmup or morning workout.",
+  "tour_stepHerculesTitle": "Morning Workout",
+  "tour_stepHerculesDescription": "This is your workout section — build your own custom morning routine. The default includes the 9min workout and stretching exercises, plus extra exercises to strengthen your leg tendons and joints.",
+  "tour_stepOnlyStretchTitle": "Stretch",
+  "tour_stepOnlyStretchDescription": "This is a short stretching routine optimized for people that sit too long.",
+  "tour_stepGymTitle": "Gym",
+  "tour_stepGymDescription": "Here you can create your own workouts and add them daily to your record.",
+  "tour_stepCalisthenicsTitle": "Bodyweight",
+  "tour_stepCalisthenicsDescription": "Here you can create your own workouts and add them daily to your record.",
+  "tour_stepRunningTitle": "Running",
+  "tour_stepRunningDescription": "Here you can create your own running routes and then live track your runs.",
+  "tour_stepFoodTitle": "Food",
+  "tour_stepFoodDescription": "Search food and add it directly to your daily intake or create a meal and save it.",
+  "tour_stepShoppingTitle": "Your shopping list",
+  "tour_stepShoppingDescription": "Tap the small note to open your shopping list. Collect food and quantities, check off purchases and save lists for later.",
+  "tour_stepMetabolicTitle": "Daily nutrition",
+  "tour_stepMetabolicDescription": "Your personal calorie and macro target based on profile and activity. See how much you've eaten today.",
+  "tour_stepCalendarTitle": "Workout calendar",
+  "tour_stepCalendarDescription": "All completed workouts in the monthly overview. Tap a day for details or the 30-day summary bottom right.",
+  "tour_stepGalleryTitle": "Progress gallery",
+  "tour_stepGalleryDescription": "Save progress photos and compare your development over weeks and months.",
+  "tour_stepWeightTitle": "Weight tracking",
+  "tour_stepWeightDescription": "See your current weight here. Use the plus button to log today's weight.",
+  "tour_stepHealthTitle": "Your health",
+  "tour_stepHealthDescription": "This card brings together your training, nutrition and health trends. Choose a metric and 7 or 28 days, then tap a day in the chart for details. Use the info icon to connect Apple Health or Health Connect and manage what you share.",
+  "tour_stepLevelingTitle": "Level & badges",
+  "tour_stepLevelingDescription": "At the top you will find your profile, level and body measurements. Completed workouts and training streaks earn you levels. Tap the trophy to see your badges and achievements.",
+  "tour_progress": "{current} / {total}",
+  "@tour_progress": {
+    "description": "Localized string for tour_progress",
+    "placeholders": {
+      "current": {},
+      "total": {}
+    }
+  },
+  "profile_settingsTooltip": "Settings",
+  "profile_metabolicTarget": "METABOLIC TARGET",
+  "profile_analytics": "ANALYTICS",
+  "profile_steps": "STEPS",
+  "profile_sleep": "SLEEP",
+  "profile_sleepLastNight": "Last night",
+  "profile_editProfile": "Edit profile",
+  "profile_settings": "Settings",
+  "profile_settingsSectionFeatures": "Features",
+  "profile_settingsSectionSystem": "App & System",
+  "profile_pinLevelIcon": "Add rank icon to home screen",
+  "profile_pinLevelIconHint": "Opens Kaizen and shows your current rank.",
+  "profile_pinLevelIconUnavailable": "Touch and hold an empty space on your home screen, then select “Kaizen Rank” under Widgets.",
+  "profile_appTour": "App tour",
+  "profile_appTourSubtitle": "Interactive tour through all areas of the app",
+  "profile_syncSteps": "Sync steps",
+  "profile_syncStepsSubtitle": "Connect Apple Health / Health Connect",
+  "profile_syncSleep": "Sync sleep",
+  "profile_syncSleepSubtitle": "Import last night's sleep from Apple Health / Health Connect",
+  "profile_workoutVoice": "Workout voice",
+  "profile_workoutVoiceSubtitle": "Voice prompts during training",
+  "profile_workoutVoiceGenderTitle": "Voice type",
+  "profile_workoutVoiceGenderSubtitle": "Female or male voice for workouts and running",
+  "profile_workoutVoiceFemale": "Female",
+  "profile_workoutVoiceMale": "Male",
+  "profile_workoutVoiceSystem": "System default",
+  "profile_workoutVoicePreview": "Preview voice",
+  "profile_lightMode": "Light mode",
+  "profile_lightModeSubtitle": "On: light surfaces. Off: previous dark design.",
+  "settings_languageTitle": "German language",
+  "settings_languageSubtitle": "On: German. Off: English.",
+  "profile_gallery": "Your Gallery",
+  "profile_updateWeight": "Update weight",
+  "profile_weightKgLabel": "Weight (kg)",
+  "profile_weightHint": "e.g. 72.5",
+  "profile_updated": "Profile updated.",
+  "profile_dailyCalorieGoal": "Today's calories",
+  "profile_kcalGoal": "KCAL GOAL",
+  "profile_today": "TODAY",
+  "profile_todayWithPercent": "TODAY · {percent}%",
+  "@profile_todayWithPercent": {
+    "description": "Localized string for profile_todayWithPercent",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_protein": "PROTEIN",
+  "profile_carbs": "CARBOHYDRATES",
+  "profile_fats": "FATS",
+  "profile_macroProteinShort": "Protein",
+  "profile_macroFatShort": "Fat",
+  "profile_macroSummary": "P {protein} g · C {carbs} g · F {fats} g",
+  "@profile_macroSummary": {
+    "description": "Localized string for profile_macroSummary",
+    "placeholders": {
+      "protein": {},
+      "carbs": {},
+      "fats": {}
+    }
+  },
+  "profile_kcalBurned": "kcal burned",
+  "profile_workoutsKcal": "Workouts: {kcal} kcal",
+  "@profile_workoutsKcal": {
+    "description": "Localized string for profile_workoutsKcal",
+    "placeholders": {
+      "kcal": {}
+    }
+  },
+  "profile_stepsKcal": "Steps: {count} · {kcal} kcal",
+  "@profile_stepsKcal": {
+    "description": "Localized string for profile_stepsKcal",
+    "placeholders": {
+      "count": {},
+      "kcal": {}
+    }
+  },
+  "profile_stepsKcalNoData": "Steps: {kcal} kcal (no step data)",
+  "@profile_stepsKcalNoData": {
+    "description": "Localized string for profile_stepsKcalNoData",
+    "placeholders": {
+      "kcal": {}
+    }
+  },
+  "profile_dishEntry": "Dish  •  {time}",
+  "@profile_dishEntry": {
+    "description": "Localized string for profile_dishEntry",
+    "placeholders": {
+      "time": {}
+    }
+  },
+  "profile_editTitle": "Edit profile",
+  "profile_nameLabel": "Name",
+  "profile_ageLabel": "Age",
+  "profile_heightLabel": "Height (cm)",
+  "profile_weightLabel": "Weight (kg)",
+  "profile_bodyFatLabel": "Body fat (%)",
+  "profile_muscleMassLabel": "Muscle mass (kg)",
+  "profile_boneWeightLabel": "Bone weight (kg)",
+  "profile_genderLabel": "Gender",
+  "profile_activityLabel": "Activity",
+  "profile_goalLabel": "Goal",
+  "profile_biometricSummary": "{height} · {weight} · {age} y · {gender}",
+  "@profile_biometricSummary": {
+    "description": "Biometric summary line on profile",
+    "placeholders": {
+      "height": {},
+      "weight": {},
+      "age": {},
+      "gender": {}
+    }
+  },
+  "profile_foodEntryGrams": "{grams} g · {time}",
+  "@profile_foodEntryGrams": {
+    "description": "Food log entry with grams and time",
+    "placeholders": {
+      "grams": {},
+      "time": {}
+    }
+  },
+  "gender_male": "Male",
+  "gender_female": "Female",
+  "activity_sedentary": "Sedentary",
+  "activity_light": "Light",
+  "activity_moderate": "Moderate",
+  "activity_high": "High",
+  "activity_athlete": "Athlete",
+  "goal_lose": "Cut",
+  "goal_maintain": "Maintain",
+  "goal_gain": "Bulk",
+  "validation_nameRequired": "Please enter a profile name.",
+  "validation_ageRequired": "Please enter your age.",
+  "validation_heightRequired": "Please enter your height.",
+  "validation_weightRequired": "Please enter your weight.",
+  "validation_ageInvalid": "Please enter a valid age.",
+  "validation_heightInvalid": "Please enter a valid height in cm.",
+  "validation_weightInvalid": "Please enter a valid weight in kg.",
+  "validation_bodyFatInvalid": "Please enter a realistic body fat percentage.",
+  "validation_muscleMassInvalid": "Please enter a valid muscle mass.",
+  "validation_boneWeightInvalid": "Please enter a valid bone weight.",
+  "avatar_mobileOnly": "Avatar upload is currently only available on mobile.",
+  "avatar_takePhoto": "Take photo",
+  "avatar_pickGallery": "Choose from gallery",
+  "avatar_remove": "Remove avatar",
+  "avatar_saveFailed": "Could not save avatar.",
+  "month_january": "January",
+  "month_february": "February",
+  "month_march": "March",
+  "month_april": "April",
+  "month_may": "May",
+  "month_june": "June",
+  "month_july": "July",
+  "month_august": "August",
+  "month_september": "September",
+  "month_october": "October",
+  "month_november": "November",
+  "month_december": "December",
+  "weekday_mon": "Mon",
+  "weekday_tue": "Tue",
+  "weekday_wed": "Wed",
+  "weekday_thu": "Thu",
+  "weekday_fri": "Fri",
+  "weekday_sat": "Sat",
+  "weekday_sun": "Sun",
+  "calendar_nutritionAvg": "NUTRITION (avg per day)",
+  "calendar_workouts": "WORKOUTS",
+  "calendar_noWorkoutsPeriod": "No workouts in this period.",
+  "calendar_noWorkoutsDay": "No workouts on this day.",
+  "calendar_consumption": "BURN",
+  "calendar_nutrition": "NUTRITION",
+  "calendar_noMealsDay": "No meals on this day.",
+  "calendar_feelingEmpty": "Feeling: --",
+  "calendar_feelingSaved": "Feeling saved",
+  "calendar_hint": "Dots = workout type. Tap a day for details.",
+  "calendar_workoutType9min": "9 Min",
+  "calendar_workoutTypeHercules": "Morning Workout",
+  "calendar_workoutTypeStretch": "Stretch / Yoga",
+  "calendar_workoutTypeGym": "Gym",
+  "calendar_workoutTypeCalisthenics": "Calisthenics",
+  "calendar_workoutTypeRun": "Run",
+  "calendar_workoutTypeLegacy": "Training",
+  "calendar_calorieBreakdown": "{label} · {kcal} kcal",
+  "@calendar_calorieBreakdown": {
+    "description": "Localized string for calendar_calorieBreakdown",
+    "placeholders": {
+      "label": {},
+      "kcal": {}
+    }
+  },
+  "calendar_30DaySummary": "30-day summary",
+  "calendar_streakDays": "{count}-day streak",
+  "@calendar_streakDays": {
+    "description": "Workout streak badge on calendar",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendar_workoutsInLastDays": "{count} workouts in the last {days} days",
+  "@calendar_workoutsInLastDays": {
+    "description": "Workout count in 30-day summary",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "calendar_kcalBurnedSuffix": " · {kcal} kcal burned",
+  "@calendar_kcalBurnedSuffix": {
+    "description": "Optional kcal suffix for workout summary",
+    "placeholders": {
+      "kcal": {
+        "type": "int"
+      }
+    }
+  },
+  "steps_unavailableDevice": "Steps are not available on this device.",
+  "steps_connectHint": "Tap Connect to grant Apple Health or Health Connect access.",
+  "steps_loadFailed": "Could not load steps.",
+  "steps_loadedToday": "Today: {count} steps loaded",
+  "@steps_loadedToday": {
+    "description": "Localized string for steps_loadedToday",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "steps_todaySnack": "Today: {count} steps",
+  "@steps_todaySnack": {
+    "description": "Localized string for steps_todaySnack",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "steps_appleHealth": "Apple Health",
+  "steps_healthConnect": "Health Connect",
+  "steps_notAvailable": "Not available",
+  "steps_notSynced": "Not synced yet",
+  "steps_updatedAt": "Updated at {time}",
+  "@steps_updatedAt": {
+    "description": "Localized string for steps_updatedAt",
+    "placeholders": {
+      "time": {}
+    }
+  },
+  "steps_connect": "Connect",
+  "steps_refresh": "Refresh",
+  "steps_label": "Steps",
+  "steps_mobileOnly": "Only available on iPhone and Android",
+  "steps_wearablesHint": "Fitbit, Garmin and Samsung Health can sync via Health Connect.",
+  "sleep_unavailableDevice": "Sleep tracking is not available on this device.",
+  "sleep_connectHint": "Tap Connect to grant Apple Health or Health Connect access for sleep.",
+  "sleep_loadFailed": "Could not load sleep data.",
+  "sleep_loadedLastNight": "Last night: {duration} loaded",
+  "@sleep_loadedLastNight": {
+    "description": "Localized string for sleep_loadedLastNight",
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "sleep_durationHoursMinutes": "{hours}h {minutes}m",
+  "@sleep_durationHoursMinutes": {
+    "placeholders": {
+      "hours": { "type": "int" },
+      "minutes": { "type": "int" }
+    }
+  },
+  "sleep_durationHours": "{hours}h",
+  "@sleep_durationHours": {
+    "placeholders": {
+      "hours": { "type": "int" }
+    }
+  },
+  "sleep_durationMinutes": "{minutes}m",
+  "@sleep_durationMinutes": {
+    "placeholders": {
+      "minutes": { "type": "int" }
+    }
+  },
+  "sleep_mobileOnly": "Only available on iPhone and Android",
+  "home_statusSleepNone": "No sleep data synced",
+  "home_statusSleepLastNight": "{hours}h {minutes}m sleep last night",
+  "@home_statusSleepLastNight": {
+    "placeholders": {
+      "hours": { "type": "int" },
+      "minutes": { "type": "int" }
+    }
+  },
+  "home_statusSleepHours": "{hours}h sleep last night",
+  "@home_statusSleepHours": {
+    "placeholders": {
+      "hours": { "type": "int" }
+    }
+  },
+  "home_statusSleepMinutes": "{minutes}m sleep last night",
+  "@home_statusSleepMinutes": {
+    "placeholders": {
+      "minutes": { "type": "int" }
+    }
+  },
+  "health_stepsUnsupported": "Steps are only available on iPhone and Android.",
+  "health_stepsPermissionConnect": "Connect Apple Health or Health Connect to load steps.",
+  "health_stepsPermissionDenied": "Permission denied. You can re-enable Apple Health or Health Connect in system settings.",
+  "health_connectNotInstalled": "Health Connect is not installed. Install it from the Play Store and connect Fitbit/Garmin/Samsung there.",
+  "analytics_weight": "Weight",
+  "analytics_steps": "Steps",
+  "analytics_calories": "Calories",
+  "analytics_burn": "Burn",
+  "analytics_water": "Water",
+  "analytics_afterburn": "Afterburn",
+  "analytics_protein": "Protein",
+  "analytics_fat": "Fat",
+  "analytics_carbs": "Carbs",
+  "analytics_workouts": "Workouts",
+  "analytics_emptyWeight": "Log weight to see your progress.",
+  "analytics_emptySteps": "Sync steps to see your daily activity.",
+  "analytics_emptyCalories": "No calories in the last 30 days yet.",
+  "analytics_emptyBurn": "No burn data in the last 30 days yet.",
+  "analytics_emptyWater": "No water data in the last 30 days yet.",
+  "analytics_emptyAfterburn": "No afterburn in the last 30 days yet.",
+  "analytics_emptyProtein": "No protein in the last 30 days yet.",
+  "analytics_emptyFat": "No fat in the last 30 days yet.",
+  "analytics_emptyCarbs": "No carbs in the last 30 days yet.",
+  "analytics_emptyWorkouts": "No workouts in the last 30 days yet.",
+  "analytics_unitKg": "kg",
+  "analytics_unitKcal": "kcal",
+  "analytics_unitMl": "ml",
+  "analytics_unitG": "g",
+  "analytics_addWeightHint": "Add weight entries to see progress.",
+  "achievements_levelingSystem": "Leveling System",
+  "achievements_noXp": "You don't collect XP here — you earn levels directly.",
+  "achievements_levelPerWorkout": "Levels per workout",
+  "achievements_onlyStretch": "Only Stretch",
+  "achievements_nineMin": "9 Min Workout",
+  "achievements_hercules": "Morning Workout",
+  "achievements_gymWorkout": "Gym Workout",
+  "achievements_caliWorkout": "Calisthenics Workout",
+  "achievements_levelPlus": "+{count} Level",
+  "@achievements_levelPlus": {
+    "description": "Localized string for achievements_levelPlus",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "achievements_streakBonus": "Streak bonus (one-time when reached)",
+  "achievements_streak10": "10 days",
+  "achievements_streak30": "30 days",
+  "achievements_streak100": "100 days",
+  "achievements_streak365": "365 days",
+  "achievements_streak1000": "1000 days",
+  "achievements_gymCaliHint": "Note: Gym/Calisthenics count when you tap the checkmark „Workout complete“ at the top of the workout detail.",
+  "achievements_milestones": "Milestones",
+  "achievements_streaks": "Streaks",
+  "achievements_earnedCount": "{earned} / {total} Earned",
+  "@achievements_earnedCount": {
+    "description": "Localized string for achievements_earnedCount",
+    "placeholders": {
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "achievements_coreLevel": "CORE LEVEL",
+  "achievements_level": "Level {level}",
+  "@achievements_level": {
+    "description": "Localized string for achievements_level",
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "achievements_rank": "Rank: {rank}",
+  "@achievements_rank": {
+    "description": "Localized string for achievements_rank",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "achievements_toNextMilestone": "to next milestone",
+  "achievements_nextMilestone": "Next milestone: Level {level}",
+  "@achievements_nextMilestone": {
+    "description": "Localized string for achievements_nextMilestone",
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "achievements_specializations": "Specializations",
+  "achievements_gym": "Gym",
+  "achievements_calisthenics": "Calisthenics",
+  "rank_rookie": "Rookie",
+  "rank_student": "Student",
+  "rank_trainee": "Trainee",
+  "rank_performer": "Performer",
+  "rank_profi": "Pro",
+  "rank_athlet": "Athlete",
+  "rank_krieger": "Warrior",
+  "rank_elite": "Elite",
+  "rank_champion": "Champion",
+  "rank_goat": "GOAT",
+  "rank_halbgott": "Demigod",
+  "badge_level0_title": "Rookie",
+  "badge_level0_subtitle": "Level 0",
+  "badge_level20_title": "Student",
+  "badge_level20_subtitle": "Level 20",
+  "badge_level50_title": "Trainee",
+  "badge_level50_subtitle": "Level 50",
+  "badge_level100_title": "Performer",
+  "badge_level100_subtitle": "Level 100",
+  "badge_level300_title": "Pro",
+  "badge_level300_subtitle": "Level 300",
+  "badge_level500_title": "Athlete",
+  "badge_level500_subtitle": "Level 500",
+  "badge_level1000_title": "Warrior",
+  "badge_level1000_subtitle": "Level 1000",
+  "badge_level2500_title": "Elite",
+  "badge_level2500_subtitle": "Level 2500",
+  "badge_level5000_title": "Champion",
+  "badge_level5000_subtitle": "Level 5000",
+  "badge_level7500_title": "GOAT",
+  "badge_level7500_subtitle": "Level 7500",
+  "badge_level10000_title": "Demigod",
+  "badge_level10000_subtitle": "Level 10000",
+  "badge_streak30_title": "Discipline",
+  "badge_streak30_subtitle": "30 day streak",
+  "badge_streak100_title": "Iron discipline",
+  "badge_streak100_subtitle": "100 day streak",
+  "badge_streak365_title": "Warrior mindset",
+  "badge_streak365_subtitle": "365 day streak",
+  "badge_streak500_title": "Titan",
+  "badge_streak500_subtitle": "500 day streak",
+  "badge_streak1000_title": "Demigod mindset",
+  "badge_streak1000_subtitle": "1000 day streak",
+  "badge_gym50_title": "Gym Junior",
+  "badge_gym50_subtitle": "50 gym workouts",
+  "badge_gym100_title": "Gym Pro",
+  "badge_gym100_subtitle": "100 gym workouts",
+  "badge_gym500_title": "Bodybuilding Junior",
+  "badge_gym500_subtitle": "500 gym workouts",
+  "badge_gym1000_title": "Bodybuilder",
+  "badge_gym1000_subtitle": "1000 gym workouts",
+  "badge_cali50_title": "Calisthenics Junior",
+  "badge_cali50_subtitle": "50 calisthenics workouts",
+  "badge_cali100_title": "Calisthenics Pro",
+  "badge_cali100_subtitle": "100 calisthenics workouts",
+  "badge_cali500_title": "Bodyweight Junior",
+  "badge_cali500_subtitle": "500 calisthenics workouts",
+  "badge_cali1000_title": "Bodyweight Master",
+  "badge_cali1000_subtitle": "1000 calisthenics workouts",
+  "gallery_mobileOnly": "Gallery is currently only available on mobile.",
+  "gallery_saveFailed": "Could not save photo.",
+  "gallery_title": "Gallery",
+  "gallery_empty": "No photos yet.\nTap + to take a photo.",
+  "food_tabFoods": "Foods",
+  "food_tabDishes": "Dishes",
+  "food_tabSupplements": "Supplements",
+  "food_supplementsSearchHint": "Search supplements…",
+  "food_supplementsEmpty": "No supplements logged today.",
+  "food_supplementsToday": "Today",
+  "food_supplementMg": "{mg} mg",
+  "@food_supplementMg": {
+    "placeholders": {
+      "mg": {}
+    }
+  },
+  "food_supplementAddTitle": "Add supplement",
+  "food_supplementAmountLabel": "Amount (mg)",
+  "food_supplementSlotMorning": "Morning",
+  "food_supplementSlotMidday": "Midday",
+  "food_supplementSlotEvening": "Evening",
+  "food_supplementSlotLabel": "Time of day",
+  "food_supplementDragHint": "Long-press a card and drag it to Morning, Midday or Evening.",
+  "food_supplementDropHere": "Drop here",
+  "food_searchHint": "Search food or tag",
+  "food_newDish": "New Dish",
+  "food_dishPhotoAction": "Choose dish photo",
+  "food_dishesSearchHint": "Search dishes…",
+  "food_dishNoIngredients": "Dish has no ingredients yet.",
+  "food_dishAddedToday": "\"{name}\" added to today.",
+  "@food_dishAddedToday": {
+    "description": "Localized string for food_dishAddedToday",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "food_deleteDishTitle": "Delete dish?",
+  "food_deleteDishBody": "\"{name}\" will be permanently deleted.",
+  "@food_deleteDishBody": {
+    "description": "Localized string for food_deleteDishBody",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "food_enterGramsMacros": "Please enter grams and macros.",
+  "food_macroProtein": "Protein",
+  "food_macroCarbs": "Carbs",
+  "food_macroFat": "Fat",
+  "food_macroKcal": "kcal",
+  "food_dishNameHint": "e.g. Breakfast bowl",
+  "food_newDishTitle": "New Dish",
+  "food_macrosHeading": "Macros",
+  "food_noFoodsFound": "No foods found",
+  "food_foodCount": "{count} foods",
+  "@food_foodCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "food_macroAll": "All",
+  "food_focusNeverEat": "Never eat",
+  "food_focusHealthyBrain": "Healthy brain",
+  "food_macroCarbsLong": "Carbs",
+  "food_kcalPer100g": "{kcal} kcal / 100 g",
+  "@food_kcalPer100g": {
+    "placeholders": {
+      "kcal": {}
+    }
+  },
+  "food_renameDishTitle": "Rename dish",
+  "food_dishNotFound": "Dish not found",
+  "food_dishFallback": "Dish",
+  "food_addedToDish": "{name} ({grams} g) added.",
+  "@food_addedToDish": {
+    "placeholders": {
+      "name": {},
+      "grams": {}
+    }
+  },
+  "food_addedToTodayFull": "{name} ({grams} g) added to today.",
+  "@food_addedToTodayFull": {
+    "placeholders": {
+      "name": {},
+      "grams": {}
+    }
+  },
+  "food_eatToday": "Eat today",
+  "food_addToDishBtn": "Add to dish",
+  "food_per100g": "Per 100 g",
+  "food_amount": "Amount",
+  "food_forGrams": "For {grams} g",
+  "@food_forGrams": {
+    "placeholders": {
+      "grams": {}
+    }
+  },
+  "food_macrosNotStored": "Macros not on file",
+  "food_macrosManualHint": "Enter macros per 100 g manually to add this food to a dish.",
+  "food_ingredientFood": "Food",
+  "food_emptyDishesTitle": "No dishes yet",
+  "food_emptyDishesBody": "Create your first dish to log combined meals.",
+  "food_pickIngredientTitle": "Pick food",
+  "food_manualEntry": "manual",
+  "food_whichDish": "Which dish?",
+  "food_newDishEllipsis": "New dish…",
+  "food_removeFromDish": "Remove from dish",
+  "food_barcodeScanTitle": "Scan barcode",
+  "food_barcodeScanHint": "Hold the barcode inside the frame",
+  "food_barcodeDesktopHint": "Barcode scanning works on mobile. Enter the barcode manually here.",
+  "food_barcodeManualLabel": "Enter barcode",
+  "food_barcodeManualHint": "e.g. 4008400407321",
+  "food_barcodeLookupBtn": "Look up product",
+  "food_barcodeLookingUp": "Looking up product…",
+  "food_barcodeNotFound": "Product not found in Open Food Facts.",
+  "food_scannedProduct": "Scanned product",
+  "food_barcodeValue": "Barcode: {code}",
+  "@food_barcodeValue": {
+    "placeholders": {
+      "code": {}
+    }
+  },
+  "muscleExercise_emptyGym": "No gym exercises listed for this muscle.",
+  "muscleExercise_emptyCalisthenics": "No calisthenics exercises listed for this muscle.",
+  "strength_setsLabel": "Sets",
+  "strength_repsLabel": "Reps",
+  "strength_sectionMyWorkouts": "My workouts",
+  "strength_sectionPresetWorkouts": "Preset workouts",
+  "strength_renameWorkoutTitle": "Rename",
+  "strength_deleteWorkoutTitle": "Delete workout?",
+  "strength_deleteWorkoutBody": "This workout will be permanently deleted.",
+  "strength_deleteWorkoutMenu": "Delete workout",
+  "strength_exerciseCount": "{count} exercises",
+  "@strength_exerciseCount": {
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "strength_addToWorkoutTooltip": "Add to workout",
+  "strength_workoutFallback": "Workout",
+  "cali_skillsHeading": "SKILLS",
+  "gym_tabExercises": "Exercises",
+  "gym_tabWorkouts": "Workouts",
+  "gym_addToLastWorkout": "Add to last workout",
+  "gym_noWorkoutYet": "No workout created yet.",
+  "gym_addWorkout": "Add to workout",
+  "gym_addToWorkoutTitle": "Add to workout",
+  "gym_noWorkoutsCreated": "You haven't created any workouts yet.",
+  "gym_newWorkout": "New workout",
+  "gym_createNewWorkout": "Create new workout",
+  "gym_exerciseAdded": "Exercise added.",
+  "gym_workoutNotFound": "Workout not found.",
+  "gym_defaultWorkoutName": "My Workout",
+  "cali_tabExercises": "Exercises",
+  "cali_tabWorkouts": "Workouts",
+  "cali_skillProgramsIntro": "More workouts and programs for this skill will be added here step by step.",
+  "cali_programBeginner": "Beginner Program",
+  "cali_programBeginnerSub": "Basics + technique + mobility",
+  "cali_programIntermediate": "Intermediate Program",
+  "cali_programIntermediateSub": "Progressions + strength building",
+  "cali_programAdvanced": "Advanced Program",
+  "cali_programAdvancedSub": "Skills + volume + intensity",
+  "cali_programPlaceholder": "This page is linked so the structure is ready. Next we'll fill it with real workouts like the Gym/Cali workout builder.",
+  "categoryDetail_startWorkout": "Start workout",
+  "categoryDetail_exerciseCountDuration": "{count} exercises · Total time: {duration}",
+  "@categoryDetail_exerciseCountDuration": {
+    "description": "Localized string for categoryDetail_exerciseCountDuration",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "duration": {}
+    }
+  },
+  "categoryDetail_secondsDefaultHint": "Default: 30s. Tap the seconds to change them.",
+  "categoryDetail_durationMinSec": "{minutes} min {seconds} sec",
+  "@categoryDetail_durationMinSec": {
+    "description": "Localized string for categoryDetail_durationMinSec",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "seconds": {}
+    }
+  },
+  "categoryDetail_heading9min": "9 Min Workout",
+  "categoryDetail_info9min": "Here you can adjust the times yourself by tapping the green 30s labels.",
+  "categoryDetail_infoStretch": "Here you can adjust the times yourself by tapping the green 30s labels.",
+  "categoryDetail_infoMorning": "Here you can adjust the times yourself by tapping the green 30s labels. You can also add or remove exercises as you like.",
+  "categoryDetail_headingHercules": "Optimized for runners",
+  "morningWorkout_addExercise": "Add exercise",
+  "morningWorkout_removeExercise": "Remove exercise",
+  "morningWorkout_pickExercise": "Add exercise to workout",
+  "morningWorkout_sourceMorning": "Morning",
+  "morningWorkout_sourceYoga": "Yoga",
+  "morningWorkout_sourceGym": "Gym",
+  "morningWorkout_sourceCalisthenics": "Calisthenics",
+  "morningWorkout_cannotRemoveLast": "At least one exercise must remain.",
+  "morningWorkout_allExercisesAdded": "All exercises are already in your workout.",
+  "categoryDetail_headingStretch": "Only Stretch",
+  "strength_exercisesZero": "0 exercises",
+  "strength_exercisesSummary": "{kcal} kcal · {count} exercises · {duration}",
+  "@strength_exercisesSummary": {
+    "description": "Localized string for strength_exercisesSummary",
+    "placeholders": {
+      "kcal": {},
+      "count": {
+        "type": "int"
+      },
+      "duration": {}
+    }
+  },
+  "strength_workoutComplete": "Workout complete",
+  "strength_workoutCompleteSnack": "Workout complete. +5 Level · {kcal} kcal",
+  "@strength_workoutCompleteSnack": {
+    "description": "Localized string for strength_workoutCompleteSnack",
+    "placeholders": {
+      "kcal": {}
+    }
+  },
+  "strength_estimatedBurn": "Estimated burn",
+  "strength_exerciseFallback": "Exercise",
+  "strength_exerciseKcalDuration": "~{kcal} kcal · {duration}",
+  "@strength_exerciseKcalDuration": {
+    "description": "Localized string for strength_exerciseKcalDuration",
+    "placeholders": {
+      "kcal": {},
+      "duration": {}
+    }
+  },
+  "preset_push": "Push Workout",
+  "preset_pull": "Pull Workout",
+  "preset_abs": "Ab Workout",
+  "preset_chestTriShoulder": "Chest · Triceps · Shoulder",
+  "preset_backBiceps": "Back · Biceps",
+  "preset_legsAbs": "Legs · Abs",
+  "preset_caliBack": "Back Workout",
+  "preset_caliChest": "Chest Workout",
+  "preset_caliAbs": "Abs Calisthenics",
+  "preset_caliLegs": "Leg Workout",
+  "preset_caliShoulders": "Shoulder Workout",
+  "preset_caliHumanFlag": "Human Flag Workout",
+  "preset_caliHandstand": "Handstand Workout",
+  "preset_caliPlanche": "Planche Workout",
+  "mood_title": "How do you feel?",
+  "mood_veryBad": "Very\nbad",
+  "mood_bad": "Bad",
+  "mood_neutral": "Neutral",
+  "mood_good": "Good",
+  "mood_veryGood": "Very\ngood",
+  "workout_phaseGetReady": "GET READY",
+  "workout_phaseWork": "WORK",
+  "workout_phaseRest": "REST",
+  "workout_phaseComplete": "WORKOUT COMPLETE",
+  "workout_setProgress": "Set {current} of {total}",
+  "@workout_setProgress": {
+    "description": "Localized string for workout_setProgress",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "workout_finishedMessage": "Great job! You completed all {count} exercises.",
+  "@workout_finishedMessage": {
+    "description": "Localized string for workout_finishedMessage",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "workout_tapCheckHint": "Tap the checkmark to see your progress.",
+  "tts_getReady": "Get ready",
+  "tts_halfway": "Halfway",
+  "tts_start": "Go!",
+  "tts_workoutComplete": "Workout finished, GREAT!",
+  "tts_pauseNext": "Pause. Next exercise: {name}",
+  "@tts_pauseNext": {
+    "description": "Localized string for tts_pauseNext",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "running_tabNewRoute": "New route",
+  "running_tabSaved": "Saved",
+  "running_tabHistory": "History",
+  "running_historyEmpty": "No runs yet",
+  "running_historyEmptyHint": "Finish a tracked run and it will appear here.",
+  "running_historyMonthKm": "{km} km this month",
+  "@running_historyMonthKm": {
+    "placeholders": {
+      "km": {}
+    }
+  },
+  "running_historyMonthAvgPace": "Avg pace {pace}",
+  "@running_historyMonthAvgPace": {
+    "placeholders": {
+      "pace": {}
+    }
+  },
+  "running_historyUntitledRun": "Run",
+  "running_needStartEnd": "Set at least a start and end point.",
+  "running_unexpectedError": "Unexpected error: {detail}",
+  "@running_unexpectedError": {
+    "description": "Localized string for running_unexpectedError",
+    "placeholders": {
+      "detail": {}
+    }
+  },
+  "running_routeSaved": "Route \"{name}\" saved.",
+  "@running_routeSaved": {
+    "description": "Localized string for running_routeSaved",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "running_saveRouteTitle": "Save route",
+  "running_routeNameLabel": "Name",
+  "running_defaultRouteName": "Run {date}",
+  "@running_defaultRouteName": {
+    "description": "Localized string for running_defaultRouteName",
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "running_myLocation": "My location",
+  "running_reset": "Reset",
+  "running_removeLastPoint": "Remove last point",
+  "running_mapHint": "Tap the map for your route or start right away.",
+  "running_calculateRoute": "Calculate route",
+  "running_save": "Save",
+  "running_points": "POINTS",
+  "running_distance": "DISTANCE",
+  "running_elevation": "ELEVATION",
+  "running_pinStart": "S",
+  "running_pinEnd": "E",
+  "running_noRoutes": "No routes yet",
+  "running_noRoutesHint": "Switch to the \"New route\" tab and plan your first run.",
+  "running_deleteRouteTitle": "Delete route?",
+  "running_deleteRouteBody": "\"{name}\" will be permanently removed.",
+  "@running_deleteRouteBody": {
+    "description": "Localized string for running_deleteRouteBody",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "running_renameTitle": "Rename",
+  "running_deleteConfirmBody": "This action cannot be undone.",
+  "run_gpsOff": "Location services are disabled.",
+  "run_gpsDenied": "Location permission denied.",
+  "run_gpsError": "GPS error: {detail}",
+  "@run_gpsError": {
+    "description": "Localized string for run_gpsError",
+    "placeholders": {
+      "detail": {}
+    }
+  },
+  "run_gpsStartFailed": "Could not start GPS: {detail}",
+  "@run_gpsStartFailed": {
+    "description": "Localized string for run_gpsStartFailed",
+    "placeholders": {
+      "detail": {}
+    }
+  },
+  "run_ttsIn100m": "In 100 meters: {instruction}",
+  "@run_ttsIn100m": {
+    "description": "Localized string for run_ttsIn100m",
+    "placeholders": {
+      "instruction": {}
+    }
+  },
+  "run_ttsIn300m": "In 300 meters: {instruction}",
+  "@run_ttsIn300m": {
+    "description": "Localized string for run_ttsIn300m",
+    "placeholders": {
+      "instruction": {}
+    }
+  },
+  "run_ttsGoalReached": "Destination reached. Well done!",
+  "run_goalReached": "Destination reached",
+  "run_ttsStarted": "Run started. Good luck!",
+  "run_ttsPause": "Pause.",
+  "run_ttsResume": "Let's go.",
+  "run_endTitle": "End run?",
+  "run_endBody": "Distance, time and the run will be saved.",
+  "run_keepRunning": "Keep running",
+  "run_end": "End",
+  "run_finishedTitle": "Run finished",
+  "run_distance": "Distance",
+  "run_time": "Time",
+  "run_calories": "Calories",
+  "run_level": "Level",
+  "run_levelNextMeters": "{meters} m until next level.",
+  "@run_levelNextMeters": {
+    "description": "Localized string for run_levelNextMeters",
+    "placeholders": {
+      "meters": {}
+    }
+  },
+  "run_levelEvery5km": "+1 level every 5 km — {meters} m to go.",
+  "@run_levelEvery5km": {
+    "description": "Localized string for run_levelEvery5km",
+    "placeholders": {
+      "meters": {}
+    }
+  },
+  "run_autoFollowOn": "Auto-follow on",
+  "run_autoFollowOff": "Auto-follow off",
+  "run_voiceOn": "Voice on",
+  "run_voiceOff": "Voice off",
+  "run_waitingGps": "Waiting for GPS signal…",
+  "run_distNow": "Now",
+  "run_distInMeters": "in {meters} m",
+  "@run_distInMeters": {
+    "description": "Localized string for run_distInMeters",
+    "placeholders": {
+      "meters": {}
+    }
+  },
+  "run_distInKm": "in {km} km",
+  "@run_distInKm": {
+    "description": "Localized string for run_distInKm",
+    "placeholders": {
+      "km": {}
+    }
+  },
+  "run_labelTime": "TIME",
+  "run_labelKm": "KM",
+  "run_labelPace": "PACE",
+  "run_start": "START RUN",
+  "run_waitGps": "WAITING FOR GPS…",
+  "run_resume": "RESUME",
+  "run_pause": "PAUSE",
+  "run_endButton": "END",
+
+  "social_connectTitle": "Connect friends",
+  "social_connectSubtitle": "Share workouts, routes and recipes",
+  "social_inboxTitle": "Inbox",
+  "social_yourIdTitle": "Your Kaizen ID",
+  "social_copyCode": "Copy ID",
+  "social_shareInvite": "Share invite",
+  "social_addFriendTitle": "Add friend by ID",
+  "social_addFriendHint": "KZN-ABC123",
+  "social_addFriendAction": "Connect",
+  "social_friendsListTitle": "Friends ({count})",
+  "@social_friendsListTitle": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "social_noFriendsYet": "No friends connected yet.",
+  "social_notifyRunStart": "Notify when starting a run",
+  "social_removeFriendTitle": "Remove friend?",
+  "social_removeFriendBody": "Remove {name} from your friends list?",
+  "@social_removeFriendBody": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "social_codeCopied": "ID copied",
+  "social_friendAdded": "Friend connected",
+  "social_errorInvalidCode": "Please enter a valid ID.",
+  "social_errorSelfFriend": "You cannot add yourself.",
+  "social_errorFriendNotFound": "No user found with this ID.",
+  "social_errorAlreadyFriends": "You are already connected.",
+  "social_errorCloudDisabled": "Cloud sync is not set up yet. Configure Firebase to connect with friends.",
+  "social_errorGeneric": "Could not connect. Please try again.",
+  "social_cloudSetupHint": "Friend sync requires Firebase. Add your projectId and apiKey in lib/services/social/social_cloud_config.dart, enable Anonymous Auth + Firestore, then rebuild.",
+  "social_inviteShareText": "Connect with me on Kaizen: {link}\nMy ID: {code}",
+  "@social_inviteShareText": {
+    "placeholders": {
+      "link": {"type": "String"},
+      "code": {"type": "String"}
+    }
+  },
+  "social_shareAction": "Share with friend",
+  "social_shareWithFriendsTitle": "Share with",
+  "social_noFriendsToShare": "Add friends in Profile → Connect friends first.",
+  "social_shareSent": "Shared successfully",
+  "social_inboxEmpty": "No messages yet.",
+  "social_inboxRoute": "{name} shared a running route with you.",
+  "@social_inboxRoute": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "social_inboxGymWorkout": "{name} shared a gym workout with you.",
+  "@social_inboxGymWorkout": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "social_inboxCalisthenicsWorkout": "{name} shared a calisthenics workout with you.",
+  "@social_inboxCalisthenicsWorkout": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "social_inboxFoodDish": "{name} shared a dish with you.",
+  "@social_inboxFoodDish": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "social_inboxThumbsUp": "{name} sent you a thumbs up 👍",
+  "@social_inboxThumbsUp": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "social_sendThumbsUp": "Send thumbs up",
+  "social_thumbsUpSent": "Thumbs up sent",
+  "social_acceptRoute": "Add to saved routes",
+  "social_acceptWorkout": "Add to my workouts",
+  "social_acceptDish": "Add to my recipes",
+  "social_reject": "Decline",
+  "social_inboxAccepted": "Added",
+  "social_inboxRejected": "Declined",
+  "social_inboxAdded": "Added to your library",
+  "friends_hubTitle": "Friends",
+  "friends_monthlyChallengeTab": "Monthly Challenge",
+  "friends_runningMapTab": "Running Map",
+  "friends_challengeTitle": "1,000 Push-Up Challenge",
+  "friends_goal": "Goal",
+  "friends_pushUps": "push-ups",
+  "friends_tapToEdit": "Tap to edit your count",
+  "friends_editCountTitle": "Update push-up count",
+  "friends_editCountHint": "Current total this month",
+  "friends_save": "Save",
+  "friends_leaderboard": "Leaderboard",
+  "friends_you": "You",
+  "friends_noFriendsHint": "Connect friends to compete with them here.",
+  "friends_goalReached": "Goal reached — keep going!",
+
+  "running_tabShared": "Shared",
+  "sharedRuns_tabHint": "See friends who are running live. Tap a profile icon for pace and route details.",
+  "sharedRuns_empty": "No friends are running right now.",
+  "sharedRuns_homeTitle": "Friends running live",
+  "sharedRuns_liveCount": "{count} live",
+  "@sharedRuns_liveCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "sharedRuns_distance": "Distance",
+  "sharedRuns_currentPace": "Current pace",
+  "sharedRuns_avgPace": "Average pace",
+
+  "onTheGo_exercises": "Exercises",
+  "onTheGo_search": "Search exercises…",
+  "onTheGo_select": "Tap muscles to select",
+  "onTheGo_show": "Show exercises",
+  "onTheGo_noMatches": "No matching exercises found.",
+  "onTheGo_empty": "Your workout is empty. Add exercises from the list on the right.",
+  "onTheGo_generate": "Generate workout",
+  "onTheGo_moreExercises": "More exercises",
+  "onTheGo_complement": "Complement for the same body area",
+  "onTheGo_saveFailed": "Could not save the workout. Please try again.",
+  "workoutHub_searchHint": "Search workouts…",
+  "workoutHub_filter": "Filter",
+  "workoutHub_filterTitle": "Filters",
+  "workoutHub_filterApply": "Apply",
+  "workoutHub_filterKind": "Type",
+  "workoutHub_filterMuscles": "Muscle groups",
+  "workoutHub_kindGym": "Gym",
+  "workoutHub_kindCalisthenics": "Calisthenics",
+  "workoutHub_kindStretch": "Stretch",
+  "workoutHub_quickAccess": "Quick start",
+  "workoutHub_myWorkouts": "My workouts",
+  "workoutHub_presets": "Preset workouts",
+  "workoutHub_favorites": "Favorites",
+  "workoutHub_empty": "No workouts match your search.",
+  "workoutHub_startAsYouGo": "Start empty workout",
+  "workoutHub_startWorkout": "Start workout",
+  "workoutHub_favorite": "Favorite",
+  "workoutHub_unfavorite": "Unpin favorite",
+  "running_startFree": "Start right away",
+  "running_freeRunName": "Free run",
+  "running_savedFreeRun": "Run saved",
+  "strength_setsMaxHint": "Up to 100 sets",
+  "strength_editSetReps": "Edit reps"
+}

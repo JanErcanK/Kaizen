@@ -1,0 +1,112 @@
+KAIZEN ANATOMY — APP-ASSETS, QUELLEN UND LIZENZ
+Stand: 22. Oktober 2026
+
+Dateien
+kaizen_anatomy_mobile.glb, kaizen_anatomy_skeleton.glb,
+kaizen_anatomy_organs.glb und zugehörige Muskel-/Struktur-/Organkataloge.
+Bearbeitbare App-Ableitungen: body_model/kaizen_anatomy/app_source/.
+Die ursprünglichen Kaizen-Master und Atlasquellen wurden nicht überschrieben.
+
+Hauptquelle und Namensnennung
+Bearbeitete Geometrie aus Z-Anatomy, basierend auf BodyParts3D des Database
+Center for Life Science. Ursprüngliche Modellarbeit: Kousaku Okubo;
+Z-Anatomy: Gauthier Kervyn; Blender-Add-on: Marcin Zielinski.
+Z-Anatomy-Modelllizenz: Creative Commons Attribution-ShareAlike 4.0 International.
+Historische BodyParts3D-Lizenzangabe aus dem Atlas: CC-BY-SA 2.1 Japan.
+
+Offizielle Quellen und verbindliche Lizenz
+https://github.com/Z-Anatomy/Models-of-human-anatomy
+https://github.com/Z-Anatomy/Models-of-human-anatomy/blob/master/License.txt
+https://github.com/Z-Anatomy/Models-of-human-anatomy/blob/master/Readme.md
+https://creativecommons.org/licenses/by-sa/4.0/
+https://creativecommons.org/licenses/by-sa/4.0/legalcode.de
+https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html
+
+Verwendeter lokaler Atlas
+body_model/reference/z_anatomy/Z-Anatomy/FitFlow_Anatomical_Body.blend
+Originalarchiv: body_model/reference/Z-Anatomy.zip, 86.734.957 Bytes.
+Archiv-SHA-256:
+e029688545627bd0214b269e1063143abb580aad72b2c2445d6d8a9a0d9da736
+Konkrete Organ-Quellobjekte: organ_ids.json und
+body_model/kaizen_anatomy/work/organ_layer_selection.json.
+
+Änderungen für Kaizen
+Auswahl anatomischer Strukturen; gemeinsame proportionale Formanpassung und
+Skalierung auf einen Körper von ungefähr 1,80 m; neue gesichtslose Kopfkontur;
+neutral geschlossener Beckenbereich; Anpassung der Muskeloberflächen;
+Neuvermaschung, Glättung, UV-Koordinaten, mobile Reduktion und glTF-Export.
+Die App-Ableitungen verwenden matte Materialien: gedämpfte Muskeltöne,
+rosa Sehnen, weiße Bänder, weiße Knochen und hellblauen Knorpel.
+
+Die beiden Rectus-abdominis-Objekte wurden entlang einer vorhandenen
+Querfurche in obere und untere auswählbare Trainingsregionen aufgeteilt.
+Es werden keine anatomisch eigenständigen Muskeln behauptet. Die vier IDs
+bewahren parent_muscle_id und tragen training_segment abs-upper/abs-lower.
+
+Organansicht
+28 gängige innere Organstrukturen bilden eine überschaubare Atlasansicht;
+die Darstellung beansprucht nicht, jedes mikroskopische Organ oder alle
+reproduktiven Strukturen zu enthalten. Die meisten Formen stammen aus
+ausgewählten Atlas-Meshes oder ausgewerteten Atlas-Kurven. Darstellungen
+werden vereinfacht, geschlossen, geglättet, farblich angepasst und reduziert.
+Blutgefäße als eigene Ebene, Genitalien, Textlabels und Hilfsgeometrien sind
+nicht Teil des Organassets.
+
+Die Nieren sind neu konstruierte, ausdrücklich vereinfachte Bohnenformen.
+Ihre Lage folgt den übernommenen Harnleiter-/Nebennieren-Landmarken; die
+Nierengeometrie aus Z-Anatomy wurde weder geladen noch kopiert oder abgeformt.
+Der distale Mastdarm ist eine neu konstruierte vereinfachte Fortsetzung;
+die distale Quellregion des Sigmoid-Objekts wurde dafür gekürzt.
+Die Dünndarm-Gesamtdarstellung verwendet die Quellkurve mit Namen Jejunum;
+eine exakte Jejunum-/Ileum-Grenze wird nicht behauptet.
+
+Ausgeschlossene nichtkommerzielle Fremdmodelle
+Das vollständige Z-Anatomy-Archiv enthält separat lizenzierte Modelle:
+die Niere von Lissie Cowley und das Innenohr der University of Dundee.
+Diese NC-Modelle werden in KEINEM der drei App-Assets verwendet. Die
+Lizenz des vollständigen Quellarchivs darf deshalb nicht pauschal mit der
+ausgewählten App-Ausgabe gleichgesetzt werden.
+
+Weitergabe
+Die bearbeiteten Modellassets werden unter CC BY-SA 4.0 weitergegeben.
+Namensnennung, Quellen-/Lizenzlink, Änderungshinweis und ShareAlike sind
+beizubehalten. Keine zusätzlichen rechtlichen oder wirksamen technischen
+Beschränkungen dürfen die eingeräumten Lizenzrechte aufheben. Die neuen
+vereinfachten Ergänzungen werden mit dem Modell unter derselben Lizenz
+bereitgestellt. Der Lizenztext unter dem obigen Link ist maßgeblich.
+
+Hinweis zur App-Code-Lizenz
+Diese Datei ändert die Lizenz des Appcodes nicht. Im offiziellen
+Repository-Issue #6 äußert der Z-Anatomy-Maintainer die Erwartung, dass auch
+der Code einer App zum Lesen des Modells offengelegt wird:
+https://github.com/Z-Anatomy/Models-of-human-anatomy/issues/6
+Die rechtliche Reichweite wird hier nicht entschieden. Dieser konkrete
+Punkt muss vor einer proprietären Veröffentlichung geklärt werden; diese
+Assetintegration ist keine uneingeschränkte Freigabe einer geschlossenen App.
+
+Qualität und Verwendung
+Alle Teile besitzen stabile IDs und sind für Auswahl/Hervorhebung vorgesehen.
+glTF enthält keinen standardisierten Sichtbarkeitsstatus; der Renderer muss
+extras.default_visible sowie die gewählte Gewebeansicht anwenden. Knochen,
+Sehnen, Bänder und Knorpel bleiben voneinander unabhängig schaltbar.
+Die Quellherkunft ersetzt keine medizinische Fachabnahme. Vereinfachte
+Organformen, Gewebekontakte und Muskelkonturen sind für eine Fitness- und
+Übersichtsvisualisierung gedacht. Gerätespezifische Leistungstests bleiben
+erforderlich; die Triangle-Zahl allein misst nicht die Kosten vieler Meshes.
+
+Ausführliche bisherige Quellenprüfung:
+body_model/kaizen_anatomy/LICENSE_SOURCES.md
+
+Darstellungsanpassung: Großhirn, Kleinhirn und Hirnstamm bleiben separate
+bearbeitbare Meshes, werden jedoch gemeinsam als Gehirn ausgewählt. Bänder
+sind weiß und Sehnen rosa; die Anpassung verändert keine Geometrie.
+
+Überarbeitung der Muskelansicht, 5. November 2026
+Für die Fitnessansicht wurden 80 auswählbare Muskeloberflächen in Atlaslage
+neu modelliert. Eine eigene geschlossene Körperhülle mit vereinfachtem Kopf,
+Händen und Füßen verbindet die Muskelgruppen. Die vordere Beckenpartie
+verwendet die bearbeitete Körperoberfläche aus der oben genannten Atlasquelle.
+Korallfarbene Materialien und vorberechnete Kontaktschattierung folgen der
+bereitgestellten Gestaltungsvorlage. Brust und Schulterkappen wurden in einem
+zweiten Schritt neu geformt, der obere Brustkorb verbreitert und die Übergänge
+an Schlüsselbein und Rücken angepasst. Diese Ableitung steht unter CC BY-SA 4.0.

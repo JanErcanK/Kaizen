@@ -1,0 +1,248 @@
+KAIZEN — INTEGRATION DES 3D-ANATOMIEMODELLS
+Stand: 23. Oktober 2026
+
+Verhalten
+Die Home-Körperansicht verwendet das neue vollständige Modell anstelle des
+Arm-Prototyps. Für männliche und weibliche Profile wird derzeit absichtlich
+dieselbe Geometrie geladen. Die vier Modi stehen in dieser Reihenfolge:
+
+1. Muskeln: 80 vereinfachte, einzeln modellierte Muskeloberflächen auf der
+   porzellanfarbenen Hülle neutral.studio. Im Vollbild erfolgt die Auswahl
+   über die Trainingssegmente. Die Organansicht verwendet separat neutral.body.
+2. Skelett: ausschließlich Knochen und Knorpel; beide auswählbar.
+3. Sehnen & Bänder: ausschließlich die 496 Strukturen dieser beiden Gewebetypen
+   aus dem Skelettasset, ohne doppelte Sehnen aus dem Muskelasset.
+4. Organe: 28 vereinfachte Geometrien in 26 auswählbaren Organregionen und eine transparente, nicht
+   auswählbare Körperhülle. Verdeckte Strukturen lassen sich durch Drehen und
+   Vergrößern betrachten; nicht jedes Organ ist gleichzeitig von vorne sichtbar.
+
+Die kompakte Ansicht dreht sich automatisch und öffnet beim Antippen das
+Vollbild. Dort sind horizontale 360-Grad-Rotation und Zoom möglich; die vertikale
+Kameraneigung ist gesperrt. Ein einzelner Seitenwechsel-Button schaltet zwischen
+Vorder- und Rückansicht um und erhält den Zoom. Er steht rechts oberhalb eines
+flachen grauen Info-Symbols, gefolgt von den vier Modusbuttons. Die bisherigen
+drei Bedienknöpfe unten links sind entfernt.
+Eine Auswahl färbt nur die betreffende Struktur bzw. Trainingsregion goldfarben.
+Muskelkarten verwenden Kaizens bestehende Übungsauswahl; andere Strukturen
+zeigen Name, lateinischen Namen und eine kurze anatomische Funktionsbeschreibung.
+Die Karten beurteilen keine individuelle Organ- oder Gewebegesundheit.
+
+Die Info-Symbole öffnen je zehn kurze Alltagstipps für Muskeln, Skelett/Knorpel,
+Sehnen/Bänder und Organe, mit kompakter Farblegende. Die 40 Texte sind auf Deutsch
+und Englisch verfügbar. lib/services/anatomy_tips.dart ordnet jeden Tipp seinen
+Quellen zu: 19 offizielle WHO-, NHS-, NIH-/NIAMS- und AAOS-Veröffentlichungen.
+Es ist eine praktische Auswahl, keine wissenschaftliche Rangliste der „besten“
+Tipps. Quellen und Modell-/Paketlizenzen stehen unter Profil → Einstellungen →
+App & System → Quellen & Lizenzen; der volle Anatomie-Lizenztext bleibt unverändert
+und auswählbar. Tipp-Quellen öffnen auf Wunsch im externen Browser.
+
+Trainingszuordnung
+Der gemeinsame Katalog enthält 23 gröbere Trainingssegmente. Obere und untere
+Bauchregion werden anhand vorhandener Übungstags unterschieden, ebenso vordere,
+seitliche und hintere Schulter. Die Rectus-Geometrie wurde an einer vorhandenen
+Querfurche in vier geschlossene Teilmeshes geteilt. Obere/untere Bauchregion sind
+Regionen desselben Muskels; die Auswahl und Hervorhebung gelten für beide Seiten.
+Die bisherigen neun Erholungsgruppen bleiben erhalten. Es gibt keine neue
+Erholungsberechnung für diese Teilregionen.
+
+Trainingsfarben
+Trainierte Muskeln erscheinen gelb (#d8b84e), hoch belastete kräftig rot
+(#e51c05). Innerhalb von 24 Stunden reichen zwei mittlere Einheiten mit direkter
+Belastung, drei mit Beteiligung oder sechs protokollierte direkte Gym-Sätze.
+Krafttraining und Hercules zählen ohne Intensitätsangabe als mittlere Einheit.
+Jeder Abschluss zählt pro Muskelgruppe einmal. Rot hält ab dem auslösenden
+Abschluss 24 Stunden an, Gelb bis 48 Stunden nach dem letzten Training.
+Ein blauer Lichtschein um die beteiligten Muskeln zeigt das aktive Nachbrennfenster.
+Sehnen, Bänder und Knorpel besitzen nur eine warme Beteiligungsmarkierung
+(#d39a4b), keine rote Belastungs-/Erholungsphase. Die Zuordnung umfasst 750
+konkrete Gewebe-IDs; 82 nicht sicher zuordenbare Strukturen bleiben unverändert.
+Knochen/Organe erhalten keine aus Muskeltraining abgeleitete Belastungsfarbe.
+Auswahlgold hat Vorrang; beim Abwählen wird die Trainings-/Grundfarbe restauriert.
+Diese Anzeigen beruhen auf gespeicherten Übungen, Intensitäten und Zeitregeln;
+sie messen keine tatsächliche Gewebeerholung. Details: work/training_integration_report.json
+und work/training_associations_report.json im Anatomieprojekt.
+
+Aufbau
+lib/widgets/anatomy_3d_view.dart: Flutter-Zustand, Auswahlkarten und Bedienelemente.
+lib/widgets/anatomy_webview_native.dart: Windows-WebView2 bzw. Android/iOS-WebView.
+lib/widgets/anatomy_scene_session.dart: ein geladener Renderer pro Home-Körperkarte.
+lib/services/anatomy_asset_server.dart: pro Sitzung ein lokaler Assetserver auf
+127.0.0.1 und einem dynamischen Port; feste Dateiliste, kein Dateisystemzugriff.
+assets/3d_viewer/index.html + anatomy_viewer.js: gebündelter Babylon-Renderer.
+assets/3d_viewer/anatomy_config.json: gemeinsame DE/EN-Namen und Trainingszuordnung.
+assets/models/: drei GLBs, muscle_ids.json, structure_ids.json, organ_ids.json,
+KAIZEN_ANATOMY_LICENSE.txt. Es werden keine CDN-Dateien benötigt.
+
+Es bleibt nur eine aktive native Ansicht montiert. Beim Öffnen/Schließen wird
+nur die Oberfläche nach einem leeren Übergabeframe umgehängt; WebView-Controller,
+Babylon-Szene, Kamerawinkel und geladene GLBs bleiben erhalten. Ein PNG des aktuell
+gerenderten Modells wird während des Größenwechsels als Flutter-Bild animiert
+(Öffnen 440 ms, Schließen 360 ms). Die native Zielfläche erhält einmal ihre
+endgültige Größe und wird am Ende eingeblendet. Der Renderer pausiert während
+des Flugs. Bildaufnahme inklusive Bridge hat eine 350-ms-Frist; bei Ausfall dient
+die weiterhin geladene Liveansicht als Ersatz. Abbruch/Tabwechsel räumen auf.
+Jede GLB lädt pro Sitzung nur einmal. Materialien werden pro Mesh getrennt, sodass
+Auswahl und Erholungsfarben keine fremden Muskelgruppen verändern. Moduswechsel
+ignorieren überholte asynchrone Ladevorgänge. Die erlaubten Gewebetypen werden
+sowohl in JavaScript als auch beim Empfang der Auswahl in Flutter geprüft.
+
+Android erlaubt unverschlüsseltes HTTP ausschließlich für localhost/127.0.0.1;
+iOS verwendet die lokale Netzwerk-Ausnahme. Alle Assets bleiben auf dem Gerät.
+Linux/macOS und Flutter Web haben derzeit keine native 3D-Adapterimplementierung;
+die bestehende statische Ersatzansicht bleibt dort verfügbar. Die gebündelte
+HTML-Rendererseite selbst wurde in einem Chromium-Browser geprüft.
+
+Geometrie und Farben
+Muskelasset: 136.554 Dreiecke, 198 Meshes, 102 Muskel-IDs; 3.349.656 B.
+Skelettasset: 189.097 Dreiecke, 970 Meshes; 9.212.096 B.
+Organasset: 27.398 Dreiecke, 28 Meshes; 1.127.956 B.
+Im Muskelmodus sichtbar: 116.428 Dreiecke, 80 auswählbare Muskelmeshes und
+die eigene Körperhülle. Gerundete Muskelbäuche, warme Koralltöne und weiche,
+in die Vertexfarben eingerechnete Kontaktschatten definieren den Studio-Look.
+Die drei separat auswählbaren Anteile des Deltamuskels bilden eine gemeinsame
+Schulterkappe; die Brust läuft schräg unter deren vorderen Ansatz. Vergleich:
+docs/images/anatomy_upper_body_before_after.png.
+Die Studiobeleuchtung folgt der horizontalen Orbitkamera und ist unabhängig
+vom Zoom. Bearbeitbare Szene: body_model/kaizen_anatomy/app_source/kaizen_muscle_studio.blend.
+Im Skelettmodus sichtbar: 105.555 Dreiecke, 474 auswählbare Strukturen.
+Im Sehnen-/Bändermodus sichtbar: 83.542 Dreiecke, 496 auswählbare Strukturen.
+Sehnen sind rosa, Bänder weiß; Knochen bleiben warmweiß und
+Knorpel hellblau. Die Materialien sind matt und unabhängig voneinander.
+
+Großhirn, Kleinhirn und Hirnstamm werden gemeinsam als Gehirn ausgewählt und
+hervorgehoben; ihre einzelnen Geometrien bleiben für die Bearbeitung erhalten.
+Die Organsammlung umfasst außerdem kleine endokrine
+Strukturen sowie Atem-, Verdauungs- und Harnorgane. Sie ist eine praktische
+Übersicht, kein vollständiger Katalog sämtlicher mikroskopischer oder
+reproduktiver Organe. Die Nieren wurden vereinfacht neu konstruiert; die
+nichtkommerziellen Nieren-/Innenohrmodelle des vollständigen Quellarchivs wurden
+nicht in die App übernommen. Die vollständige Liste steht in organ_ids.json.
+
+Bearbeitung und Quellen
+Die bisherigen Masterdateien wurden erhalten. Bearbeitbare App-Ableitungen
+liegen in body_model/kaizen_anatomy/app_source/. Die Organquelle und einzelne
+Ergänzungen sind in den Manifesten und Buildberichten dokumentiert.
+Quellen, Namensnennung und CC-BY-SA-Bedingungen stehen in
+assets/models/KAIZEN_ANATOMY_LICENSE.txt und sind über Quellen & Lizenzen
+in den Einstellungen erreichbar. Die im Quellenhinweis dokumentierte Frage zur Reichweite von
+ShareAlike auf proprietären Appcode bleibt vor einer Veröffentlichung zu klären.
+Die Integration ändert nicht die Lizenz des vorhandenen Appcodes.
+
+Validierung
+Alle drei GLBs: Khronos glTF Validator 0 Fehler / 0 Warnungen; anschließender
+frischer Blender-Reimport. Alle 28 Organmeshes sowie die vier Rectus-Teilmeshes
+sind geschlossen. Berichte: body_model/kaizen_anatomy/work/app_asset_validation.json,
+app_reimport_report.json und organ_build_report.json.
+
+test/anatomy_viewer_test.cjs lädt echte GLBs mit dem gebündelten Babylon-Loader
+in NullEngine und prüft Front-Picking, Sichtbarkeit, Auswahl, Materialrestauration,
+Moduswechsel-Rennen, Lade-Caching und ausbleibende Rückkopplungsschleifen.
+68 gezielte Flutter-Tests zu Katalog/Übungsfilter, Bridge, Lebensdauer,
+Assetserver, Body-Map, Erholungsanzeige, Intensitätsregeln, Quellen, Tipps,
+Popups, Theme, Home und Chat bestanden. Neue Übergabetests prüfen wiederholte
+Öffnungs-/Schließflüge mit nur einer Initialisierung und höchstens einer
+montierten nativen Oberfläche, hängende Bridge-Aufrufe, Tabwechsel und System-Back.
+Windows-Release-Build und Android-Debug-APK wurden nach der Design-Überarbeitung
+erfolgreich erstellt. Die alte Desktop-Testinstanz wurde geschlossen und die
+aktuelle Release-Version geöffnet: build/windows/x64/runner/Release/kaizen.exe.
+Echte Windows-App: alle vier Modi, Vollbild, obere Bauchregion mit Übungen,
+Knochenkarte und Herzkarte wurden über die Oberfläche geprüft. Nach dem Design-
+Update zusätzlich: neue Bedienleiste, Seitenwechsel in beide Richtungen,
+gesperrte vertikale Drehung per Ziehgeste, weiß/rosa Gewebe, gemeinsame Auswahl
+des Gehirns samt Karte sowie neuer Anatomie-Infodialog und Übungspopup.
+Bildnachweise: docs/images/anatomy_fullscreen_refined.png,
+docs/images/anatomy_brain_refined.png und anatomy_muscle_popup_refined.png.
+Workout-Hub, Profil und Einstellungsdialog ebenfalls in der Windows-App geprüft.
+Nach dem Update vom 23.10. zusätzlich in der frisch gebauten Release-App geprüft:
+Home/Vollbild vergrößern und verkleinern mit erhaltener Kameraperspektive,
+scrollbare zehn Muskeltipps sowie Einstellungen > App & System > Quellen &
+Lizenzen. Bildnachweise: docs/images/anatomy_tips_live.png und
+docs/images/anatomy_sources_settings_live.png.
+Training mit ausdrücklich synthetischen Daten im echten Chromium-WebGL-Renderer
+geprüft: grüne/rote Muskelstufen, amberfarbene Sehnen/Bänder/Knorpel sowie
+Auswahl und Rückkehr zum Trainingszustand. Alle PBR-Markierungsfarben werden
+vor der Mischung mit dem GLB-Material von sRGB nach linear umgerechnet.
+Bildnachweise: docs/images/anatomy_training_highlights_qa.png und
+docs/images/anatomy_connective_highlights_qa.png. Die QA-Seite schreibt keine
+Workouts oder anderen Nutzerdaten.
+Im separaten
+Chromium-Renderer lagen statische Ansichten auf diesem PC ungefähr bei 60 FPS.
+Das ist kein Leistungsnachweis für Smartphones. Kein Android-/iOS-Gerät war
+angeschlossen; reale Touch-/GPU-/Speichertests auf Zielgeräten bleiben offen.
+
+Erneut prüfen
+node test/anatomy_viewer_test.cjs
+flutter test test/anatomy_catalog_test.dart test/muscle_exercise_filter_test.dart
+flutter test test/anatomy_3d_view_test.dart test/anatomy_asset_server_test.dart
+flutter test test/anatomy_scene_session_test.dart test/anatomy_training_snapshot_test.dart
+flutter test test/anatomy_tips_test.dart test/sources_licenses_test.dart
+flutter test test/body_map_performance_test.dart test/home_recovery_test.dart
+flutter test test/anatomy_popup_design_test.dart test/app_theme_test.dart
+flutter test test/home_settings_test.dart test/ai_chat_test.dart
+flutter build windows --debug --dart-define-from-file=config/local.defines.json
+flutter build windows --release --dart-define-from-file=config/local.defines.json
+flutter build apk --debug --dart-define-from-file=config/local.defines.json
+
+Der Home-Einstellungstest aktiviert die optionale Fastenanzeige jetzt explizit
+vor dem Aus-/Einschalten und prüft das aktuelle kompakte HUD. Der gespeicherte
+Standardwert bleibt unverändert. Die gezielten Tests ersetzen keine komplette
+App-Suite. Der Analyzer für lib meldet keine Fehler, aber 44 bestehende Hinweise/
+Warnungen; die gezielt geprüften neuen Theme- und Anatomie-Komponenten sind sauber.
+
+Design-Überarbeitung
+Update 23.10.: Trainingsmarkierungen kombinieren die gedämpfte Grundfarbe mit
+leichter Emission und einem weichen inneren/äußeren Lichtsaum. Eine gemeinsame
+Babylon-HighlightLayer mit 512-Pixel-Zieltextur (Stencil aktiv) wird nur bei
+sichtbaren Trainings- oder Auswahlmarkierungen aktiviert. Ohne Markierung ist
+der zusätzliche Renderdurchlauf abgeschaltet; Übergangsflüge bleiben Standbilder.
+Der Node-Vertrag prüft auch das Entfernen der Markierungen und Emission.
+Hell-/Dunkel-Nachweise: docs/images/anatomy_glow_light_qa.png und
+docs/images/anatomy_glow_dark_qa.png (synthetische Testdaten).
+Home-Autorotation: 0,112 statt 0,100 Radiant/s, entsprechend zwölf Prozent schneller.
+Vollbild: Info- und Seitenwechsel-Button haben transparente graue Kreisränder.
+
+lib/theme/app_theme.dart bündelt die Stile für Buttons, Dialoge, Chips,
+Eingabefelder, Tabs und Menüs. Cyan als allgemeine UI-Akzentfarbe wurde entfernt.
+Normale Aktionen verwenden neutrale Flächen mit kontrastreicher Schrift,
+Auswahlzustände gedecktes Grün. Die weißen Home-Flächen und fachlichen Farben
+für Ernährung, Laufen und Kalorien bleiben erhalten. Harte Farb-Overrides in
+den Screens wurden an die gemeinsamen AppColors-Rollen angepasst.
+Anatomie- und Übungskarten verwenden ruhige Titel, graue Sekundärtexte, größere
+Abstände und zurückhaltende Divider; Info-Dialoge haben keine leuchtgrüne
+Bestätigungsfläche mehr. Hell- und Dunkelmodus werden gesondert geprüft.
+
+Update: Vollbild, Ernährung und Einleitung (23.10.2026)
+Stufe 1 ist jetzt warmgelb (#d8b84e), Stufe 2 bleibt rot. Autorotation
+0,120 rad/s (gegenüber 0,112 noch etwa sieben Prozent schneller).
+OrganHealthService.displayStatus wird an die 3D-Szene übertragen: gut grün,
+vorsichtig rot, gemischt amber. Organ-Emission 0,10 und halbierter Lichtsaum;
+keine neuen Bewertungen für Organe ohne bestehende Ernährungszuordnung.
+Angeklickte Meshes melden Ober-/Unterkörper anhand ihrer räumlichen Mitte.
+Infokarten sitzen gegenüber; Muskelkarten besitzen keine ganzflächige
+Touch-Barriere mehr. Drehen/Zoomen außerhalb der Karte bleibt möglich.
+Info-Icon grau ohne Kreis; Titel höher und salbeigrün. Große Aktionen nutzen
+helles Grün und dunkle Schrift. Snackbars nutzen lesbare Oberflächenfarben.
+Einleitung: Zielkoordinaten relativ zum Overlay, direktes vertikales Scrollen
+ohne Tab-Schwenk, Rahmen erst nach abgeschlossenem Layout.
+Neue Regressionen: app_tour_geometry_test.dart und anatomy_3d_view_test.dart;
+Node-Vertrag ergänzt um Organfarben, Rücksetzen und Ober-/Unterkörper-Auswahl.
+
+Abschlussprüfung dieses Updates:
+20 gezielte Flutter-Tests bestanden (19 zusammen, zusätzlicher RootShell-
+Einleitungstest plus Theme-Tests danach). Alle neun Tour-Zielrahmen werden
+gegen ihre tatsächlichen Widget-Rechtecke geprüft. Gezielter Analyzer sauber.
+Babylon-Vertrag mit echten GLBs bestanden, einschließlich Organstatus/Reset.
+In Windows geprüft: Karte unten beim Oberkörper, oben beim Bein, Drehen und
+Mausrad-Zoom bei offener Karte, Titel/Info-Stil und korrigierter Tour-Einstieg
+aus Profil. Nachweise: anatomy_popup_gestures_live.png,
+anatomy_lower_body_popup_live.png und tour_aligned_live.png in docs/images.
+Organleuchten zusätzlich im Chromium-WebGL mit synthetischen Ernährungsdaten:
+docs/images/anatomy_nutrition_glow_qa.png. Keine echten Mahlzeiten hinzugefügt.
+Windows Release und Android Release erfolgreich gebaut; Android-Touchprüfung
+auf einem physischen Gerät weiterhin ausstehend.
+
+Einleitungsergänzung: Das Mannequin ist jetzt Schritt 1 von 10. Eigener
+Layout-Anker um die sichtbare Figur (ohne linkes Dashboard und Seitenleiste),
+stark gerundeter Spotlight-Rahmen. DE/EN erläutern die Aktualisierung durch
+Workouts, Lebensmittel und Gerichte sowie die geschätzte Muskelerholung.
+Der RootShell-Test prüft die Reihenfolge und alle zehn Zielrahmen.

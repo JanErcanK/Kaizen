@@ -1,0 +1,169 @@
+rules_version = '2';
+// Kaizen social: accepted, reciprocal friendships control sensitive reads.
+// Deploy together with the client supporting friend requests. Test locally first.
+// Optional activity metadata on communityRuns and runningRoute inbox payloads:
+// type enum, durationSeconds 0..604800, descentMeters 0..100000,
+// maxSpeedKmh 0..500, calories 0..100000, elevationRecorded bool,
+// recordedAt optional ISO text <=40 chars. Owner and publication time immutable.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function isSelf(uid) { return signedIn() && request.auth.uid == uid; }
+    function mutualFriend(uid) {
+      return signedIn()
+        && exists(/databases/$(database)/documents/users/$(uid)/friends/$(request.auth.uid))
+        && exists(/databases/$(database)/documents/users/$(request.auth.uid)/friends/$(uid))
+        && get(/databases/$(database)/documents/users/$(uid)/friends/$(request.auth.uid)).data.consentVersion == 1
+        && get(/databases/$(database)/documents/users/$(request.auth.uid)/friends/$(uid)).data.consentVersion == 1;
+    }
+    function shortText(value, max) {
+      return value is string && value.size() > 0 && value.size() <= max;
+    }
+    function userName(uid) {
+      return get(/databases/$(database)/documents/users/$(uid)).data.displayName;
+    }
+    function validFriend(d) {
+      return d.keys().hasOnly(['displayName', 'friendCode', 'notifyOnRunStart', 'connectedAt', 'consentVersion', 'acceptedBy'])
+        && shortText(d.displayName, 120) && shortText(d.friendCode, 32)
+        && d.notifyOnRunStart is bool && d.connectedAt is timestamp
+        && d.consentVersion == 1 && d.acceptedBy is string;
+    }
+    function accepting(owner, peer) {
+      return signedIn() && owner != peer
+        && request.resource.data.acceptedBy == request.auth.uid
+        && ((isSelf(owner) && exists(/databases/$(database)/documents/users/$(owner)/friendRequests/$(peer)))
+          || (isSelf(peer) && exists(/databases/$(database)/documents/users/$(peer)/friendRequests/$(owner))))
+        && getAfter(/databases/$(database)/documents/users/$(peer)/friends/$(owner)).data.connectedAt
+          == request.resource.data.connectedAt;
+    }
+    function validPresence(d) {
+      return d.keys().hasOnly(['routeId', 'routeName', 'displayName', 'latitude', 'longitude',
+          'distanceMeters', 'currentPaceSecPerKm', 'avgPaceSecPerKm', 'recordedPoints', 'recordedPointTimestamps',
+          'plannedPoints', 'startedAt', 'updatedAt', 'paused', 'positionUpdatedAt'])
+        && d.routeId is string && d.routeId.size() <= 160
+        && shortText(d.routeName, 160) && shortText(d.displayName, 120)
+        && d.latitude is number && d.latitude >= -90 && d.latitude <= 90
+        && d.longitude is number && d.longitude >= -180 && d.longitude <= 180
+        && d.distanceMeters is number && d.distanceMeters >= 0 && d.distanceMeters <= 10000000
+        && (d.currentPaceSecPerKm == null || (d.currentPaceSecPerKm is number && d.currentPaceSecPerKm > 0))
+        && (d.avgPaceSecPerKm == null || (d.avgPaceSecPerKm is number && d.avgPaceSecPerKm > 0))
+        && d.recordedPoints is list && d.recordedPoints.size() <= 400
+        && (!('recordedPointTimestamps' in d) || (d.recordedPointTimestamps is list
+          && d.recordedPointTimestamps.size() == d.recordedPoints.size()))
+        && d.plannedPoints is list && d.plannedPoints.size() <= 1000
+        && d.startedAt is timestamp && d.updatedAt is timestamp
+        && d.startedAt <= d.updatedAt
+        && d.updatedAt <= request.time + duration.value(2, 'm')
+        && (!('paused' in d) || d.paused is bool)
+        && (!('positionUpdatedAt' in d) || d.positionUpdatedAt is timestamp);
+    }
+    function validActivity(a) {
+      return a is map
+        && a.keys().hasAll(['type', 'durationSeconds', 'descentMeters', 'maxSpeedKmh', 'calories', 'elevationRecorded'])
+        && a.keys().hasOnly(['type', 'durationSeconds', 'descentMeters', 'maxSpeedKmh', 'calories', 'elevationRecorded', 'recordedAt'])
+        && a.type in ['jogging', 'walking', 'cycling', 'hiking', 'other']
+        && a.durationSeconds is int && a.durationSeconds >= 0 && a.durationSeconds <= 604800
+        && a.descentMeters is number && a.descentMeters >= 0 && a.descentMeters <= 100000
+        && a.maxSpeedKmh is number && a.maxSpeedKmh >= 0 && a.maxSpeedKmh <= 500
+        && a.calories is int && a.calories >= 0 && a.calories <= 100000
+        && a.elevationRecorded is bool
+        && (!('recordedAt' in a) || shortText(a.recordedAt, 40));
+    }
+    function validCommunityRun(d) {
+      return d.keys().hasOnly(['ownerUid', 'displayName', 'routeName', 'distanceMeters', 'ascentMeters', 'points', 'createdAt', 'activity'])
+        && signedIn() && d.ownerUid == request.auth.uid
+        && shortText(d.displayName, 120) && shortText(d.routeName, 160)
+        && d.distanceMeters is number && d.distanceMeters > 0 && d.distanceMeters <= 1000000
+        && d.ascentMeters is number && d.ascentMeters >= 0 && d.ascentMeters <= 100000
+        && d.points is list && d.points.size() >= 2 && d.points.size() <= 1000
+        && (!('activity' in d) || validActivity(d.activity))
+        && d.createdAt is timestamp && d.createdAt <= request.time + duration.value(2, 'm');
+    }
+    function validShare(d, messageId) {
+      return d.keys().hasOnly(['id', 'fromUid', 'fromName', 'type', 'payload', 'status', 'createdAt'])
+        && d.id == messageId && shortText(d.id, 180)
+        && d.fromUid == request.auth.uid && d.fromName == userName(request.auth.uid)
+        && d.type in ['gymWorkout', 'calisthenicsWorkout', 'foodDish', 'runningRoute', 'thumbsUp']
+        && d.status == 'pending' && d.createdAt is timestamp
+        && d.payload is map && d.payload.keys().size() <= 12
+        && shortText(d.payload.name, 160)
+        && (d.type != 'foodDish' || (d.payload.items is list && d.payload.items.size() > 0 && d.payload.items.size() <= 100))
+        && (!(d.type in ['gymWorkout', 'calisthenicsWorkout'])
+          || (d.payload.exercises is list && d.payload.exercises.size() > 0 && d.payload.exercises.size() <= 100))
+        && (d.type != 'runningRoute' || (d.payload.points is list && d.payload.points.size() >= 2 && d.payload.points.size() <= 1000
+          && (!('activity' in d.payload) || validActivity(d.payload.activity))));
+    }
+    match /users/{userId} {
+      // Individual code lookup needs only this public display profile. No listing.
+      allow get: if signedIn();
+      allow list: if false;
+      allow create, update: if isSelf(userId)
+        && request.resource.data.keys().hasOnly(['displayName', 'friendCode'])
+        && shortText(request.resource.data.displayName, 120)
+        && shortText(request.resource.data.friendCode, 32);
+      allow delete: if false;
+
+      match /friendRequests/{senderId} {
+        allow read: if isSelf(userId);
+        allow create, update: if isSelf(senderId) && senderId != userId
+          && request.resource.data.keys().hasOnly(['fromUid', 'displayName', 'friendCode', 'createdAt'])
+          && request.resource.data.fromUid == senderId
+          && request.resource.data.displayName == userName(senderId)
+          && request.resource.data.friendCode == get(/databases/$(database)/documents/users/$(senderId)).data.friendCode
+          && request.resource.data.createdAt is timestamp;
+        allow delete: if isSelf(userId) || isSelf(senderId);
+      }
+      match /friends/{friendId} {
+        allow read: if isSelf(userId);
+        allow create: if accepting(userId, friendId) && validFriend(request.resource.data);
+        allow update: if validFriend(request.resource.data)
+          && ((isSelf(userId) && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['notifyOnRunStart']))
+            || accepting(userId, friendId));
+        allow delete: if isSelf(userId) || isSelf(friendId);
+      }
+      match /inbox/{messageId} {
+        allow read, delete: if isSelf(userId);
+        allow create: if mutualFriend(userId) && validShare(request.resource.data, messageId);
+        allow update: if isSelf(userId)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
+          && request.resource.data.status in ['accepted', 'rejected'];
+      }
+      match /presence/{docId} {
+        allow get: if docId == 'activeRun' && (isSelf(userId)
+          || (mutualFriend(userId) && resource.data.updatedAt >= request.time - duration.value(2, 'm')));
+        allow create, update: if docId == 'activeRun' && isSelf(userId) && validPresence(request.resource.data);
+        allow delete: if isSelf(userId);
+      }
+      match /challenges/{monthKey} {
+        allow get: if isSelf(userId) || mutualFriend(userId);
+        allow create, update: if isSelf(userId)
+          && request.resource.data.keys().hasOnly(['challengeId', 'monthKey', 'displayName', 'count', 'goal', 'updatedAt'])
+          && request.resource.data.monthKey == monthKey
+          && request.resource.data.challengeId == 'pushups_1000'
+          && request.resource.data.count is int && request.resource.data.count >= 0
+          && request.resource.data.count <= 10000000 && request.resource.data.goal == 1000
+          && shortText(request.resource.data.displayName, 120)
+          && request.resource.data.updatedAt is timestamp;
+        allow delete: if isSelf(userId);
+      }
+    }
+    match /communityRuns/{runId} {
+      // Runs appear in the community map only after the owner opts in.
+      allow get, list: if signedIn();
+      allow create: if validCommunityRun(request.resource.data);
+      allow update: if signedIn() && resource.data.ownerUid == request.auth.uid
+        && request.resource.data.createdAt == resource.data.createdAt
+        && validCommunityRun(request.resource.data);
+      allow delete: if signedIn() && resource.data.ownerUid == request.auth.uid;
+    }
+    match /friendCodes/{code} {
+      allow get: if signedIn();
+      allow list: if false;
+      allow create: if signedIn() && request.resource.data.keys().hasOnly(['uid'])
+        && request.resource.data.uid == request.auth.uid && code.size() <= 32;
+      allow update: if signedIn() && request.resource.data.keys().hasOnly(['uid'])
+        && resource.data.uid == request.auth.uid && request.resource.data.uid == request.auth.uid;
+      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
+    }
+  }
+}

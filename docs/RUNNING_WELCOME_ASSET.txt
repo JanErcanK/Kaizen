@@ -1,0 +1,6 @@
+Asset: assets/running_welcome.png
+Created with: built-in image_gen tool, 2026-11-13.
+Bundled static artwork only. Workout muscle maps are drawn locally from exercise metadata and vector paths; they do not use image generation.
+
+Final generation prompt:
+Use case: photorealistic-natural. Asset type: background photograph for a mobile running app welcome panel. A lone runner photographed from behind, in dark forest-green sportswear, jogging away along a curving gravel park path in soft early morning sunshine, green trees and a hint of open sky. Inviting, peaceful and energetic, natural editorial sports photography. Wide landscape composition, runner on the right third, left half softly defocused greenery and light mist with ample negative space for UI text. Restrained sage green and warm cream palette. No text, no logos, no watermark. Save this project asset as running_welcome.png.

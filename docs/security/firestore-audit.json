@@ -1,0 +1,30 @@
+{
+  "score": 4,
+  "summary": "Local assessment, rechecked 2026-10-17. Original rules had critical location-read and unilateral-friendship flaws. Revised rules passed 19 official-emulator scenarios covering ownership, consent, mutual friendship, status/payload immutability and stale-location denial. Score describes local rules only, not production or the entire app; deployed rule state remains unknown.",
+  "findings": [
+    {
+      "check": "Authority source and identity-level security",
+      "severity": "critical",
+      "issue": "Original rules allowed unrelated authenticated users to read locations and create friendship edges. Fixed locally through recipient requests, atomic acceptance, consent versioning and mutual-friend checks; production deployment is unverified.",
+      "recommendation": "Deploy tested rules with upgraded clients. Reconfirm legacy connections rather than stamping old records as consented. Verify deployed behavior using isolated test users."
+    },
+    {
+      "check": "Resource exhaustion / abuse",
+      "severity": "minor",
+      "issue": "Major fields/lists are bounded, but anonymous users can create many identities and requests. No backend request quota, App Check enforcement or complete blocking/reporting workflow exists.",
+      "recommendation": "Add backend rate controls, reporting/blocking and monitoring before public rollout; evaluate App Check for this REST architecture."
+    },
+    {
+      "check": "Type safety and storage bounds",
+      "severity": "minor",
+      "issue": "Rules do not deeply validate every coordinate or ingredient/exercise map. Client validation rejects malformed imports and path coordinates, but accepted friends can still submit wasteful nested payloads within Firestore limits.",
+      "recommendation": "Consider backend-validated sharing or stricter schemas. Retain receiving-side validation regardless of rule hardening."
+    },
+    {
+      "check": "Business logic and lifecycle",
+      "severity": "minor",
+      "issue": "Stale friend reads are denied and normal stop deletes presence. Failed deletion can leave owner-readable data. Freshness depends on client clocks. Full cloud account/data deletion is missing.",
+      "recommendation": "Add server timestamps, verified retention/cleanup and account deletion. Verify clock skew and device lifecycle on two physical devices."
+    }
+  ]
+}

@@ -1,0 +1,1451 @@
+{
+  "@@locale": "de",
+  "appTitle": "Kaizen",
+  "common_ok": "OK",
+  "common_cancel": "Abbrechen",
+  "common_save": "Speichern",
+  "common_continue": "Weiter",
+  "common_delete": "Löschen",
+  "common_reset": "Reset",
+  "common_create": "Erstellen",
+  "common_add": "Hinzufügen",
+  "common_rename": "Umbenennen",
+  "common_close": "Schließen",
+  "common_skip": "Überspringen",
+  "common_done": "Fertig",
+  "common_filter": "Filter",
+  "common_info": "Info",
+  "common_search": "Suchen…",
+  "common_name": "Name",
+  "nav_home": "Home",
+  "nav_profile": "Profil",
+  "onboarding_welcomeTitle": "Willkommen bei Kaizen",
+  "onboarding_profileNameLabel": "Profilname",
+  "onboarding_profileNameHint": "Gib deinen Namen ein",
+  "onboarding_stepProfileTitle": "Lernen wir uns kennen",
+  "onboarding_stepProfileSubtitle": "Deine Daten helfen uns, deine Tagesziele zu berechnen.",
+  "onboarding_stepGoalTitle": "Was ist dein Ziel?",
+  "onboarding_stepGoalSubtitle": "Wir passen Kalorien und Makros entsprechend an.",
+  "onboarding_stepMacrosTitle": "Deine Tagesziele",
+  "onboarding_stepMacrosSubtitle": "Individuell für dich berechnet — jederzeit im Profil änderbar.",
+  "onboarding_stepScheduleTitle": "Dein Wochenplan",
+  "onboarding_stepScheduleSubtitle": "Wähle Trainingstage und optional Uhrzeiten. Leer lassen ist auch okay.",
+  "onboarding_stepScheduleLaterHint": "Du kannst deinen Wochenplan jederzeit unter Profil → Profil bearbeiten anpassen.",
+  "onboarding_skipSchedule": "Vorerst überspringen",
+  "onboarding_stepNotificationsTitle": "Dranbleiben",
+  "onboarding_stepNotificationsSubtitle": "Erinnerungen 15 Minuten vor jedem geplanten Training.",
+  "onboarding_stepMorningTitle": "Dein Morgen-Workout",
+  "onboarding_stepMorningSubtitle": "Stelle deine persönliche Morgenroutine zusammen — ideal einmal täglich am Morgen.",
+  "onboarding_enableNotifications": "Trainings-Erinnerungen aktivieren",
+  "onboarding_skipNotifications": "Später",
+  "onboarding_next": "Weiter",
+  "onboarding_finish": "Los geht's",
+  "onboarding_back": "Zurück",
+  "onboarding_morningSelected": "Ausgewählte Übungen",
+  "onboarding_morningPickFrom": "Aus Katalog hinzufügen",
+  "onboarding_morningTabStretch": "Dehnen / Yoga",
+  "onboarding_morningTabCalisthenics": "Calisthenics",
+  "onboarding_morningTabGym": "Fitnessstudio",
+  "onboarding_morningMinOne": "Mindestens eine Übung im Morgen-Workout behalten.",
+  "schedule_editorHint": "Tag antippen = Training. Auf die Uhr tippen für die Zeit — optional.",
+  "schedule_editorTitle": "Wochenplan",
+  "schedule_tapToEdit": "Tippen zum Bearbeiten",
+  "schedule_emptySummary": "Noch nichts geplant",
+  "schedule_activityGym": "Fitnessstudio",
+  "schedule_activityCalisthenics": "Körpergewicht",
+  "schedule_activityShortGym": "Gym",
+  "schedule_activityShortCalisthenics": "KG",
+  "schedule_activityShortRunning": "Lauf",
+  "schedule_activityShortStretch": "Dehn",
+  "profile_trainingReminders": "Trainings-Erinnerungen",
+  "profile_trainingRemindersSubtitle": "Benachrichtigung 15 Minuten vor geplanten Workouts",
+  "profile_fastingHud": "Intervallfasten",
+  "profile_fastingHudSubtitle": "Essensfenster-Timer auf dem Home Screen anzeigen",
+  "profile_waterTracking": "Wasser tracken",
+  "profile_waterTrackingSubtitle": "Wasser-Fortschrittsbalken auf dem Home Screen anzeigen",
+  "profile_waterGoal": "Tägliches Wasserziel",
+  "profile_waterGoalHint": "Empfehlung aus deinem Profil: {liters} L",
+  "@profile_waterGoalHint": {
+    "placeholders": {
+      "liters": {}
+    }
+  },
+  "fasting_setupTitle": "Essensfenster",
+  "fasting_setupSubtitle": "Ziehe den grünen Bereich, um dein Essensfenster festzulegen — morgens links bis abends rechts.",
+  "fasting_save": "Speichern",
+  "fasting_reminders": "Erinnerungen",
+  "fasting_remindersSubtitle": "15 Min. bevor du essen darfst, 30 Min. bevor das Fenster schließt",
+  "fasting_windowLabel": "Essensfenster",
+  "fasting_configureTap": "Tippen zum Einrichten",
+  "fasting_untilEating": "Essen in",
+  "fasting_untilEatingEnd": "Essen endet in",
+  "fasting_notificationOpenTitle": "Essensfenster bald offen",
+  "fasting_notificationOpenBody": "Du kannst ab {time} essen",
+  "@fasting_notificationOpenBody": {
+    "placeholders": {
+      "time": {}
+    }
+  },
+  "fasting_notificationCloseTitle": "Essensfenster endet bald",
+  "fasting_notificationCloseBody": "Essensfenster schließt um {time}",
+  "@fasting_notificationCloseBody": {
+    "placeholders": {
+      "time": {}
+    }
+  },
+  "fasting_notificationChannelName": "Fasten-Erinnerungen",
+  "fasting_notificationChannelDesc": "Erinnerungen vor Öffnen und Schließen des Essensfensters",
+  "schedule_activityNineMin": "9min",
+  "schedule_activityMorning": "Morgen",
+  "schedule_activityRunning": "Laufen",
+  "schedule_activityStretch": "Dehnen",
+  "schedule_editInProfile": "Wochenplan",
+  "notification_trainingReminderTitle": "Training bald",
+  "notification_trainingReminderBody": "{activity} in 15 Min · {time}",
+  "@notification_trainingReminderBody": {
+    "placeholders": {
+      "activity": {"type": "String"},
+      "time": {"type": "String"}
+    }
+  },
+  "notification_trainingChannelName": "Trainings-Erinnerungen",
+  "notification_trainingChannelDesc": "Erinnerungen vor geplanten Workouts",
+  "installHint_title": "Willkommen bei Kaizen",
+  "installHint_body": "Mit der kurzen App-Einweisung lernst du die wichtigsten Bereiche kennen. Du kannst sie überspringen und jederzeit erneut starten unter Profil → Einstellungen → App-Einweisung.",
+  "installHint_startTour": "Einweisung starten",
+  "installHint_gotIt": "Verstanden",
+  "start_featured": "FEATURED",
+  "start_categories": "KATEGORIEN",
+  "start_days": "TAGE",
+  "start_open": "Öffnen",
+  "start_heroPickGallery": "Aus Galerie wählen",
+  "start_heroTakePhoto": "Foto aufnehmen",
+  "start_heroResetDefault": "Auf Standard zurücksetzen",
+  "start_cameraGalleryError": "Kamera/Galerie konnte nicht geöffnet werden.",
+  "start_cameraGalleryErrorWithDetail": "Kamera/Galerie Fehler: {detail}",
+  "@start_cameraGalleryErrorWithDetail": {
+    "description": "Localized string for start_cameraGalleryErrorWithDetail",
+    "placeholders": {
+      "detail": {}
+    }
+  },
+  "start_imageSaveFailed": "Konnte Bild nicht speichern.",
+  "home_bodyViewRecovery": "Erholung",
+  "home_bodyViewAfterburn": "Nachbrennen",
+  "home_bodyViewTrained": "Trainiert",
+  "home_bodyViewOrgans": "Organe",
+  "home_bodyViewSkeleton": "Gelenke und Sehnen",
+  "home_bodyStillToTrain": "Diese Woche noch zu trainieren",
+  "home_statusRecoveryReady": "Alle Gruppen bereit",
+  "home_statusRecoveryRecovering": "{count} Gruppen in Erholung",
+  "@home_statusRecoveryRecovering": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "home_statusAfterburnNone": "Kein aktives Nachbrennen",
+  "home_statusAfterburnActive": "+{kcal} kcal Nachbrennen",
+  "@home_statusAfterburnActive": {
+    "placeholders": {
+      "kcal": { "type": "String" }
+    }
+  },
+  "home_statusTrainedComplete": "Ganzkörper abgedeckt",
+  "home_statusTrainedWeek": "{trained}/{total} Gruppen diese Woche",
+  "@home_statusTrainedWeek": {
+    "placeholders": {
+      "trained": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "home_statusTrainedPending": "{trained}/{total} Gruppen · offen: {muscles}",
+  "@home_statusTrainedPending": {
+    "placeholders": {
+      "trained": { "type": "int" },
+      "total": { "type": "int" },
+      "muscles": {}
+    }
+  },
+  "home_statusOrgansGood": "Ernährung im grünen Bereich",
+  "home_statusOrgansAttention": "{count} Organe brauchen Aufmerksamkeit",
+  "@home_statusOrgansAttention": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "home_statusJointsNone": "Noch kein Gelenk-Fokus",
+  "home_statusJointsStrengthened": "{count} Gelenke diese Woche",
+  "@home_statusJointsStrengthened": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "home_organRecommended": "Empfohlen",
+  "home_organGoodFoods": "Gut — letzte 30 Tage",
+  "home_organBadFoods": "Belastend — letzte 30 Tage",
+  "home_organStatusGood": "Gut versorgt",
+  "home_organStatusMixed": "Gemischt",
+  "home_organStatusCareful": "Achtung",
+  "home_organStatusNoData": "Noch keine Daten",
+  "home_organStatusGoodActive": "Grün aufleuchtend (24 Std.)",
+  "home_organGoodFoods24h": "Helfende Lebensmittel — letzte 24 Std.",
+  "home_organsHint": "Tippe ein Organ für Details.",
+  "home_bodyTabIntroRecoveryTitle": "Recovery",
+  "home_bodyTabIntroRecoveryBody": "Gelb zeigt trainierte Muskeln. Ein Muskel wird rot, wenn du ihn innerhalb von 24 Stunden in zwei mittleren Workouts direkt trainierst oder er bei drei mittleren Workouts mitarbeitet. Auch sechs direkte Gym-Sätze reichen aus. Rot hält ab dem auslösenden Workout 24 Stunden an. Die gelbe Markierung endet 48 Stunden nach dem letzten Training.",
+  "home_bodyTabIntroAfterburnTitle": "Nachbrennen",
+  "home_bodyTabIntroAfterburnBody": "Umrahmte Muskelgruppen verbrennen nach dem Training noch extra Kalorien (EPOC). Je intensiver das Training, desto länger hält das Nachbrennen an. Trainiere regelmäßig, um den Effekt zu nutzen.",
+  "home_bodyTabIntroTrainedTitle": "Trainiert",
+  "home_bodyTabIntroTrainedBody": "Blau markierte Muskelgruppen hast du diese Woche bereits trainiert. Unmarkierte Gruppen stehen noch aus — so behältst du einen ausgewogenen Wochenplan im Blick.",
+  "home_bodyTabIntroOrgansTitle": "Organe",
+  "home_bodyTabIntroOrgansBody": "Hier siehst du den Zustand deiner Organe anhand deiner Ernährung. Grün leuchtet ein Organ nur 24 Stunden, nachdem du ein helfendes Lebensmittel aufgenommen hast. Ernähre dich gesund und vielfältig — dann leuchten deine Organe grün auf. Tippe ein Organ für Details und Empfehlungen.",
+  "home_bodyTabIntroSkeletonTitle": "Skelett",
+  "home_bodyTabIntroSkeletonBody": "Grüne Gelenke hast du diese Woche durch passende Übungen gestärkt. Unmarkierte Gelenke brauchen noch Aufmerksamkeit — achte auf Mobilität und gezieltes Training.",
+  "home_skeletonHint": "Grüne Gelenke wurden diese Woche gestärkt.",
+  "home_jointTrainedThisWeek": "Diese Woche gestärkt",
+  "home_jointNotTrainedThisWeek": "Diese Woche nicht trainiert",
+  "home_muscleExercises": "Gute Übungen",
+  "home_muscleChest": "Brust",
+  "home_muscleBack": "Rücken",
+  "home_muscleShoulders": "Schultern",
+  "home_muscleBiceps": "Bizeps",
+  "home_muscleTriceps": "Trizeps",
+  "home_muscleAbs": "Bauch",
+  "home_muscleLegs": "Beine",
+  "home_muscleForearms": "Unterarme",
+  "home_muscleNeck": "Nacken",
+  "home_bodyRecoveryHint": "Innerhalb von 24 Stunden führen zwei mittlere Workouts mit direkter Belastung, drei mit Beteiligung oder sechs direkte Gym-Sätze zu Rot. Nach 24 Stunden wechselt Rot zu Gelb.",
+  "home_bodyAfterburnHint": "Ein blaues Leuchten um den Muskel zeigt, dass sein geschätztes Nachbrennfenster noch läuft.",
+  "home_bodyAfterburnTitle": "Nachbrennen bisher",
+  "home_bodyAfterburnKcalValue": "+{kcal} kcal",
+  "@home_bodyAfterburnKcalValue": {
+    "placeholders": {
+      "kcal": {
+        "type": "String"
+      }
+    }
+  },
+  "home_bodyLegendRecoveryRed": "Hohe Belastung <24h",
+  "home_bodyLegendRecoveryYellow": "Trainiert <48h",
+  "home_bodyLegendAfterburn": "Blaues Leuchten bei Nachbrennen",
+  "home_bodyStreakLabel": "STREAK",
+  "home_startIntro": "Einleitung starten",
+  "home_hudTodaysAnalytics": "Tagesanalyse",
+  "home_hudCubeDaily": "Tages",
+  "home_hudCubeAnalytics": "Analyse",
+  "home_hudSteps": "Schritte: {count}",
+  "@home_hudSteps": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "home_hudBurned": "Verbrannt: {kcal} kcal",
+  "@home_hudBurned": {
+    "placeholders": { "kcal": { "type": "int" } }
+  },
+  "home_hudDistanceRan": "Laufstrecke: {distance}",
+  "@home_hudDistanceRan": {
+    "placeholders": { "distance": {} }
+  },
+  "home_hudWorkouts": "Workouts: {count}",
+  "@home_hudWorkouts": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "home_hudCaloriesIn": "Kalorien aufgenommen: {kcal} kcal",
+  "@home_hudCaloriesIn": {
+    "placeholders": {
+      "kcal": { "type": "int" }
+    }
+  },
+  "home_hudProtein": "Protein: {grams}g",
+  "@home_hudProtein": {
+    "placeholders": {
+      "grams": { "type": "int" }
+    }
+  },
+  "home_hudCarbs": "Kohlenhydrate: {grams}g",
+  "@home_hudCarbs": {
+    "placeholders": {
+      "grams": { "type": "int" }
+    }
+  },
+  "home_hudFats": "Fette: {grams}g",
+  "@home_hudFats": {
+    "placeholders": {
+      "grams": { "type": "int" }
+    }
+  },
+  "home_hudRecoveryNoData": "Recovery: no data",
+  "home_hudRecovery": "Recovery: {sleep}, {quality}",
+  "@home_hudRecovery": {
+    "placeholders": { "sleep": {}, "quality": {} }
+  },
+  "home_hudSleepNone": "keine Schlafdaten",
+  "home_hudSleepDuration": "{hours}h {minutes}m Schlaf",
+  "@home_hudSleepDuration": {
+    "placeholders": {
+      "hours": { "type": "int" },
+      "minutes": { "type": "int" }
+    }
+  },
+  "home_hudSleepDurationHours": "{hours}h Schlaf",
+  "@home_hudSleepDurationHours": {
+    "placeholders": { "hours": { "type": "int" } }
+  },
+  "home_hudSleepDurationMinutes": "{minutes}m Schlaf",
+  "@home_hudSleepDurationMinutes": {
+    "placeholders": { "minutes": { "type": "int" } }
+  },
+  "home_hudSleepQualityBad": "schlechte Qualität",
+  "home_hudSleepQualityGood": "gute Qualität",
+  "home_hudSleepQualityPerfect": "perfekte Qualität",
+  "home_hudSummaryDoingWell": "Gut dabei diese Woche.",
+  "home_hudSummaryNoneToday": "Beweg dich heute noch.",
+  "home_hudSummaryOneToday": "Super! Mach weiter so.",
+  "home_hudSummaryTwoPlusToday": "Du bist unglaublich!",
+  "home_hudSummaryEatHealthy": "Gesund essen.",
+  "home_hudSummaryMoveToday": "Beweg deinen Körper heute.",
+  "home_hudSummaryStretchToday": "Du hast heute eine gute Dehn-Einheit gemacht, weiter so.",
+  "home_hudSummaryShortWorkoutToday": "Super gemacht! Du hast ein kurzes Workout absolviert.",
+  "home_hudSummaryRunToday": "Weiter so. Das war ein Super Lauf!",
+  "home_hudSummaryHardTrainingToday": "Du bist unglaublich!",
+  "home_hudTabRecoveryRest": "Ruhe heute deine {muscles} aus.",
+  "@home_hudTabRecoveryRest": {
+    "placeholders": { "muscles": { "type": "String" } }
+  },
+  "home_hudTabRecoveryAllReady": "Alle Gruppen bereit zum Trainieren.",
+  "home_hudTabAfterburnEpoc": "Berechnet via EPOC. Nachbrennen kann je nach Intensität bis zu {hours}h anhalten.",
+  "@home_hudTabAfterburnEpoc": {
+    "placeholders": { "hours": { "type": "int" } }
+  },
+  "home_hudTabAfterburnActive": "+{kcal} kcal verbrannt · noch {remaining}",
+  "@home_hudTabAfterburnActive": {
+    "placeholders": {
+      "kcal": { "type": "int" },
+      "remaining": { "type": "String" }
+    }
+  },
+  "home_hudTabAfterburnNone": "Aktuell kein Nachbrennen.",
+  "home_hudTabAfterburnUnknownRemaining": "noch aktiv",
+  "home_hudTabTrainedOpen": "Noch zu trainieren: {muscles}",
+  "@home_hudTabTrainedOpen": {
+    "placeholders": { "muscles": { "type": "String" } }
+  },
+  "home_hudTabTrainedComplete": "Alle Muskelgruppen diese Woche trainiert.",
+  "home_hudTabOrgansNeed": "Brauchen bessere Nährstoffe: {organs}",
+  "@home_hudTabOrgansNeed": {
+    "placeholders": { "organs": { "type": "String" } }
+  },
+  "home_hudTabOrgansAllGood": "Alle Organe gut versorgt.",
+  "home_hudTabOrgansEatToday": "Iss heute gesund.",
+  "home_hudTabJointsNeed": "Diese Woche noch stärken: {joints}",
+  "@home_hudTabJointsNeed": {
+    "placeholders": { "joints": { "type": "String" } }
+  },
+  "home_hudTabJointsAllDone": "Alle Gelenke diese Woche abgedeckt.",
+  "home_hudTabDurationHoursMinutes": "{hours}h {minutes}m",
+  "@home_hudTabDurationHoursMinutes": {
+    "placeholders": {
+      "hours": { "type": "int" },
+      "minutes": { "type": "int" }
+    }
+  },
+  "home_hudTabDurationHours": "{hours}h",
+  "@home_hudTabDurationHours": {
+    "placeholders": { "hours": { "type": "int" } }
+  },
+  "home_hudTabDurationMinutes": "{minutes}m",
+  "@home_hudTabDurationMinutes": {
+    "placeholders": { "minutes": { "type": "int" } }
+  },
+  "home_hudMuscleChest": "Brust",
+  "home_hudMuscleBack": "Rücken",
+  "home_hudMuscleShoulders": "Schultern",
+  "home_hudMuscleBiceps": "Bizeps",
+  "home_hudMuscleTriceps": "Trizeps",
+  "home_hudMuscleAbs": "Bauch",
+  "home_hudMuscleLegs": "Beine",
+  "home_hudMuscleForearms": "Unterarme",
+  "home_hudMuscleNeck": "Nacken",
+  "home_hudOrganBrain": "Gehirn",
+  "home_hudOrganHeart": "Herz",
+  "home_hudOrganLungs": "Lunge",
+  "home_hudOrganLiver": "Leber",
+  "home_hudOrganStomach": "Magen",
+  "home_hudOrganIntestines": "Darm",
+  "home_hudOrganKidneys": "Nieren",
+  "home_hudJointNeck": "Nacken",
+  "home_hudJointShoulders": "Schultern",
+  "home_hudJointElbows": "Ellbogen",
+  "home_hudJointWrists": "Handgelenke",
+  "home_hudJointSpine": "Wirbelsäule",
+  "home_hudJointHips": "Hüfte",
+  "home_hudJointKnees": "Knie",
+  "home_hudJointShins": "Schienbein",
+  "home_hudJointAnkles": "Sprunggelenk",
+  "home_bodyFront": "Vorne",
+  "home_bodyBack": "Hinten",
+  "category_9min_title": "9min",
+  "category_9min_description": "Ein kurzes Workout, das deinen ganzen Körper in kurzer Zeit aktiviert. Ideal als Aufwärmung oder Morgen-Workout.",
+  "category_hercules_title": "Optimiert für Läufer",
+  "category_hercules_description": "Stelle deine eigene Routine für Läufer zusammen. Standard enthält 9min, Dehnen und Extra-Übungen für Bein-Sehnen und Gelenke.",
+  "category_onlyStretch_title": "Dehnen",
+  "category_onlyStretch_description": "Eine kurze Dehnroutine für Menschen, die viel sitzen.",
+  "category_wakeup_title": "Ganzkörper Wake-Up",
+  "category_wakeup_description": "Festes Ganzkörper-Aktivierungsprogramm mit 20 Übungen. Mobilisierung, Kraft und Dehnung in ca. 20 Minuten.",
+  "category_gym_title": "Fitnessstudio",
+  "category_gym_description": "Erstelle eigene Workouts und trage sie täglich in dein Training ein.",
+  "category_calisthenics_title": "Körpergewicht",
+  "category_calisthenics_description": "Erstelle eigene Workouts und trage sie täglich in dein Training ein.",
+  "category_running_title": "Lauf",
+  "category_running_description": "Routen planen oder direkt starten — Distanz, Höhenmeter und Pace live tracken.",
+  "category_workout_title": "Workout",
+  "category_workout_description": "Gym, Calisthenics, Dehnen und Morgen-Workout — suchen, filtern und starten.",
+  "category_food_title": "Lebensmittel und Gerichte",
+  "category_food_description": "Erstelle eigene Gerichte und füge sie zu deiner Tagesbilanz hinzu, trage Lebensmittel direkt ein oder scanne sie einfach.",
+  "category_friends_title": "Freunde",
+  "category_friends_description": "Tritt in Challenges an und verfolge Freunde live auf der Laufkarte.",
+  "tour_stepMannequinTitle": "Dein Körper im Überblick",
+  "tour_stepMannequinDescription": "Das Körpermodell aktualisiert sich anhand deiner eingetragenen Workouts, Lebensmittel und Gerichte. Die Markierungen zeigen dir eine Einschätzung deiner Belastung, Ernährung und Erholung – so siehst du, welche Muskeln beansprucht wurden und wann sie voraussichtlich wieder erholt sind.",
+  "tour_stepWorkoutTitle": "Workout",
+  "tour_stepWorkoutDescription": "Hier liegen alle Workouts: 9 Min, Morning Workout, Dehnen, Fitnessstudio und Körpergewicht. Tippe rein, um zu suchen, eigene Workouts zu erstellen oder direkt zu starten.",
+  "tour_stepFriendsTitle": "Freunde",
+  "tour_stepFriendsDescription": "Tritt Challenges an und verfolge Freunde live auf der Laufkarte.",
+  "tour_step9minTitle": "9 Min Workout",
+  "tour_step9minDescription": "Ein kurzes Workout, das deinen ganzen Körper in kurzer Zeit aktiviert. Ideal als Aufwärmung oder Morgen-Workout.",
+  "tour_stepHerculesTitle": "Morning Workout",
+  "tour_stepHerculesDescription": "Dein Workout-Bereich: Stelle deine persönliche Morgenroutine zusammen. Standard enthält 9min und Dehnübungen sowie Extra-Übungen für Bein-Sehnen und Gelenke.",
+  "tour_stepOnlyStretchTitle": "Dehnen",
+  "tour_stepOnlyStretchDescription": "Eine kurze Dehnroutine für Menschen, die viel sitzen.",
+  "tour_stepGymTitle": "Fitnessstudio",
+  "tour_stepGymDescription": "Erstelle eigene Workouts und trage sie täglich in dein Training ein.",
+  "tour_stepCalisthenicsTitle": "Körpergewicht",
+  "tour_stepCalisthenicsDescription": "Erstelle eigene Workouts und trage sie täglich in dein Training ein.",
+  "tour_stepRunningTitle": "Laufen",
+  "tour_stepRunningDescription": "Erstelle eigene Laufstrecken und tracke deine Läufe live.",
+  "tour_stepFoodTitle": "Lebensmittel",
+  "tour_stepFoodDescription": "Suche Lebensmittel und füge sie direkt zu deiner Tagesbilanz hinzu – oder erstelle eine Mahlzeit und speichere sie.",
+  "tour_stepShoppingTitle": "Dein Einkaufszettel",
+  "tour_stepShoppingDescription": "Über den kleinen Zettel öffnest du deine Einkaufsliste. Sammle Lebensmittel mit Mengenangaben, hake Einkäufe ab und speichere Listen für später.",
+  "tour_stepMetabolicTitle": "Tages-Nährwerte",
+  "tour_stepMetabolicDescription": "Dein persönliches Kalorien- und Makroziel basierend auf Profil und Aktivität. Sieh hier, wie viel du heute schon gegessen hast.",
+  "tour_stepCalendarTitle": "Workout-Kalender",
+  "tour_stepCalendarDescription": "Alle absolvierten Workouts im Monatsüberblick. Tippe einen Tag für Details oder die 30-Tage-Zusammenfassung unten rechts.",
+  "tour_stepGalleryTitle": "Fortschritts-Galerie",
+  "tour_stepGalleryDescription": "Speichere Fortschrittsfotos und vergleiche deine Entwicklung über Wochen und Monate hinweg.",
+  "tour_stepWeightTitle": "Gewichtstracking",
+  "tour_stepWeightDescription": "Hier siehst du dein aktuelles Gewicht. Mit dem Plus-Button trägst du dein heutiges Gewicht ein.",
+  "tour_stepHealthTitle": "Deine Gesundheit",
+  "tour_stepHealthDescription": "Diese Karte vereint deine Trainings-, Ernährungs- und Gesundheitsverläufe. Wähle oben einen Wert und 7 oder 28 Tage; tippe im Graphen auf einen Tag für Details. Über das Info-Symbol kannst du Apple Health oder Health Connect verbinden und deine Freigaben verwalten.",
+  "tour_stepLevelingTitle": "Level & Abzeichen",
+  "tour_stepLevelingDescription": "Ganz oben findest du dein Profil, dein Level und deine Körperdaten. Mit abgeschlossenen Workouts und Trainingsserien sammelst du Levels. Tippe auf den Pokal, um deine Abzeichen und Erfolge anzusehen.",
+  "tour_progress": "{current} / {total}",
+  "@tour_progress": {
+    "description": "Localized string for tour_progress",
+    "placeholders": {
+      "current": {},
+      "total": {}
+    }
+  },
+  "profile_settingsTooltip": "Einstellungen",
+  "profile_metabolicTarget": "METABOLIC TARGET",
+  "profile_analytics": "ANALYTICS",
+  "profile_steps": "SCHRITTE",
+  "profile_sleep": "SCHLAF",
+  "profile_sleepLastNight": "Letzte Nacht",
+  "profile_editProfile": "Profil bearbeiten",
+  "profile_settings": "Einstellungen",
+  "profile_settingsSectionFeatures": "Funktionen",
+  "profile_settingsSectionSystem": "App & System",
+  "profile_pinLevelIcon": "Rang-Icon zum Startbildschirm hinzufügen",
+  "profile_pinLevelIconHint": "Öffnet Kaizen und zeigt deinen aktuellen Rang.",
+  "profile_pinLevelIconUnavailable": "Halte eine freie Stelle auf dem Startbildschirm gedrückt und wähle unter Widgets „Kaizen-Rang“.",
+  "profile_appTour": "App-Einweisung",
+  "profile_appTourSubtitle": "Interaktive Tour durch alle Bereiche der App",
+  "profile_syncSteps": "Schritte synchronisieren",
+  "profile_syncStepsSubtitle": "Apple Health / Health Connect verbinden",
+  "profile_syncSleep": "Schlaf synchronisieren",
+  "profile_syncSleepSubtitle": "Schlaf der letzten Nacht aus Apple Health / Health Connect importieren",
+  "profile_workoutVoice": "Workoutstimme",
+  "profile_workoutVoiceSubtitle": "Sprachansagen während des Trainings",
+  "profile_workoutVoiceGenderTitle": "Stimmtyp",
+  "profile_workoutVoiceGenderSubtitle": "Weibliche oder männliche Stimme für Workouts und Laufen",
+  "profile_workoutVoiceFemale": "Weiblich",
+  "profile_workoutVoiceMale": "Männlich",
+  "profile_workoutVoiceSystem": "Systemstandard",
+  "profile_workoutVoicePreview": "Stimme testen",
+  "profile_lightMode": "Hellmodus",
+  "profile_lightModeSubtitle": "Eingeschaltet: helle Oberflächen. Aus: bisheriges dunkles Design.",
+  "settings_languageTitle": "Deutsche Sprache",
+  "settings_languageSubtitle": "Ein: Deutsch. Aus: Englisch.",
+  "profile_gallery": "Deine Galerie",
+  "profile_updateWeight": "Gewicht aktualisieren",
+  "profile_weightKgLabel": "Gewicht (kg)",
+  "profile_weightHint": "z. B. 72.5",
+  "profile_updated": "Profil aktualisiert.",
+  "profile_dailyCalorieGoal": "Kalorien heute",
+  "profile_kcalGoal": "KCAL ZIEL",
+  "profile_today": "HEUTE",
+  "profile_todayWithPercent": "HEUTE · {percent}%",
+  "@profile_todayWithPercent": {
+    "description": "Localized string for profile_todayWithPercent",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_protein": "PROTEIN",
+  "profile_carbs": "CARBOHYDRATES",
+  "profile_fats": "FATS",
+  "profile_macroProteinShort": "Eiweiß",
+  "profile_macroFatShort": "Fett",
+  "profile_macroSummary": "E {protein} g · KH {carbs} g · F {fats} g",
+  "@profile_macroSummary": {
+    "description": "Localized string for profile_macroSummary",
+    "placeholders": {
+      "protein": {},
+      "carbs": {},
+      "fats": {}
+    }
+  },
+  "profile_kcalBurned": "kcal verbrannt",
+  "profile_workoutsKcal": "Workouts: {kcal} kcal",
+  "@profile_workoutsKcal": {
+    "description": "Localized string for profile_workoutsKcal",
+    "placeholders": {
+      "kcal": {}
+    }
+  },
+  "profile_stepsKcal": "Schritte: {count} · {kcal} kcal",
+  "@profile_stepsKcal": {
+    "description": "Localized string for profile_stepsKcal",
+    "placeholders": {
+      "count": {},
+      "kcal": {}
+    }
+  },
+  "profile_stepsKcalNoData": "Schritte: {kcal} kcal (keine Schrittdaten)",
+  "@profile_stepsKcalNoData": {
+    "description": "Localized string for profile_stepsKcalNoData",
+    "placeholders": {
+      "kcal": {}
+    }
+  },
+  "profile_dishEntry": "Gericht  •  {time}",
+  "@profile_dishEntry": {
+    "description": "Localized string for profile_dishEntry",
+    "placeholders": {
+      "time": {}
+    }
+  },
+  "profile_editTitle": "Profil bearbeiten",
+  "profile_nameLabel": "Name",
+  "profile_ageLabel": "Alter",
+  "profile_heightLabel": "Größe (cm)",
+  "profile_weightLabel": "Gewicht (kg)",
+  "profile_bodyFatLabel": "Fettanteil (%)",
+  "profile_muscleMassLabel": "Muskelmasse (kg)",
+  "profile_boneWeightLabel": "Knochengewicht (kg)",
+  "profile_genderLabel": "Geschlecht",
+  "profile_activityLabel": "Aktivität",
+  "profile_goalLabel": "Ziel",
+  "profile_biometricSummary": "{height} · {weight} · {age} J · {gender}",
+  "@profile_biometricSummary": {
+    "description": "Biometric summary line on profile",
+    "placeholders": {
+      "height": {},
+      "weight": {},
+      "age": {},
+      "gender": {}
+    }
+  },
+  "profile_foodEntryGrams": "{grams} g · {time}",
+  "@profile_foodEntryGrams": {
+    "description": "Food log entry with grams and time",
+    "placeholders": {
+      "grams": {},
+      "time": {}
+    }
+  },
+  "gender_male": "Male",
+  "gender_female": "Female",
+  "activity_sedentary": "Sitzend",
+  "activity_light": "Leicht",
+  "activity_moderate": "Moderat",
+  "activity_high": "Hoch",
+  "activity_athlete": "Athlet",
+  "goal_lose": "Cut",
+  "goal_maintain": "Maintain",
+  "goal_gain": "Bulk",
+  "validation_nameRequired": "Bitte einen Profilnamen eingeben.",
+  "validation_ageRequired": "Bitte ein Alter eingeben.",
+  "validation_heightRequired": "Bitte eine Größe eingeben.",
+  "validation_weightRequired": "Bitte ein Gewicht eingeben.",
+  "validation_ageInvalid": "Bitte ein gültiges Alter eingeben.",
+  "validation_heightInvalid": "Bitte eine gültige Größe in cm eingeben.",
+  "validation_weightInvalid": "Bitte ein gültiges Gewicht in kg eingeben.",
+  "validation_bodyFatInvalid": "Bitte einen realistischen Fettanteil eingeben.",
+  "validation_muscleMassInvalid": "Bitte eine gültige Muskelmasse eingeben.",
+  "validation_boneWeightInvalid": "Bitte ein gültiges Knochengewicht eingeben.",
+  "avatar_mobileOnly": "Avatar-Upload ist aktuell nur auf dem Handy aktiv.",
+  "avatar_takePhoto": "Foto aufnehmen",
+  "avatar_pickGallery": "Aus Galerie wählen",
+  "avatar_remove": "Avatar entfernen",
+  "avatar_saveFailed": "Konnte Avatar nicht speichern.",
+  "month_january": "Januar",
+  "month_february": "Februar",
+  "month_march": "März",
+  "month_april": "April",
+  "month_may": "Mai",
+  "month_june": "Juni",
+  "month_july": "Juli",
+  "month_august": "August",
+  "month_september": "September",
+  "month_october": "Oktober",
+  "month_november": "November",
+  "month_december": "Dezember",
+  "weekday_mon": "Mo",
+  "weekday_tue": "Di",
+  "weekday_wed": "Mi",
+  "weekday_thu": "Do",
+  "weekday_fri": "Fr",
+  "weekday_sat": "Sa",
+  "weekday_sun": "So",
+  "calendar_nutritionAvg": "ERNÄHRUNG (Ø pro Tag)",
+  "calendar_workouts": "WORKOUTS",
+  "calendar_noWorkoutsPeriod": "Keine Workouts in diesem Zeitraum.",
+  "calendar_noWorkoutsDay": "Keine Workouts an diesem Tag.",
+  "calendar_consumption": "VERBRAUCH",
+  "calendar_nutrition": "ERNÄHRUNG",
+  "calendar_noMealsDay": "Keine Mahlzeiten an diesem Tag.",
+  "calendar_feelingEmpty": "Feeling: --",
+  "calendar_feelingSaved": "Feeling gespeichert",
+  "calendar_hint": "Punkte = Workout-Typ. Tippe einen Tag für Details.",
+  "calendar_workoutType9min": "9 Min",
+  "calendar_workoutTypeHercules": "Morning Workout",
+  "calendar_workoutTypeStretch": "Stretch / Yoga",
+  "calendar_workoutTypeGym": "Gym",
+  "calendar_workoutTypeCalisthenics": "Calisthenics",
+  "calendar_workoutTypeRun": "Lauf",
+  "calendar_workoutTypeLegacy": "Training",
+  "calendar_calorieBreakdown": "{label} · {kcal} kcal",
+  "@calendar_calorieBreakdown": {
+    "description": "Localized string for calendar_calorieBreakdown",
+    "placeholders": {
+      "label": {},
+      "kcal": {}
+    }
+  },
+  "calendar_30DaySummary": "30-Tage Zusammenfassung",
+  "calendar_streakDays": "{count} Tage Streak",
+  "@calendar_streakDays": {
+    "description": "Workout streak badge on calendar",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendar_workoutsInLastDays": "{count} Workouts in den letzten {days} Tagen",
+  "@calendar_workoutsInLastDays": {
+    "description": "Workout count in 30-day summary",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "calendar_kcalBurnedSuffix": " · {kcal} kcal verbrannt",
+  "@calendar_kcalBurnedSuffix": {
+    "description": "Optional kcal suffix for workout summary",
+    "placeholders": {
+      "kcal": {
+        "type": "int"
+      }
+    }
+  },
+  "steps_unavailableDevice": "Schritte sind auf diesem Gerät nicht verfügbar.",
+  "steps_connectHint": "Tippe auf Verbinden, um Apple Health oder Health Connect freizugeben.",
+  "steps_loadFailed": "Schritte konnten nicht geladen werden.",
+  "steps_loadedToday": "Heute: {count} Schritte geladen",
+  "@steps_loadedToday": {
+    "description": "Localized string for steps_loadedToday",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "steps_todaySnack": "Heute: {count} Schritte",
+  "@steps_todaySnack": {
+    "description": "Localized string for steps_todaySnack",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "steps_appleHealth": "Apple Health",
+  "steps_healthConnect": "Health Connect",
+  "steps_notAvailable": "Nicht verfügbar",
+  "steps_notSynced": "Noch nicht synchronisiert",
+  "steps_updatedAt": "Aktualisiert um {time}",
+  "@steps_updatedAt": {
+    "description": "Localized string for steps_updatedAt",
+    "placeholders": {
+      "time": {}
+    }
+  },
+  "steps_connect": "Verbinden",
+  "steps_refresh": "Aktualisieren",
+  "steps_label": "Schritte",
+  "steps_mobileOnly": "Nur auf iPhone und Android verfügbar",
+  "steps_wearablesHint": "Fitbit, Garmin und Samsung Health können über Health Connect verbunden werden.",
+  "sleep_unavailableDevice": "Schlaftracking ist auf diesem Gerät nicht verfügbar.",
+  "sleep_connectHint": "Tippe auf Verbinden, um Apple Health oder Health Connect für Schlaf freizugeben.",
+  "sleep_loadFailed": "Schlafdaten konnten nicht geladen werden.",
+  "sleep_loadedLastNight": "Letzte Nacht: {duration} geladen",
+  "@sleep_loadedLastNight": {
+    "description": "Localized string for sleep_loadedLastNight",
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "sleep_durationHoursMinutes": "{hours}h {minutes}m",
+  "@sleep_durationHoursMinutes": {
+    "placeholders": {
+      "hours": { "type": "int" },
+      "minutes": { "type": "int" }
+    }
+  },
+  "sleep_durationHours": "{hours}h",
+  "@sleep_durationHours": {
+    "placeholders": {
+      "hours": { "type": "int" }
+    }
+  },
+  "sleep_durationMinutes": "{minutes}m",
+  "@sleep_durationMinutes": {
+    "placeholders": {
+      "minutes": { "type": "int" }
+    }
+  },
+  "sleep_mobileOnly": "Nur auf iPhone und Android verfügbar",
+  "home_statusSleepNone": "Keine Schlafdaten synchronisiert",
+  "home_statusSleepLastNight": "{hours}h {minutes}m Schlaf letzte Nacht",
+  "@home_statusSleepLastNight": {
+    "placeholders": {
+      "hours": { "type": "int" },
+      "minutes": { "type": "int" }
+    }
+  },
+  "home_statusSleepHours": "{hours}h Schlaf letzte Nacht",
+  "@home_statusSleepHours": {
+    "placeholders": {
+      "hours": { "type": "int" }
+    }
+  },
+  "home_statusSleepMinutes": "{minutes}m Schlaf letzte Nacht",
+  "@home_statusSleepMinutes": {
+    "placeholders": {
+      "minutes": { "type": "int" }
+    }
+  },
+  "health_stepsUnsupported": "Schritte sind nur auf iPhone und Android verfügbar.",
+  "health_stepsPermissionConnect": "Verbinde Apple Health oder Health Connect, um Schritte zu laden.",
+  "health_stepsPermissionDenied": "Berechtigung abgelehnt. In den System-Einstellungen kannst du Apple Health bzw. Health Connect erneut freigeben.",
+  "health_connectNotInstalled": "Health Connect ist nicht installiert. Bitte aus dem Play Store installieren und Fitbit/Garmin/Samsung dort verbinden.",
+  "analytics_weight": "Gewicht",
+  "analytics_steps": "Schritte",
+  "analytics_calories": "Kalorien",
+  "analytics_burn": "Verbrauch",
+  "analytics_water": "Wasser",
+  "analytics_afterburn": "Nachbrennen",
+  "analytics_protein": "Protein",
+  "analytics_fat": "Fett",
+  "analytics_carbs": "Carbs",
+  "analytics_workouts": "Workouts",
+  "analytics_emptyWeight": "Gewicht eintragen, um den Verlauf zu sehen.",
+  "analytics_emptySteps": "Schritte synchronisieren, um die Aktivität zu sehen.",
+  "analytics_emptyCalories": "Noch keine Kalorien in den letzten 30 Tagen.",
+  "analytics_emptyBurn": "Noch kein Verbrauch in den letzten 30 Tagen.",
+  "analytics_emptyWater": "Noch kein Wasser in den letzten 30 Tagen.",
+  "analytics_emptyAfterburn": "Noch kein Nachbrennen in den letzten 30 Tagen.",
+  "analytics_emptyProtein": "Noch kein Protein in den letzten 30 Tagen.",
+  "analytics_emptyFat": "Noch kein Fett in den letzten 30 Tagen.",
+  "analytics_emptyCarbs": "Noch keine Carbs in den letzten 30 Tagen.",
+  "analytics_emptyWorkouts": "Noch keine Workouts in den letzten 30 Tagen.",
+  "analytics_unitKg": "kg",
+  "analytics_unitKcal": "kcal",
+  "analytics_unitMl": "ml",
+  "analytics_unitG": "g",
+  "analytics_addWeightHint": "Gewicht eintragen, um den Verlauf zu sehen.",
+  "achievements_levelingSystem": "Leveling System",
+  "achievements_noXp": "Hier sammelst du keine XP, sondern direkt Level.",
+  "achievements_levelPerWorkout": "Level pro Workout",
+  "achievements_onlyStretch": "Only Stretch",
+  "achievements_nineMin": "9 Min Workout",
+  "achievements_hercules": "Morning Workout",
+  "achievements_gymWorkout": "Gym Workout",
+  "achievements_caliWorkout": "Calisthenics Workout",
+  "achievements_levelPlus": "+{count} Level",
+  "@achievements_levelPlus": {
+    "description": "Localized string for achievements_levelPlus",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "achievements_streakBonus": "Streak-Bonus (einmalig beim Erreichen)",
+  "achievements_streak10": "10 Tage",
+  "achievements_streak30": "30 Tage",
+  "achievements_streak100": "100 Tage",
+  "achievements_streak365": "365 Tage",
+  "achievements_streak1000": "1000 Tage",
+  "achievements_gymCaliHint": "Hinweis: Gym/Calisthenics zählen, wenn du im Workout-Detail oben auf das Häkchen „Workout abgeschlossen“ tippst.",
+  "achievements_milestones": "Milestones",
+  "achievements_streaks": "Streaks",
+  "achievements_earnedCount": "{earned} / {total} Earned",
+  "@achievements_earnedCount": {
+    "description": "Localized string for achievements_earnedCount",
+    "placeholders": {
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "achievements_coreLevel": "CORE LEVEL",
+  "achievements_level": "Level {level}",
+  "@achievements_level": {
+    "description": "Localized string for achievements_level",
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "achievements_rank": "Rank: {rank}",
+  "@achievements_rank": {
+    "description": "Localized string for achievements_rank",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "achievements_toNextMilestone": "to next milestone",
+  "achievements_nextMilestone": "Next milestone: Level {level}",
+  "@achievements_nextMilestone": {
+    "description": "Localized string for achievements_nextMilestone",
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "achievements_specializations": "Specializations",
+  "achievements_gym": "Gym",
+  "achievements_calisthenics": "Calisthenics",
+  "rank_rookie": "Rookie",
+  "rank_student": "Student",
+  "rank_trainee": "Trainee",
+  "rank_performer": "Performer",
+  "rank_profi": "Profi",
+  "rank_athlet": "Athlet",
+  "rank_krieger": "Krieger",
+  "rank_elite": "Elite",
+  "rank_champion": "Champion",
+  "rank_goat": "GOAT",
+  "rank_halbgott": "Halbgott",
+  "badge_level0_title": "Rookie",
+  "badge_level0_subtitle": "Level 0",
+  "badge_level20_title": "Student",
+  "badge_level20_subtitle": "Level 20",
+  "badge_level50_title": "Trainee",
+  "badge_level50_subtitle": "Level 50",
+  "badge_level100_title": "Performer",
+  "badge_level100_subtitle": "Level 100",
+  "badge_level300_title": "Profi",
+  "badge_level300_subtitle": "Level 300",
+  "badge_level500_title": "Athlet",
+  "badge_level500_subtitle": "Level 500",
+  "badge_level1000_title": "Krieger",
+  "badge_level1000_subtitle": "Level 1000",
+  "badge_level2500_title": "Elite",
+  "badge_level2500_subtitle": "Level 2500",
+  "badge_level5000_title": "Champion",
+  "badge_level5000_subtitle": "Level 5000",
+  "badge_level7500_title": "GOAT",
+  "badge_level7500_subtitle": "Level 7500",
+  "badge_level10000_title": "Halbgott",
+  "badge_level10000_subtitle": "Level 10000",
+  "badge_streak30_title": "Disziplin",
+  "badge_streak30_subtitle": "30 Tage Streak",
+  "badge_streak100_title": "Eiserne Disziplin",
+  "badge_streak100_subtitle": "100 Tage Streak",
+  "badge_streak365_title": "Krieger Mentalität",
+  "badge_streak365_subtitle": "365 Tage Streak",
+  "badge_streak500_title": "Titan",
+  "badge_streak500_subtitle": "500 Tage Streak",
+  "badge_streak1000_title": "Halbgott Mentalität",
+  "badge_streak1000_subtitle": "1000 Tage Streak",
+  "badge_gym50_title": "Gym Junior",
+  "badge_gym50_subtitle": "50 Gym Workouts",
+  "badge_gym100_title": "Gym Profi",
+  "badge_gym100_subtitle": "100 Gym Workouts",
+  "badge_gym500_title": "Bodybuilding Junior",
+  "badge_gym500_subtitle": "500 Gym Workouts",
+  "badge_gym1000_title": "Bodybuilder",
+  "badge_gym1000_subtitle": "1000 Gym Workouts",
+  "badge_cali50_title": "Calisthenics Junior",
+  "badge_cali50_subtitle": "50 Calisthenics Workouts",
+  "badge_cali100_title": "Calisthenics Profi",
+  "badge_cali100_subtitle": "100 Calisthenics Workouts",
+  "badge_cali500_title": "Bodyweight Junior",
+  "badge_cali500_subtitle": "500 Calisthenics Workouts",
+  "badge_cali1000_title": "Bodyweight Master",
+  "badge_cali1000_subtitle": "1000 Calisthenics Workouts",
+  "gallery_mobileOnly": "Galerie ist aktuell nur auf dem Handy aktiv.",
+  "gallery_saveFailed": "Konnte Foto nicht speichern.",
+  "gallery_title": "Galerie",
+  "gallery_empty": "Noch keine Fotos.\nTippe auf + um ein Foto zu machen.",
+  "food_tabFoods": "Lebensmittel",
+  "food_tabDishes": "Gerichte",
+  "food_tabSupplements": "Supplements",
+  "food_supplementsSearchHint": "Supplements suchen…",
+  "food_supplementsEmpty": "Heute noch keine Supplements eingetragen.",
+  "food_supplementsToday": "Heute",
+  "food_supplementMg": "{mg} mg",
+  "@food_supplementMg": {
+    "placeholders": {
+      "mg": {}
+    }
+  },
+  "food_supplementAddTitle": "Supplement hinzufügen",
+  "food_supplementAmountLabel": "Menge (mg)",
+  "food_supplementSlotMorning": "Morgens",
+  "food_supplementSlotMidday": "Mittags",
+  "food_supplementSlotEvening": "Abends",
+  "food_supplementSlotLabel": "Tageszeit",
+  "food_supplementDragHint": "Karte lange drücken und nach Morgens, Mittags oder Abends ziehen.",
+  "food_supplementDropHere": "Hier ablegen",
+  "food_searchHint": "Nach Lebensmittel oder Tag suchen",
+  "food_newDish": "Neues Gericht",
+  "food_dishPhotoAction": "Gerichtsfoto wählen",
+  "food_dishesSearchHint": "Gerichte suchen…",
+  "food_dishNoIngredients": "Gericht hat noch keine Zutaten.",
+  "food_dishAddedToday": "\"{name}\" zum heutigen Tag hinzugefügt.",
+  "@food_dishAddedToday": {
+    "description": "Localized string for food_dishAddedToday",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "food_deleteDishTitle": "Gericht löschen?",
+  "food_deleteDishBody": "\"{name}\" wird unwiderruflich gelöscht.",
+  "@food_deleteDishBody": {
+    "description": "Localized string for food_deleteDishBody",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "food_enterGramsMacros": "Bitte Gramm und Makros eingeben.",
+  "food_macroProtein": "Protein",
+  "food_macroCarbs": "KH",
+  "food_macroFat": "Fett",
+  "food_macroKcal": "kcal",
+  "food_dishNameHint": "z. B. Frühstücks-Bowl",
+  "food_newDishTitle": "Neues Gericht",
+  "food_macrosHeading": "Makros",
+  "food_noFoodsFound": "Keine Lebensmittel gefunden",
+  "food_foodCount": "{count} Lebensmittel",
+  "@food_foodCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "food_macroAll": "Alle",
+  "food_focusNeverEat": "Nie essen",
+  "food_focusHealthyBrain": "Gehirngesund",
+  "food_macroCarbsLong": "Kohlenhydrate",
+  "food_kcalPer100g": "{kcal} kcal / 100 g",
+  "@food_kcalPer100g": {
+    "placeholders": {
+      "kcal": {}
+    }
+  },
+  "food_renameDishTitle": "Gericht umbenennen",
+  "food_dishNotFound": "Gericht nicht gefunden",
+  "food_dishFallback": "Gericht",
+  "food_addedToDish": "{name} ({grams} g) hinzugefügt.",
+  "@food_addedToDish": {
+    "placeholders": {
+      "name": {},
+      "grams": {}
+    }
+  },
+  "food_addedToTodayFull": "{name} ({grams} g) zum heutigen Tag hinzugefügt.",
+  "@food_addedToTodayFull": {
+    "placeholders": {
+      "name": {},
+      "grams": {}
+    }
+  },
+  "food_eatToday": "Heute essen",
+  "food_addToDishBtn": "Zum Gericht",
+  "food_per100g": "Pro 100 g",
+  "food_amount": "Menge",
+  "food_forGrams": "Für {grams} g",
+  "@food_forGrams": {
+    "placeholders": {
+      "grams": {}
+    }
+  },
+  "food_macrosNotStored": "Makros nicht hinterlegt",
+  "food_macrosManualHint": "Gib die Makros pro 100 g manuell ein, um dieses Lebensmittel zu einem Gericht hinzuzufügen.",
+  "food_ingredientFood": "Lebensmittel",
+  "food_emptyDishesTitle": "Noch keine Gerichte",
+  "food_emptyDishesBody": "Erstelle dein erstes Gericht, um Mahlzeiten zu kombinieren.",
+  "food_pickIngredientTitle": "Lebensmittel auswählen",
+  "food_manualEntry": "manuell",
+  "food_whichDish": "Zu welchem Gericht?",
+  "food_newDishEllipsis": "Neues Gericht…",
+  "food_removeFromDish": "Aus Gericht entfernen",
+  "food_barcodeScanTitle": "Barcode scannen",
+  "food_barcodeScanHint": "Barcode in den Rahmen halten",
+  "food_barcodeDesktopHint": "Barcode-Scanner ist auf dem Handy verfügbar. Gib den Barcode hier manuell ein.",
+  "food_barcodeManualLabel": "Barcode eingeben",
+  "food_barcodeManualHint": "z. B. 4008400407321",
+  "food_barcodeLookupBtn": "Produkt suchen",
+  "food_barcodeLookingUp": "Produkt wird gesucht…",
+  "food_barcodeNotFound": "Produkt nicht in Open Food Facts gefunden.",
+  "food_scannedProduct": "Gescanntes Produkt",
+  "food_barcodeValue": "Barcode: {code}",
+  "@food_barcodeValue": {
+    "placeholders": {
+      "code": {}
+    }
+  },
+  "muscleExercise_emptyGym": "Keine Gym-Übungen für diesen Muskel hinterlegt.",
+  "muscleExercise_emptyCalisthenics": "Keine Calisthenics-Übungen für diesen Muskel hinterlegt.",
+  "strength_setsLabel": "Sätze",
+  "strength_repsLabel": "Wiederholungen",
+  "strength_sectionMyWorkouts": "Meine Workouts",
+  "strength_sectionPresetWorkouts": "Vorgefertigte Workouts",
+  "strength_renameWorkoutTitle": "Namen ändern",
+  "strength_deleteWorkoutTitle": "Workout löschen?",
+  "strength_deleteWorkoutBody": "Dieses Workout wird dauerhaft gelöscht.",
+  "strength_deleteWorkoutMenu": "Workout löschen",
+  "strength_exerciseCount": "{count} Übungen",
+  "@strength_exerciseCount": {
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "strength_addToWorkoutTooltip": "Zum Workout hinzufügen",
+  "strength_workoutFallback": "Workout",
+  "cali_skillsHeading": "SKILLS",
+  "gym_tabExercises": "Übungen",
+  "gym_tabWorkouts": "Workouts",
+  "gym_addToLastWorkout": "Zum letzten Workout hinzufügen",
+  "gym_noWorkoutYet": "Noch kein Workout erstellt.",
+  "gym_addWorkout": "Workout hinzufügen",
+  "gym_addToWorkoutTitle": "Zu Workout hinzufügen",
+  "gym_noWorkoutsCreated": "Du hast noch keine Workouts erstellt.",
+  "gym_newWorkout": "Neues Workout",
+  "gym_createNewWorkout": "Neues Workout erstellen",
+  "gym_exerciseAdded": "Übung hinzugefügt.",
+  "gym_workoutNotFound": "Workout nicht gefunden.",
+  "gym_defaultWorkoutName": "My Workout",
+  "cali_tabExercises": "Übungen",
+  "cali_tabWorkouts": "Workouts",
+  "cali_skillProgramsIntro": "Hier kommen später mehrere Workouts/Programme hin, die dich Schritt für Schritt zu dieser Königsübung bringen.",
+  "cali_programBeginner": "Beginner Program",
+  "cali_programBeginnerSub": "Basics + Technik + Mobilität",
+  "cali_programIntermediate": "Intermediate Program",
+  "cali_programIntermediateSub": "Progressions + Kraftaufbau",
+  "cali_programAdvanced": "Advanced Program",
+  "cali_programAdvancedSub": "Skills + Volumen + Intensität",
+  "cali_programPlaceholder": "Wichtig: Diese Seite ist schon verlinkt, damit die Struktur steht. Als nächstes füllen wir sie mit echten Workouts und speichern sie wie beim Gym/Cali Workout Builder.",
+  "categoryDetail_startWorkout": "Workout starten",
+  "categoryDetail_exerciseCountDuration": "{count} Übungen · Gesamtzeit: {duration}",
+  "@categoryDetail_exerciseCountDuration": {
+    "description": "Localized string for categoryDetail_exerciseCountDuration",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "duration": {}
+    }
+  },
+  "categoryDetail_secondsDefaultHint": "Standard: 30s. Tippe auf die Sekunden, um sie zu ändern.",
+  "categoryDetail_durationMinSec": "{minutes} Min {seconds} Sek",
+  "@categoryDetail_durationMinSec": {
+    "description": "Localized string for categoryDetail_durationMinSec",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "seconds": {}
+    }
+  },
+  "categoryDetail_heading9min": "9 Min Workout",
+  "categoryDetail_info9min": "Hier kannst du die Zeiten selber anpassen, indem du auf die grünen 30s klickst.",
+  "categoryDetail_infoStretch": "Hier kannst du die Zeiten selber anpassen, indem du auf die grünen 30s klickst.",
+  "categoryDetail_infoMorning": "Hier kannst du die Zeiten selber anpassen, indem du auf die grünen 30s klickst. Außerdem kannst du Übungen nach Belieben hinzufügen oder entfernen.",
+  "categoryDetail_headingHercules": "Optimiert für Läufer",
+  "morningWorkout_addExercise": "Übung hinzufügen",
+  "morningWorkout_removeExercise": "Übung entfernen",
+  "morningWorkout_pickExercise": "Übung zum Workout hinzufügen",
+  "morningWorkout_sourceMorning": "Morning",
+  "morningWorkout_sourceYoga": "Yoga",
+  "morningWorkout_sourceGym": "Gym",
+  "morningWorkout_sourceCalisthenics": "Calisthenics",
+  "morningWorkout_cannotRemoveLast": "Mindestens eine Übung muss im Workout bleiben.",
+  "morningWorkout_allExercisesAdded": "Alle Übungen sind bereits im Workout.",
+  "categoryDetail_headingStretch": "Only Stretch",
+  "strength_exercisesZero": "0 Übungen",
+  "strength_exercisesSummary": "{kcal} kcal · {count} Übungen · {duration}",
+  "@strength_exercisesSummary": {
+    "description": "Localized string for strength_exercisesSummary",
+    "placeholders": {
+      "kcal": {},
+      "count": {
+        "type": "int"
+      },
+      "duration": {}
+    }
+  },
+  "strength_workoutComplete": "Workout abgeschlossen",
+  "strength_workoutCompleteSnack": "Workout abgeschlossen. +5 Level · {kcal} kcal",
+  "@strength_workoutCompleteSnack": {
+    "description": "Localized string for strength_workoutCompleteSnack",
+    "placeholders": {
+      "kcal": {}
+    }
+  },
+  "strength_estimatedBurn": "Geschätzter Verbrauch",
+  "strength_exerciseFallback": "Übung",
+  "strength_exerciseKcalDuration": "~{kcal} kcal · {duration}",
+  "@strength_exerciseKcalDuration": {
+    "description": "Localized string for strength_exerciseKcalDuration",
+    "placeholders": {
+      "kcal": {},
+      "duration": {}
+    }
+  },
+  "preset_push": "Push Workout",
+  "preset_pull": "Pull Workout",
+  "preset_abs": "Ab Workout",
+  "preset_chestTriShoulder": "Chest · Trizeps · Schulter",
+  "preset_backBiceps": "Back · Bizeps",
+  "preset_legsAbs": "Legs · Abs",
+  "preset_caliBack": "Back Workout",
+  "preset_caliChest": "Chest Workout",
+  "preset_caliAbs": "Abs Calisthenics",
+  "preset_caliLegs": "Leg Workout",
+  "preset_caliShoulders": "Shoulder Workout",
+  "preset_caliHumanFlag": "Human Flag Workout",
+  "preset_caliHandstand": "Handstand Workout",
+  "preset_caliPlanche": "Planche Workout",
+  "mood_title": "Wie fühlst du dich?",
+  "mood_veryBad": "Sehr\nschlecht",
+  "mood_bad": "Schlecht",
+  "mood_neutral": "Neutral",
+  "mood_good": "Gut",
+  "mood_veryGood": "Sehr\ngut",
+  "workout_phaseGetReady": "GET READY",
+  "workout_phaseWork": "WORK",
+  "workout_phaseRest": "REST",
+  "workout_phaseComplete": "WORKOUT COMPLETE",
+  "workout_setProgress": "Satz {current} von {total}",
+  "@workout_setProgress": {
+    "description": "Localized string for workout_setProgress",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "workout_finishedMessage": "Super! Du hast alle {count} Übungen geschafft.",
+  "@workout_finishedMessage": {
+    "description": "Localized string for workout_finishedMessage",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "workout_tapCheckHint": "Tippe auf den Haken, um deinen Fortschritt zu sehen.",
+  "tts_getReady": "Get ready",
+  "tts_halfway": "Halbzeit",
+  "tts_start": "Los!",
+  "tts_workoutComplete": "Workout beendet, SUPER!",
+  "tts_pauseNext": "Pause. Nächste Übung: {name}",
+  "@tts_pauseNext": {
+    "description": "Localized string for tts_pauseNext",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "running_tabNewRoute": "Neue Route",
+  "running_tabSaved": "Gespeichert",
+  "running_tabHistory": "Verlauf",
+  "running_historyEmpty": "Noch keine Läufe",
+  "running_historyEmptyHint": "Beende einen Lauf — er erscheint dann hier.",
+  "running_historyMonthKm": "{km} km diesen Monat",
+  "@running_historyMonthKm": {
+    "placeholders": {
+      "km": {}
+    }
+  },
+  "running_historyMonthAvgPace": "Ø Tempo {pace}",
+  "@running_historyMonthAvgPace": {
+    "placeholders": {
+      "pace": {}
+    }
+  },
+  "running_historyUntitledRun": "Lauf",
+  "running_needStartEnd": "Setze mindestens einen Start- und einen Zielpunkt.",
+  "running_unexpectedError": "Unerwarteter Fehler: {detail}",
+  "@running_unexpectedError": {
+    "description": "Localized string for running_unexpectedError",
+    "placeholders": {
+      "detail": {}
+    }
+  },
+  "running_routeSaved": "Route \"{name}\" gespeichert.",
+  "@running_routeSaved": {
+    "description": "Localized string for running_routeSaved",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "running_saveRouteTitle": "Route speichern",
+  "running_routeNameLabel": "Name",
+  "running_defaultRouteName": "Lauf {date}",
+  "@running_defaultRouteName": {
+    "description": "Localized string for running_defaultRouteName",
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "running_myLocation": "Mein Standort",
+  "running_reset": "Zurücksetzen",
+  "running_removeLastPoint": "Letzten Punkt entfernen",
+  "running_mapHint": "Tippe auf die Karte für deine Route oder starte sofort.",
+  "running_calculateRoute": "Route berechnen",
+  "running_save": "Speichern",
+  "running_points": "PUNKTE",
+  "running_distance": "DISTANZ",
+  "running_elevation": "HÖHE",
+  "running_pinStart": "S",
+  "running_pinEnd": "Z",
+  "running_noRoutes": "Noch keine Routen",
+  "running_noRoutesHint": "Wechsle zum Tab \"Neue Route\" und plane deinen ersten Lauf.",
+  "running_deleteRouteTitle": "Route löschen?",
+  "running_deleteRouteBody": "\"{name}\" wird unwiderruflich entfernt.",
+  "@running_deleteRouteBody": {
+    "description": "Localized string for running_deleteRouteBody",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "running_renameTitle": "Umbenennen",
+  "running_deleteConfirmBody": "Diese Aktion kann nicht rückgängig gemacht werden.",
+  "run_gpsOff": "Standortdienste sind ausgeschaltet.",
+  "run_gpsDenied": "Standortfreigabe verweigert.",
+  "run_gpsError": "GPS-Fehler: {detail}",
+  "@run_gpsError": {
+    "description": "Localized string for run_gpsError",
+    "placeholders": {
+      "detail": {}
+    }
+  },
+  "run_gpsStartFailed": "GPS konnte nicht gestartet werden: {detail}",
+  "@run_gpsStartFailed": {
+    "description": "Localized string for run_gpsStartFailed",
+    "placeholders": {
+      "detail": {}
+    }
+  },
+  "run_ttsIn100m": "In 100 Metern: {instruction}",
+  "@run_ttsIn100m": {
+    "description": "Localized string for run_ttsIn100m",
+    "placeholders": {
+      "instruction": {}
+    }
+  },
+  "run_ttsIn300m": "In 300 Metern: {instruction}",
+  "@run_ttsIn300m": {
+    "description": "Localized string for run_ttsIn300m",
+    "placeholders": {
+      "instruction": {}
+    }
+  },
+  "run_ttsGoalReached": "Ziel erreicht. Gut gemacht!",
+  "run_goalReached": "Ziel erreicht",
+  "run_ttsStarted": "Lauf gestartet. Viel Erfolg!",
+  "run_ttsPause": "Pause.",
+  "run_ttsResume": "Weiter geht's.",
+  "run_endTitle": "Lauf beenden?",
+  "run_endBody": "Distanz, Zeit und der Lauf werden gespeichert.",
+  "run_keepRunning": "Weiterlaufen",
+  "run_end": "Beenden",
+  "run_finishedTitle": "Lauf beendet",
+  "run_distance": "Distanz",
+  "run_time": "Zeit",
+  "run_calories": "Kalorien",
+  "run_level": "Level",
+  "run_levelNextMeters": "Noch {meters} m bis zum nächsten Level.",
+  "@run_levelNextMeters": {
+    "description": "Localized string for run_levelNextMeters",
+    "placeholders": {
+      "meters": {}
+    }
+  },
+  "run_levelEvery5km": "Ab 5 km gibt es +1 Level – noch {meters} m.",
+  "@run_levelEvery5km": {
+    "description": "Localized string for run_levelEvery5km",
+    "placeholders": {
+      "meters": {}
+    }
+  },
+  "run_autoFollowOn": "Auto-Verfolgen aktiv",
+  "run_autoFollowOff": "Auto-Verfolgen aus",
+  "run_voiceOn": "Stimme an",
+  "run_voiceOff": "Stimme aus",
+  "run_waitingGps": "Warte auf GPS-Signal…",
+  "run_distNow": "Jetzt",
+  "run_distInMeters": "in {meters} m",
+  "@run_distInMeters": {
+    "description": "Localized string for run_distInMeters",
+    "placeholders": {
+      "meters": {}
+    }
+  },
+  "run_distInKm": "in {km} km",
+  "@run_distInKm": {
+    "description": "Localized string for run_distInKm",
+    "placeholders": {
+      "km": {}
+    }
+  },
+  "run_labelTime": "ZEIT",
+  "run_labelKm": "KM",
+  "run_labelPace": "TEMPO",
+  "run_start": "LAUF STARTEN",
+  "run_waitGps": "WARTE AUF GPS…",
+  "run_resume": "WEITER",
+  "run_pause": "PAUSE",
+  "run_endButton": "BEENDEN",
+
+  "social_connectTitle": "Freunde verbinden",
+  "social_connectSubtitle": "Workouts, Routen und Rezepte teilen",
+  "social_inboxTitle": "Postfach",
+  "social_yourIdTitle": "Deine Kaizen-ID",
+  "social_copyCode": "ID kopieren",
+  "social_shareInvite": "Einladung teilen",
+  "social_addFriendTitle": "Freund per ID hinzufügen",
+  "social_addFriendHint": "KZN-ABC123",
+  "social_addFriendAction": "Verbinden",
+  "social_friendsListTitle": "Freunde ({count})",
+  "social_noFriendsYet": "Noch keine Freunde verbunden.",
+  "social_notifyRunStart": "Benachrichtigen bei Laufstart",
+  "social_removeFriendTitle": "Freund entfernen?",
+  "social_removeFriendBody": "{name} aus der Freundesliste entfernen?",
+  "social_codeCopied": "ID kopiert",
+  "social_friendAdded": "Freund verbunden",
+  "social_errorInvalidCode": "Bitte eine gültige ID eingeben.",
+  "social_errorSelfFriend": "Du kannst dich nicht selbst hinzufügen.",
+  "social_errorFriendNotFound": "Kein Nutzer mit dieser ID gefunden.",
+  "social_errorAlreadyFriends": "Ihr seid bereits verbunden.",
+  "social_errorCloudDisabled": "Cloud-Sync ist noch nicht eingerichtet. Firebase konfigurieren, um Freunde zu verbinden.",
+  "social_errorGeneric": "Verbindung fehlgeschlagen. Bitte erneut versuchen.",
+  "social_cloudSetupHint": "Freunde-Sync benötigt Firebase. Trage projectId und apiKey in lib/services/social/social_cloud_config.dart ein, aktiviere Anonymous Auth + Firestore und baue neu.",
+  "social_inviteShareText": "Verbinde dich mit mir in Kaizen: {link}\nMeine ID: {code}",
+  "social_shareAction": "Mit Freund teilen",
+  "social_shareWithFriendsTitle": "Teilen mit",
+  "social_noFriendsToShare": "Füge zuerst Freunde unter Profil → Freunde verbinden hinzu.",
+  "social_shareSent": "Erfolgreich geteilt",
+  "social_inboxEmpty": "Noch keine Nachrichten.",
+  "social_inboxRoute": "{name} hat eine Laufroute mit dir geteilt.",
+  "social_inboxGymWorkout": "{name} hat ein Gym-Workout mit dir geteilt.",
+  "social_inboxCalisthenicsWorkout": "{name} hat ein Calisthenics-Workout mit dir geteilt.",
+  "social_inboxFoodDish": "{name} hat ein Gericht mit dir geteilt.",
+  "social_inboxThumbsUp": "{name} hat dir einen Daumen hoch geschickt 👍",
+  "social_sendThumbsUp": "Daumen hoch senden",
+  "social_thumbsUpSent": "Daumen hoch gesendet",
+  "social_acceptRoute": "Zu gespeicherten Routen",
+  "social_acceptWorkout": "Zu meinen Workouts",
+  "social_acceptDish": "Zu meinen Rezepten",
+  "social_reject": "Ablehnen",
+  "social_inboxAccepted": "Hinzugefügt",
+  "social_inboxRejected": "Abgelehnt",
+  "social_inboxAdded": "Zu deiner Bibliothek hinzugefügt",
+  "friends_hubTitle": "Freunde",
+  "friends_monthlyChallengeTab": "Monats-Challenge",
+  "friends_runningMapTab": "Laufkarte",
+  "friends_challengeTitle": "1.000-Liegestütze-Challenge",
+  "friends_goal": "Ziel",
+  "friends_pushUps": "Liegestütze",
+  "friends_tapToEdit": "Tippen, um deinen Stand zu bearbeiten",
+  "friends_editCountTitle": "Liegestütze aktualisieren",
+  "friends_editCountHint": "Aktueller Gesamtstand dieses Monats",
+  "friends_save": "Speichern",
+  "friends_leaderboard": "Rangliste",
+  "friends_you": "Du",
+  "friends_noFriendsHint": "Verbinde Freunde, um hier gegen sie anzutreten.",
+  "friends_goalReached": "Ziel erreicht — weiter geht’s!",
+
+  "running_tabShared": "Shared",
+  "sharedRuns_tabHint": "Sieh live, welche Freunde gerade laufen. Tippe auf ein Profilicon für Pace und Routendetails.",
+  "sharedRuns_empty": "Aktuell läuft kein Freund.",
+  "sharedRuns_homeTitle": "Freunde laufen live",
+  "sharedRuns_liveCount": "{count} live",
+  "sharedRuns_distance": "Distanz",
+  "sharedRuns_currentPace": "Aktuelle Pace",
+  "sharedRuns_avgPace": "Durchschnittspace",
+
+  "onTheGo_exercises": "Übungen",
+  "onTheGo_search": "Übung suchen…",
+  "onTheGo_select": "Muskeln antippen",
+  "onTheGo_show": "Übungen anzeigen",
+  "onTheGo_noMatches": "Keine passende Übung gefunden.",
+  "onTheGo_empty": "Dein Workout ist leer. Füge rechts Übungen hinzu.",
+  "onTheGo_generate": "Workout generieren",
+  "onTheGo_moreExercises": "Weitere Übungen",
+  "onTheGo_complement": "Ergänzung für dieselbe Körperregion",
+  "onTheGo_saveFailed": "Das Workout konnte nicht gespeichert werden. Bitte erneut versuchen.",
+  "workoutHub_searchHint": "Workouts suchen…",
+  "workoutHub_filter": "Filter",
+  "workoutHub_filterTitle": "Filter",
+  "workoutHub_filterApply": "Übernehmen",
+  "workoutHub_filterKind": "Art",
+  "workoutHub_filterMuscles": "Muskelgruppen",
+  "workoutHub_kindGym": "Gym",
+  "workoutHub_kindCalisthenics": "Calisthenics",
+  "workoutHub_kindStretch": "Dehnen",
+  "workoutHub_quickAccess": "Schnellstart",
+  "workoutHub_myWorkouts": "Meine Workouts",
+  "workoutHub_presets": "Vorgefertigte Workouts",
+  "workoutHub_favorites": "Favoriten",
+  "workoutHub_empty": "Keine Workouts gefunden.",
+  "workoutHub_startAsYouGo": "Leeres Workout starten",
+  "workoutHub_startWorkout": "Workout starten",
+  "workoutHub_favorite": "Favorit",
+  "workoutHub_unfavorite": "Favorit entfernen",
+  "running_startFree": "Sofort starten",
+  "running_freeRunName": "Freier Lauf",
+  "running_savedFreeRun": "Lauf gespeichert",
+  "strength_setsMaxHint": "Max. 100 Sätze",
+  "strength_editSetReps": "Wiederholungen ändern"
+}

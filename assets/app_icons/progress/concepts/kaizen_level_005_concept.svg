@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FCFDFB"/>
+      <stop offset="1" stop-color="#F0F5EC"/>
+    </linearGradient>
+    <linearGradient id="steps" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#6FAE00"/>
+      <stop offset="1" stop-color="#8FC65A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#background)"/>
+  <path d="M 238 674 H 428 V 592 H 522 V 510 H 616 V 428 H 710 V 346 H 804"
+    fill="none" stroke="url(#steps)" stroke-width="27" stroke-linecap="square" stroke-linejoin="round"/>
+  <g transform="translate(462 592) scale(0.94)">
+    <path d="M -3 -170 Q 13 -131 12 -81" fill="none" stroke="#234936" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 2 -150 Q -26 -133 -43 -105" fill="none" stroke="#234936" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 5 -150 Q 35 -169 55 -193" fill="none" stroke="#234936" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 12 -81 Q -16 -51 -38 -8" fill="none" stroke="#234936" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 12 -81 Q 36 -65 43 -45 Q 50 -26 72 -82" fill="none" stroke="#234936" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="-213" r="30" fill="#234936"/>
+    <path d="M 22 -221 Q 35 -216 24 -208 Q 20 -208 20 -212 Z" fill="#234936"/>
+  </g>
+  <text x="512" y="820" text-anchor="middle" fill="#234936"
+    font-family="Inter, Avenir Next, 'Segoe UI', Arial, sans-serif"
+    font-size="84" font-weight="400" letter-spacing="1"
+    textLength="300" lengthAdjust="spacingAndGlyphs">Kaizen</text>
+</svg>

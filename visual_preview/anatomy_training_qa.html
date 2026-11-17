@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kaizen Anatomie · manuelle QA mit Testdaten</title>
+<style>
+  *{box-sizing:border-box}body{margin:0;background:#111713;color:#e9eee8;font:14px/1.45 system-ui,sans-serif}
+  header{padding:16px 22px;border-bottom:1px solid #354139;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  h1{margin:0;font-size:20px}p{margin:8px 0 14px;color:#bfc9c1}.badge{padding:4px 10px;background:#e2ad66;color:#272016;border-radius:5px;font-weight:750}
+  .layout{display:grid;grid-template-columns:330px minmax(0,1fr);height:calc(100vh - 75px);min-height:640px}
+  aside{padding:18px;overflow:auto;border-right:1px solid #354139}h2{font-size:14px;letter-spacing:.02em;margin:20px 0 8px}h2:first-child{margin-top:0}
+  .stack{display:grid;gap:7px}.row{display:flex;gap:7px;flex-wrap:wrap}button{padding:9px 11px;color:#e9eee8;border:1px solid #4c5b50;border-radius:6px;background:#202a23;text-align:left;font:inherit;cursor:pointer}
+  button:hover{background:#344239}button:focus-visible{outline:3px solid #dcb576;outline-offset:2px}button[aria-pressed=true]{border-color:#a4c9ad;background:#344b3a}button:disabled{opacity:.45;cursor:wait}
+  .note{font-size:12px;color:#aab7ad}.legend{list-style:none;margin:0;padding:0}.legend li{margin:7px 0}.dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px;vertical-align:middle}
+  main{min-width:0;display:flex;flex-direction:column}.modebar{padding:12px;display:flex;gap:7px;flex-wrap:wrap;border-bottom:1px solid #354139}iframe{width:100%;border:0;flex:1;min-height:530px;background:#0a0a0a}
+  pre{font:12px/1.5 ui-monospace,monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:#0a100c;padding:12px;border-radius:6px;color:#bad0bf}.error{color:#ff9b95}
+  @media(max-width:850px){.layout{height:auto;grid-template-columns:1fr}aside{border-right:0}main{height:80vh;min-height:650px}header{padding:14px}.modebar{position:sticky;top:0;background:#111713;z-index:1}}
+</style>
+</head>
+<body>
+<header><h1>Kaizen Anatomie · manuelle QA</h1><span class="badge">TESTDATEN</span><span>Lokale Prüfung · keine gespeicherten Workouts werden verändert</span></header>
+<div class="layout">
+<aside>
+  <h2>Trainingszustand</h2>
+  <p class="note">Diese Buttons senden ausschließlich synthetischen Zustand an den eingebetteten Renderer. Nach Neuladen sind die Testfarben zurückgesetzt.</p>
+  <div class="stack" id="fixtures">
+    <button data-fixture="rest" aria-pressed="true">Keine Trainingsmarkierung</button>
+    <button data-fixture="mixed">Gemischt: Brust rot · Arme und Beine gelb</button>
+    <button data-fixture="chestLight">Brust: Stufe 1 · gelb</button>
+    <button data-fixture="chestHard">Brust: Stufe 2 · rot</button>
+    <button data-fixture="afterburn">Afterburn: Brust und Arme · blaue Kontur</button>
+    <button data-fixture="afterburnOnly">Nur Afterburn · unveränderte Muskelfarbe</button>
+    <button data-fixture="afterburnAll">Afterburn: alle Muskelgruppen</button>
+    <button data-fixture="legs">Beine: Stufe 2 + Gewebebeteiligung</button>
+    <button data-fixture="nutrition">Ernährung: Herz grün · Leber rot</button>
+    <button data-fixture="all">Alle neun Muskelgruppen: Stufe 2</button>
+  </div>
+  <p id="fixtureDescription" class="note">Basisfarben: Muskulatur lachsfarben, Sehnen rosa, Bänder weiß.</p>
+  <h2>Farbvertrag</h2>
+  <ul class="legend">
+    <li><span class="dot" style="background:#d8b84e"></span>Muskel Stufe 1: trainiert</li>
+    <li><span class="dot" style="background:#e51c05"></span>Muskel Stufe 2: intensiv beansprucht</li>
+    <li><span class="dot" style="background:#b8575e"></span>Sehnen: rosa, bei Beteiligung blauer Außenrand</li>
+    <li><span class="dot" style="background:#dbd6c9"></span>Bänder: weiß, bei Beteiligung blauer Außenrand</li>
+    <li><span class="dot" style="background:#d7ad65"></span>Knorpel: bei Beteiligung bernsteinfarbener Außenrand</li>
+    <li><span class="dot" style="background:#3fd07a"></span>Grün: ausgewählt, hat Vorrang</li>
+    <li><span class="dot" style="background:#dcb576"></span>Gold: ausgewähltes Organ</li>
+    <li><span class="dot" style="background:#78bfff"></span>Blauer Rand: Afterburn aktiv</li>
+  </ul>
+  <p class="note">Beteiligung ist eine anatomische Zuordnung, keine gemessene Gewebe-Erholung. Knochen und Organe erhalten keine Trainingsfarbe.</p>
+  <h2>Auswahl prüfen</h2>
+  <div id="selections" class="stack"></div>
+  <button id="clearSelection" style="margin-top:8px">Auswahl aufheben</button>
+  <p class="note">Nach Aufheben muss die aktuelle Trainingsfarbe zurückkehren. Gleiche Struktur erneut antippen schaltet die Auswahl ebenfalls aus.</p>
+  <h2>Kamera</h2>
+  <div class="row"><button id="toggleView">Vorne ↔ hinten</button><button id="resetView">Ansicht zurücksetzen</button></div>
+  <p class="note">Ziehen: horizontal drehen. Rad / Pinch: zoomen. Vorne ↔ hinten erhält den Zoom.</p>
+  <h2>Status des tatsächlichen Renderers</h2>
+  <pre id="summary" role="status" aria-live="polite">Renderer wird geladen …</pre>
+</aside>
+<main>
+  <nav class="modebar" aria-label="Anatomieansicht">
+    <button data-mode="muscles" aria-pressed="true">Muskeln</button>
+    <button data-mode="skeleton">Knochen & Knorpel</button>
+    <button data-mode="connective">Sehnen & Bänder</button>
+    <button data-mode="organs">Organe</button>
+    <button id="theme" style="margin-left:auto">Heller Hintergrund</button>
+  </nav>
+  <iframe id="viewer" title="Kaizen Anatomiemodell mit synthetischen Testdaten" src="../assets/3d_viewer/index.html?expanded=1&locale=de&theme=dark"></iframe>
+</main>
+</div>
+<script>
+'use strict';
+const frame=document.getElementById('viewer'),summary=document.getElementById('summary');
+const groups=['chest','back','shoulders','biceps','triceps','abs','legs','forearms','neck'];
+const fixtures={
+  rest:{recovery:{},afterburn:[],trained:[],organHealth:{}},
+  nutrition:{recovery:{},afterburn:[],trained:[],organHealth:{heart:'good',brain:'good',liver:'careful',lungs:'mixed'}},
+  mixed:{recovery:{chest:'recent',biceps:'almostReady',triceps:'almostReady'},afterburn:[],trained:['chest','biceps','triceps','legs']},
+  chestLight:{recovery:{chest:'almostReady'},afterburn:[],trained:['chest']},
+  chestHard:{recovery:{chest:'recent'},afterburn:[],trained:['chest']},
+  afterburn:{recovery:{chest:'recent',biceps:'almostReady',triceps:'almostReady'},afterburn:['chest','biceps','triceps'],trained:['chest','biceps','triceps']},
+  afterburnOnly:{recovery:{},afterburn:['chest','biceps','triceps'],trained:[]},
+  afterburnAll:{recovery:Object.fromEntries(groups.map(group=>[group,'recent'])),afterburn:groups,trained:groups},
+  legs:{recovery:{legs:'recent'},afterburn:[],trained:['legs']},
+  all:{recovery:Object.fromEntries(groups.map(group=>[group,'recent'])),afterburn:[],trained:groups}
+};
+const descriptions={nutrition:'Synthetische Ernährungsdaten: Herz und Gehirn grün, Leber rot, Lunge gemischt. Keine Nutzerdaten werden geändert.',rest:'Basisfarben: Muskulatur lachsfarben, Sehnen rosa, Bänder weiß.',mixed:'Testdaten: Brust = recent; Bizeps/Trizeps = almostReady; Beine = trainedThisWeek ohne aktuelle Recoverystufe.',chestLight:'Testdaten: Brust = almostReady → gelb. Zugeordnete Gewebe erhalten dieselbe Beteiligungsstufe wie bei Stufe 2.',chestHard:'Testdaten: Brust = recent → rot. In der App stammt recent aus einer explizit gespeicherten Intensität 3.',legs:'Testdaten: Beine = recent. Unter anderem Achillessehnen, Kreuzbänder und Menisken erhalten eine Beteiligungsmarkierung; Schulterstrukturen bleiben unverändert.',all:'Testdaten: Alle neun Muskelgruppen = recent. Unzugeordnete Gewebe, Knochen und Organe behalten ihre Basisfarbe.'};
+const selectionTargets={
+  muscles:[['Brust links (gemeinsame Brustauswahl)','pectoralis_major.l'],['Oberer Bauch links','rectus_abdominis.upper.l'],['Vorderer Oberschenkel links','rectus_femoris.l']],
+  skeleton:[['Medialer Meniskus links','cartilage_medial_meniscus_l'],['Schulterlabrum links','cartilage_glenoid_labrum_l'],['Oberschenkelknochen links','bone_femur_l']],
+  connective:[['Achillessehne links','tendon_calcaneal_tendon_l'],['Vorderes Kreuzband links','ligament_anterior_cruciate_ligament_l'],['Brustsehne links','tendon_tendinous_component_of_clavicular_head_of_pectoralis_major_muscle_l']],
+  organs:[['Gehirn über Großhirn auswählen','organ.brain'],['Gehirn über Kleinhirn auswählen','organ.cerebellum'],['Herz','organ.heart']]
+};
+Object.assign(descriptions,{
+  afterburn:'Testdaten: Brust rot, Arme gelb; aktiver Afterburn als blaue Außenkontur. Auswahl hat Vorrang, nach Abwahl kehrt Blau zurück.',
+  afterburnOnly:'Testdaten: Nur Afterburn aktiv. Die Muskeloberflächen behalten ihre ursprüngliche Farbe.',
+  afterburnAll:'Testdaten: Alle Muskelgruppen mit Trainingsfarbe und Afterburn. Konturen bei Drehung, Zoom und Überdeckungen prüfen.'
+});
+let mode='muscles',fixture='rest',light=false,lastError='',busy=false;
+function api(){return frame.contentWindow?.kaizenAnatomy;}
+function selectionButtons(){
+  document.getElementById('selections').replaceChildren(...selectionTargets[mode].map(([label,id])=>{
+    const button=document.createElement('button');button.textContent=label;
+    button.onclick=()=>perform(()=>{if(!api().select(id))throw new Error('Auswahl noch nicht verfügbar: '+id);});return button;
+  }));
+}
+async function perform(action){
+  if(!api()?.snapshot().ready)return;
+  busy=true;lastError='';update();
+  try{await action();}catch(error){lastError=String(error.message||error);}
+  finally{busy=false;update();}
+}
+function update(){
+  const state=api()?.snapshot(),ready=Boolean(state?.ready);
+  for(const button of document.querySelectorAll('button'))button.disabled=!ready||busy;
+  if(!state){summary.textContent='Renderer wird geladen …';return;}
+  const highlights=state.trainingHighlights||[],counts={};
+  for(const row of highlights){const key=row.tissue+(row.kind==='muscle-load'?' / Stufe '+row.level:' / beteiligt');counts[key]=(counts[key]||0)+1;}
+  summary.classList.toggle('error',Boolean(lastError||state.errors?.length));
+  summary.textContent=[`TESTDATEN · ${fixture}`,`Ansicht: ${state.mode} · ${ready?'bereit':'lädt …'}`,`Sichtbar: ${state.visibleMeshes} Meshes · ${state.triangles.toLocaleString('de-DE')} Dreiecke`,...Object.entries(counts).map(([key,n])=>`${key}: ${n}`),`Auswahl: ${state.selectedKey||'keine'}`,`Auswahlmaterialien: ${state.selectionMaterials}`,`Kamera β: ${state.camera.beta?.toFixed(6)} · Zoom: ${state.camera.radius?.toFixed(3)}`,lastError,...(state.errors||[])].filter(Boolean).join('\n');
+}
+for(const button of document.querySelectorAll('[data-fixture]'))button.onclick=()=>perform(async()=>{
+  fixture=button.dataset.fixture;await api().setState({...fixtures[fixture],paused:false});
+  for(const item of document.querySelectorAll('[data-fixture]'))item.setAttribute('aria-pressed',String(item===button));
+  document.getElementById('fixtureDescription').textContent=descriptions[fixture];
+});
+for(const button of document.querySelectorAll('[data-mode]'))button.onclick=()=>perform(async()=>{
+  mode=button.dataset.mode;await api().setState({mode,expanded:true,paused:false});selectionButtons();
+  for(const item of document.querySelectorAll('[data-mode]'))item.setAttribute('aria-pressed',String(item===button));
+});
+document.getElementById('clearSelection').onclick=()=>perform(()=>api().clearSelection());
+document.getElementById('toggleView').onclick=()=>perform(()=>api().toggleFrontBack());
+document.getElementById('resetView').onclick=()=>perform(()=>api().resetView());
+document.getElementById('theme').onclick=()=>perform(async()=>{light=!light;await api().setState({theme:light?'light':'dark'});document.getElementById('theme').textContent=light?'Dunkler Hintergrund':'Heller Hintergrund';});
+selectionButtons();update();setInterval(update,1000);
+</script>
+</body>
+</html>
