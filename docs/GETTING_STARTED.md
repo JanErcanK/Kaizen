@@ -12,13 +12,14 @@ Run `flutter doctor -v` and resolve missing components for your platform. Commit
 ## First run
 
 ```sh
+git clone https://github.com/JanErcanK/Kaizen.git
+cd Kaizen
 flutter pub get
 flutter gen-l10n
 flutter devices
-flutter run -d <device-id>
 ```
 
-Choose a listed device ID. A fresh installation shows onboarding and defaults to English/light mode. Existing saved language and theme choices persist. Core local tracking does not require Firebase or an AI provider account.
+Run `flutter run -d DEVICE_ID`, replacing `DEVICE_ID` with the ID of your emulator or phone. To verify the checkout locally, run `flutter test`. A fresh installation shows onboarding and defaults to English/light mode. Existing saved language and theme choices persist. Core local tracking does not require Firebase or an AI provider account.
 
 For a first walkthrough, complete onboarding, open a workout, inspect the body map, log a food item and revisit Profile. Chat opens without a key; sending requests requires a configured provider account with available API usage.
 

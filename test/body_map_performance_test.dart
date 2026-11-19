@@ -105,6 +105,35 @@ void main() {
       await storage.delete(recursive: true);
     });
 
+    testWidgets('short dashboard keeps anatomy controls reachable', (
+      tester,
+    ) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
+          home: const Scaffold(
+            body: SizedBox(
+              height: 175,
+              child: RecoveryBodyCard(
+                compactDashboard: true,
+                compactSidePanel: SizedBox.shrink(),
+              ),
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      final muscles = find.byTooltip('Muscles');
+      final tips = find.byTooltip('Anatomy tips');
+      expect(muscles.hitTestable(), findsOneWidget);
+      expect(tips.hitTestable(), findsNothing);
+      await tester.drag(muscles, const Offset(0, -90));
+      await tester.pumpAndSettle();
+      expect(tips.hitTestable(), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    });
+
     testWidgets('repeated expand, zoom, tabs and system back keep the app open', (
       tester,
     ) async {

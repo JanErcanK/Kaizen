@@ -788,32 +788,40 @@ class _RecoveryBodyCardState extends State<RecoveryBodyCard>
                                   bottom: widget.compactDashboard && !expanded
                                       ? 42
                                       : 4,
-                                  child: _BodyMapSidebar(
-                                    mode: _mode,
-                                    onInfoTap: () => BodyMapTabIntroDialog.show(
-                                      context,
-                                      _mode,
+                                  child: Align(
+                                    alignment: Alignment.bottomRight,
+                                    child: SingleChildScrollView(
+                                      primary: false,
+                                      child: _BodyMapSidebar(
+                                        mode: _mode,
+                                        onInfoTap: () =>
+                                            BodyMapTabIntroDialog.show(
+                                              context,
+                                              _mode,
+                                            ),
+                                        onModeTap: _goToMode,
+                                        // The recovery/muscle figure supports front and back
+                                        // views in both compact and expanded layouts.
+                                        showInfo: true,
+                                        recoveryLabel: BodyMapViewMode.recovery
+                                            .anatomyLabel(
+                                              l10n.localeName.startsWith('de'),
+                                            ),
+                                        organsLabel: BodyMapViewMode.organs
+                                            .anatomyLabel(
+                                              l10n.localeName.startsWith('de'),
+                                            ),
+                                        skeletonLabel: BodyMapViewMode.skeleton
+                                            .anatomyLabel(
+                                              l10n.localeName.startsWith('de'),
+                                            ),
+                                        connectiveLabel: BodyMapViewMode
+                                            .connective
+                                            .anatomyLabel(
+                                              l10n.localeName.startsWith('de'),
+                                            ),
+                                      ),
                                     ),
-                                    onModeTap: _goToMode,
-                                    // The recovery/muscle figure supports front and back
-                                    // views in both compact and expanded layouts.
-                                    showInfo: true,
-                                    recoveryLabel: BodyMapViewMode.recovery
-                                        .anatomyLabel(
-                                          l10n.localeName.startsWith('de'),
-                                        ),
-                                    organsLabel: BodyMapViewMode.organs
-                                        .anatomyLabel(
-                                          l10n.localeName.startsWith('de'),
-                                        ),
-                                    skeletonLabel: BodyMapViewMode.skeleton
-                                        .anatomyLabel(
-                                          l10n.localeName.startsWith('de'),
-                                        ),
-                                    connectiveLabel: BodyMapViewMode.connective
-                                        .anatomyLabel(
-                                          l10n.localeName.startsWith('de'),
-                                        ),
                                   ),
                                 ),
                               ],

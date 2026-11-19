@@ -29,13 +29,17 @@ Tests use isolated temporary storage and mocked provider responses; they do not 
 | `test/launcher_icon_service_test.dart` | Progress-icon behavior |
 | `test/widget_test.dart` | New-install onboarding |
 
-The GitHub workflow runs tests and an error-level analyzer gate. Warnings and informational lints are still reported, but do not fail that gate while the existing debt is being addressed. A green workflow would therefore **not** mean a warning-free analyzer. The workflow must actually run on GitHub before claiming remote CI success.
+Each push and pull request runs the full Flutter test suite, checks for analyzer errors and tests the Firestore rules against a local emulator. The workflow reports analyzer warnings and informational lints separately. [Public CI results](https://github.com/JanErcanK/Kaizen/actions/workflows/verify.yml)
+
+## Compact dashboard and run-history tests — 2026-11-19
+
+The [first public run](https://github.com/JanErcanK/Kaizen/actions/runs/44067304901) exposed two issues. The Home anatomy sidebar overflowed when a share arrived while the app was open. The sidebar now scrolls when vertical space is short. A widget test scrolls the compact dashboard and checks that its last control is reachable. The run-history tests now load Roboto from the active Flutter SDK, so the tests also run on machines with a different SDK installation path.
 
 ## Home persistence and GitHub CI — 2026-10-25
 
-The push of `37c7eb6` succeeded, but [its GitHub Actions run](https://github.com/JanErcanK/FitFlow/actions/runs/40206742480) failed in the Home keyboard/swipe test. `markHomeOpened()` resumed after the test had closed Hive, then attempted to read the analytics date, raising `Box has already been closed`. Dependency setup, localization generation, analysis and the Firestore-rules job passed.
+The development run at `37c7eb6` failed in the Home keyboard/swipe test. `markHomeOpened()` resumed after the test had closed Hive, then attempted to read the analytics date, raising `Box has already been closed`. Dependency setup, localization generation, analysis and the Firestore-rules job passed.
 
-The counter and initial analytics date are now submitted in one `putAll` before yielding. Three lifecycle tests reproduced the original error without sleeps; after the fix they verify persistence across an immediate close/reopen, legacy backfill and overlapping opens. The full local suite passes **187 tests**, and analysis still reports **0 errors, 59 warnings and 36 informational findings**. No tests were skipped and no workflow checks were weakened. [GitHub Actions](https://github.com/JanErcanK/FitFlow/actions/workflows/verify.yml) records the remote result for each pushed revision.
+The counter and initial analytics date are now submitted in one `putAll` before yielding. Three lifecycle tests reproduced the original error without sleeps. After the fix they verified persistence across an immediate close/reopen, legacy backfill and overlapping opens. At the time, all **187 tests** passed locally and analysis reported **0 errors, 59 warnings and 36 informational findings**.
 
 ## Share to Chat and Instagram carousels — 2026-10-25
 

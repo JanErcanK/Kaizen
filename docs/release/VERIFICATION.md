@@ -1,4 +1,10 @@
-# Latest verification — 2026-10-25
+# Verification
+
+## Public portfolio checks — 2026-11-19
+
+The public HTTPS clone was verified without credentials. The full local suite passed **250 Flutter tests** using Flutter 3.44.8 and Dart 3.12.2. The [public workflow](https://github.com/JanErcanK/Kaizen/actions/workflows/verify.yml) shows Flutter and Firestore emulator results for each revision. See the [regression details](../TESTING.md#compact-dashboard-and-run-history-tests--2026-11-19).
+
+## Development verification — 2026-10-25
 
 This record accompanies the current source/documentation snapshot. Checks are local unless identified as GitHub Actions evidence; they do not establish store approval, an iOS build, production Firebase verification or a completed live AI analysis.
 
@@ -12,8 +18,8 @@ This record accompanies the current source/documentation snapshot. Checks are lo
 | `node test/anatomy_viewer_test.cjs` | **PASS** | Real bundled GLBs with Babylon NullEngine; not a physical-phone GPU test |
 | Live Instagram import diagnostic | **9 images decoded, 6,665,979 PNG bytes** | Exact supplied public carousel, all slides in order; no AI API call |
 | Android release APK | **Built successfully before the CI fix** | `1.1.0+3` at `37c7eb6`; no new physical-device installation |
-| Firestore emulator | **GitHub Actions job passed at `37c7eb6`** | [Run 40206742480](https://github.com/JanErcanK/FitFlow/actions/runs/40206742480); deployed rules remain unverified |
-| Remote CI | [Results by pushed revision](https://github.com/JanErcanK/FitFlow/actions/workflows/verify.yml) | The first run at `37c7eb6` failed in a Home test after database teardown; setup, analysis and rules passed. Local success alone does not establish a green remote run. |
+| Firestore emulator | **GitHub Actions job passed at `37c7eb6`** | Emulator rules only. Deployed rules were unverified. |
+| Development CI | Flutter test failed at `37c7eb6` | The Home test failed after database teardown. Setup, analysis and rules passed. |
 
 The CI follow-up saves the Home-open counter and analytics start date in one operation. Three deterministic lifecycle tests failed with the original `Box has already been closed` error before this change and passed afterward; the full local suite passes 187 tests. See the [failure diagnosis and regression details](../TESTING.md#home-persistence-and-github-ci--2026-10-25). The APK below predates this small persistence change and was not rebuilt for the CI follow-up.
 

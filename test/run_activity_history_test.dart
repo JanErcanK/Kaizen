@@ -37,11 +37,12 @@ Map<String, dynamic> route() => {
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(() async {
+    final sdk = Platform.environment['FLUTTER_ROOT']!;
     final font = FontLoader('Roboto');
     for (final weight in ['regular', 'bold']) {
       font.addFont(
         File(
-          'C:/src/flutter/bin/cache/artifacts/material_fonts/roboto-$weight.ttf',
+          '$sdk/bin/cache/artifacts/material_fonts/roboto-$weight.ttf',
         ).readAsBytes().then(ByteData.sublistView),
       );
     }

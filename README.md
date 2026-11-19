@@ -1,5 +1,6 @@
 <p align="center"><img src="assets/kaizen_header_logo.png" alt="Kaizen" width="260" /></p>
 <h1 align="center">Kaizen</h1>
+<p align="center"><a href="https://github.com/JanErcanK/Kaizen/actions/workflows/verify.yml"><img src="https://github.com/JanErcanK/Kaizen/actions/workflows/verify.yml/badge.svg?branch=main" alt="Flutter and Firestore checks on main" /></a></p>
 <p align="center"><strong>Training, nutrition, and progress — in one daily routine.</strong></p>
 <p align="center">A Flutter fitness application with an interactive anatomy view, local progress tracking, and an optional AI coach for meals and workouts.</p>
 <p align="center">
@@ -12,7 +13,7 @@
 
 Kaizen brings workout planning, food logging, and everyday progress into a shared interface. The aim is to reduce the steps between deciding to train or track a meal and actually recording it.
 
-This repository documents the application and its engineering decisions, including a physical-device rendering fix and the boundary between an imported workout proposal and a confirmed saved plan. The repository retains its original name, **FitFlow**; the application is named **Kaizen**.
+This repository documents the application and its engineering decisions, including a physical-device rendering fix and the boundary between an imported workout proposal and a confirmed saved plan.
 
 ## Preview
 
@@ -64,20 +65,19 @@ Instagram import uses publicly available post media and supports up to 20 carous
 
 ## Try the project locally
 
-Cloning requires access to this repository. See [rights and permission](LICENSE.md) for reuse terms.
+You can clone Kaizen and run the tests without a GitHub account or API keys. See [rights and permission](LICENSE.md) for reuse terms.
 
-The current development toolchain is **Flutter 3.44.8 / Dart 3.12.2**. Install Flutter and an Android SDK, then:
+The project uses **Flutter 3.44.8 / Dart 3.12.2**. With Git and Flutter installed, run the following commands.
 
 ```sh
-git clone https://github.com/JanErcanK/FitFlow.git
-cd FitFlow
+git clone https://github.com/JanErcanK/Kaizen.git
+cd Kaizen
 flutter pub get
 flutter gen-l10n
 flutter test
-flutter run -d <device-id>
 ```
 
-No AI key is needed to browse the interface or run automated tests. Firebase and route calculation are unconfigured in a clean checkout. For optional services, native prerequisites and troubleshooting, follow [Getting started](docs/GETTING_STARTED.md).
+To explore the app on Android, start an emulator or connect a phone with USB debugging enabled. Run `flutter devices`, then `flutter run -d DEVICE_ID` with the ID from the list. For Android SDK setup, optional services and troubleshooting, see [Getting started](docs/GETTING_STARTED.md).
 
 ## Project structure
 

@@ -39,6 +39,7 @@ Changes below describe the repository's development version. They are not a decl
 
 ### Fixed
 
+- Keep the anatomy controls within reach on short dashboards and load the run-history test fonts from the active Flutter SDK.
 - Save the Home-open counter and initial analytics date together so database shutdown cannot interrupt a second read/write. Three lifecycle regressions reproduce the GitHub Actions failure and verify saved data after reopening.
 - Deliver cold-start Android share intents after the Flutter channel is available; synchronize the visible Chat page and refresh pending shares on resume.
 - Handle links in Android ClipData without mistaking text previews for video attachments. Show import progress immediately and preserve a clear fallback when media cannot be retrieved.
